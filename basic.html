@@ -1,176 +1,313 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NMIMS</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
     <link rel="stylesheet" href="./css/basic.css" />
-  </head>
+</head>
 
-  <body>
+<body>
+
+    <!-- ******************************************Sidebar ****************************************************************-->
+
     <aside id="sidebar">
-      <div id="sidebar-logo">
-        <img src="./img/logo-nmims.png" alt="Logo" title="Logo" />
-      </div>
+        <a href="/basic.html">
+            <div id="sidebar-logo">
+                <img src="./img/logo-nmims.png" alt="Logo" title="Logo" />
+            </div>
+        </a>
 
-      <div class="accordion accordion-flush" id="accordionFlushExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingOne">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseOne"
-              aria-expanded="false"
-              aria-controls="flush-collapseOne"
-            >
-              Accordion 1
-            </button>
-          </h2>
-          <div
-            id="flush-collapseOne"
-            class="accordion-collapse collapse"
-            aria-labelledby="flush-headingOne"
-            data-bs-parent="#accordionFlushExample"
-          >
-            <div class="accordion-body">link1</div>
-            <div class="accordion-body">link2</div>
-            <div class="accordion-body">link3</div>
-            <div class="accordion-body">link4</div>
-          </div>
+        <!-- ******************************************Accordion ****************************************************************-->
+
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Number 1
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">link1</div>
+                    <div class="accordion-body">link2</div>
+                    <div class="accordion-body">link3</div>
+                    <div class="accordion-body">link4</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Number 2
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">link1</div>
+                    <div class="accordion-body">link2</div>
+                    <div class="accordion-body">link3</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Number 3
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">link1</div>
+                    <div class="accordion-body">link2</div>
+                </div>
+            </div>
         </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingTwo">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseTwo"
-              aria-expanded="false"
-              aria-controls="flush-collapseTwo"
-            >
-              Accordion 2
-            </button>
-          </h2>
-          <div
-            id="flush-collapseTwo"
-            class="accordion-collapse collapse"
-            aria-labelledby="flush-headingTwo"
-            data-bs-parent="#accordionFlushExample"
-          >
-            <div class="accordion-body">link1</div>
-            <div class="accordion-body">link2</div>
-            <div class="accordion-body">link3</div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingThree">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseThree"
-              aria-expanded="false"
-              aria-controls="flush-collapseThree"
-            >
-              Accordion 3
-            </button>
-          </h2>
-          <div
-            id="flush-collapseThree"
-            class="accordion-collapse collapse"
-            aria-labelledby="flush-headingThree"
-            data-bs-parent="#accordionFlushExample"
-          >
-            <div class="accordion-body">link1</div>
-            <div class="accordion-body">link2</div>
-          </div>
-        </div>
-      </div>
     </aside>
 
-    <main id="main-area">
-      <header>
-        <div class="d-flex justify-content-between">
-          <i id="menu-toggle-button" class="h3 fa-solid fa-bars"></i>
-          <nav id="header" class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >Home</a
-                  >
-                  <a class="nav-link" href="#">Features</a>
-                  <a class="nav-link" href="#">Pricing</a>
+
+    <!-- **********************************Personal Details Modal ****************************************************-->
+
+    <div class="modal fade" id="personal-details-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">
+                        Personal Details
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-              </div>
+                <div class="modal-body">
+                    <form id="modal-form" enctype="multipart/form-data">
+                        <div class="form-group p-2 col-md-12 col-sm-6">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <label for="image">Passport Size Photo</label><span class="error"></span><br />
+                                    <input accept="image/jpeg, image/jpg, image/png" type="file" class="image"
+                                        name="image" id="faculty-modal-input-image"
+                                        onchange="document.getElementById('faculty-modal-image').src = window.URL.createObjectURL(this.files[0])">
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-sm-6">
+                                    <img id="faculty-modal-image" alt="your image" src="" width="100" height="100"
+                                        style="border: 1px solid #ced4da; margin-left:100px;" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group p-2 col-md-12 col-sm-12">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <label for="faculty-modal-name">Full Name</label>
+                                    <span id="name-message" class="error"></span>
+                                    <input type="text" class="form-control name=" id="faculty-modal-name">
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <label for="faculty-modal-email">Email</label><span id="email-message" class="error"></span><br />
+                                    <input type="text" class="form-control" name="email" id="faculty-modal-email">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group p-2 col-md-12 col-sm-12">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-6 my-3">
+                                    <label for="male">Male</label>
+                                    <input type="radio" name="gender" id="male">
+                                    <label for="female">Female</label>
+                                    <input type="radio" name="gender" id="female">
+                                    <label for="other">other</label>
+                                    <input type="radio" name="gender" id="other">
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <label for="faculty-modal-date-of-birth">date of birth</label><span
+                                        id="email-message" class="error"></span><br />
+                                    <input type="date" class="form-control" name="date-of-birth"
+                                        id="faculty-modal-date-of-birth">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group p-2 col-md-12 col-sm-12">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <label for="name">Contact No.</label>
+                                    <span id="name-message" class="error"></span>
+                                    <input type="text" class="form-control name=" id="faculty-modal-name">
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <label for="faculty-modal-aadhar">Aadhar Number</label><span id="email-message"
+                                        class="error"></span><br />
+                                    <input type="text" class="form-control" name="email" id="faculty-modal-aadhar">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group p-2 col-md-12 col-sm-12">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <label for="faculty-modal-pan">Pan Number</label><span id="contact-message"
+                                        class="error"></span>
+                                    <input type="text" class="form-control" name="faculty-modal-pan"
+                                        id="faculty-modal-pan">
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <label for="faculty-modal-address">Address</label><span id="aadhar-message"
+                                        class="error"></span><br />
+                                    <input type="text" class="form-control" name="faculty-modal-address"
+                                        id="faculty-modal-address">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group p-2 col-md-12 col-sm-12">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <label for="faculty-modal-city">City</label><span id="pan-message" class="error"></span><br />
+                                    <input type="text" class="form-control pan" name="pan" id="faculty-modal-city">
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <label for="faculty-modal-pin">Pincode</label><span id="pan-message" class="error"></span><br />
+                                    <input type="text" class="form-control pan" name="pan" id="faculty-modal-pin">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        Close
+                    </button>
+                    <button type="button" id="faculty-modal-submit" class="btn btn-primary">Submit</button>
+                </div>
             </div>
-          </nav>
         </div>
-      </header>
+    </div>
 
-      <section id="content" class="p-5">
-        <h3>CONTENT</h3>
-        <h3>CONTENT</h3>
-      </section>
 
-      <footer id="footer" class="text-center">@2022 Copyright</footer>
+    <main id="main-area">
+
+        <!-- ******************************************Header ****************************************************************-->
+
+        <header>
+            <div class="d-flex justify-content-between">
+                <i id="menu-toggle-button" class="h4 fa-solid fa-bars"></i>
+                <nav id="header" class="navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                <a class="nav-link" href="#">Features</a>
+                                <a class="nav-link" href="#">Account</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+
+        <!-- ******************************************Content Area ****************************************************************-->
+
+        <section id="content">
+
+
+            <div class="d-flex align-items-center justify-content-center">
+
+                <div class="resume-box row">
+                    <div id="resume-photo" class="col-2"></div>
+                    <div id="resume-name" class="col-10">
+                        <div>Personal Details<i id="personal-details-edit" class="fa-solid fa-pen-fancy"></i></div>
+                        <div class="m-2">Full Name</div>
+                        <div class="row">
+                            <div class="col-3">Gender</div>
+                            <div class="col-3">date of birth</div>
+                            <div class="col-3">email</div>
+                            <div class="col-3">contact no</div>
+                        </div>
+                        <div class="m-3 row">
+                            <div class="mb-1 col-6">Aadhar card no</div>
+                            <div class="mb-1 col-6">Pan card no.</div>
+                            <div class="mb-1 col-12">Address</div>
+                            <div class="mb-1 col-6">City</div>
+                            <div class="mb-1 col-6">Pincode</div>
+                        </div>
+                    </div>
+                    <div id="resume-role" class="col-12">
+                        Job Role<i class="fa-solid fa-pen-fancy"></i>
+                    </div>
+
+                    <div id="resume-education" class="col-12">
+                        Education<i class="fa-solid fa-pen-fancy"></i>
+                    </div>
+                    <div id="resume-skills" class="col-6">
+                        Skills<i class="fa-solid fa-pen-fancy"></i>
+                    </div>
+                    <div id="resume-achievements" class="col-6">
+                        Achievements<i class="fa-solid fa-pen-fancy"></i>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+        </section>
+
+
+        <!-- ******************************************Footer ****************************************************************-->
+
+        <footer id="footer" class="text-center">@2022 Copyright</footer>
+
     </main>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      let MenuToggleButton = document.getElementById("menu-toggle-button");
-      let menuVariable = 0;
-
-      MenuToggleButton.addEventListener("click", function (e) {
-        switch (menuVariable) {
-          case 0:
-            document
-              .querySelector("#sidebar")
-              .classList.add("hide-left-sidebar");
-            document
-              .querySelector("#main-area")
-              .classList.add("collapse-main-content");
-            menuVariable = 1;
-            break;
-
-          case 1:
-            document
-              .querySelector("#sidebar")
-              .classList.remove("hide-left-sidebar");
-            document
-              .querySelector("#main-area")
-              .classList.remove("collapse-main-content");
-            menuVariable = 0;
-            break;
-        }
-      });
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous">
     </script>
-  </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous">
+    </script>
+
+    <script>
+        $(document).ready(function () {
+
+            let MenuToggleButton = document.getElementById("menu-toggle-button");
+            let menuVariable = 0;
+
+            MenuToggleButton.addEventListener("click", function (e) {
+                switch (menuVariable) {
+                    case 0:
+                        document.querySelector("#sidebar").classList.add("hide-left-sidebar");
+                        document.querySelector("#main-area").classList.add("collapse-main-content");
+                        menuVariable = 1;
+                        break;
+
+                    case 1:
+                        document.querySelector("#sidebar").classList.remove("hide-left-sidebar");
+                        document.querySelector("#main-area").classList.remove("collapse-main-content");
+                        menuVariable = 0;
+                        break;
+                }
+            });
+
+            $(document).on('click', '#personal-details-edit', function () {
+                $("#personal-details-modal").modal("toggle");
+            })
+        })
+    </script>
+</body>
+
 </html>

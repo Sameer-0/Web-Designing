@@ -57,6 +57,7 @@
 .hide-left-sidebar {
   transform: translateX(-350px);
 }
+
 .collapse-main-content {
   width: 100% !important;
   transform: translateX(0px) !important;
