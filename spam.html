@@ -302,18 +302,12 @@
       </div>
     </div>
 
-    <!-- **********************************Personal Details Modal-END ****************************************************-->
-
     <main id="main-area">
       <!-- ******************************************Header ****************************************************************-->
 
       <header>
         <div class="d-flex justify-content-between">
-          <i
-            id="menu-toggle-button"
-            class="h4 fa-solid fa-bars"
-            style="padding: 20px !important"
-          ></i>
+          <i id="menu-toggle-button" class="h4 fa-solid fa-bars"></i>
           <nav id="header" class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
               <button
@@ -344,71 +338,77 @@
       <!-- ******************************************Content Area ****************************************************************-->
 
       <section id="content">
-        <div id="resume-body">
-          <div class="container-fluid">
-            <div class="row base-grid">
-              <div class="col-11 col-md-11 col-sm-11">personal details</div>
-
-              <div
-                class="d-flex justify-content-center align-items-center col-1 col-md-1 col-sm-1"
-              >
-                <button
+        <!-- <div id="resume-body">
+          <div class="row">
+            <div class="col-md-6 col-sm-12">Resume Body top left</div>
+            <div class="col-md-6 col-sm-12">Resume Body top right</div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-sm-12">Resume Body bottom left</div>
+            <div class="col-md-6 col-sm-12">Resume Body bottom right</div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-sm-12">Resume Body bottom left</div>
+            <div class="col-md-6 col-sm-12">Resume Body bottom right</div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-sm-12">Resume Body bottom left</div>
+            <div class="col-md-6 col-sm-12">Resume Body bottom right</div>
+          </div>
+        </div> -->
+        <div class="d-flex align-items-center justify-content-center">
+          <div class="resume-box row">
+            <div id="resume-photo" class="col-2">
+              <img src="" alt="" />
+            </div>
+            <div id="resume-name" class="col-10">
+              <div>
+                Personal Details<i
                   id="personal-details-edit"
-                  class="side-btn btn btn-primary btn-sm"
-                >
-                  <div class="vertical-text">
-                    Personal Details<i class="fa-solid fa-pen-fancy"></i>
-                  </div>
-                </button>
+                  class="fa-solid fa-pen-fancy"
+                ></i>
               </div>
+              <div class="m-2">
+                <input
+                  type="text"
+                  value="Full Name"
+                  class="form-control shadow-none"
+                  readonly
+                />
+              </div>
+              <div class="pl-0 row">
+                <div class="col-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    readonly
+                    value="Gender"
+                  />
+                </div>
+                <div class="col-3">date of birth</div>
+                <div class="col-3">email</div>
+                <div class="col-3">contact no</div>
+              </div>
+              <div class="m-3 row">
+                <div class="mb-1 col-6">Aadhar card no</div>
+                <div class="mb-1 col-6">Pan card no.</div>
+                <div class="mb-1 col-12">Address</div>
+                <div class="mb-1 col-6">City</div>
+                <div class="mb-1 col-6">Pincode</div>
+              </div>
+            </div>
+            <div id="resume-role" class="col-12">
+              Job Role<i class="fa-solid fa-pen-fancy"></i>
             </div>
 
-            <div class="row base-grid">
-              <div class="col-11 col-md-11 col-sm-11">
-                Academic Qualification
-              </div>
-              <div
-                class="d-flex justify-content-center align-items-center col-1 col-md-1 col-sm-1"
-              >
-                <button class="side-btn btn btn-primary btn-sm">
-                  <div class="vertical-text">
-                    Academic Qualification<i
-                      id="personal-details-edit"
-                      class="fa-solid fa-pen-fancy"
-                    ></i>
-                  </div>
-                </button>
-              </div>
+            <div id="resume-education" class="col-12">
+              Education<i class="fa-solid fa-pen-fancy"></i>
             </div>
-            <div class="row base-grid">
-              <div class="col-11 col-md-11 col-sm-11">Experience</div>
-              <div
-                class="d-flex justify-content-center align-items-center col-1 col-md-1 col-sm-1"
-              >
-                <button class="side-btn btn btn-primary btn-sm">
-                  <div class="vertical-text">
-                    Experience<i
-                      id="personal-details-edit"
-                      class="fa-solid fa-pen-fancy"
-                    ></i>
-                  </div>
-                </button>
-              </div>
+            <div id="resume-skills" class="col-6">
+              Skills<i class="fa-solid fa-pen-fancy"></i>
             </div>
-            <div class="row base-grid">
-              <div class="col-11 col-md-11 col-sm-11">Bank Details</div>
-              <div
-                class="d-flex justify-content-center align-items-center col-1 col-md-1 col-sm-1"
-              >
-                <button class="side-btn btn btn-primary btn-sm">
-                  <div class="vertical-text">
-                    Bank Details<i
-                      id="personal-details-edit"
-                      class="fa-solid fa-pen-fancy"
-                    ></i>
-                  </div>
-                </button>
-              </div>
+            <div id="resume-achievements" class="col-6">
+              Achievements<i class="fa-solid fa-pen-fancy"></i>
             </div>
           </div>
         </div>

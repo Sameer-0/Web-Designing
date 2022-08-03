@@ -36,7 +36,7 @@ header {
 }
 
 #content {
-  background-color: #E0E0E0;
+  background-color: #e0e0e0;
   min-height: calc(100vh - 120px);
 }
 
@@ -48,7 +48,6 @@ header {
 }
 
 i {
-  padding: 20px;
   cursor: pointer;
 }
 
@@ -74,46 +73,36 @@ i {
   padding-bottom: 7px;
 }
 
-/* Resume Box */
+input:read-only {
+  background-color: white !important;
+  box-shadow: none !important;
+  border: none !important;
+  cursor: pointer;
+}
 
-.resume-box {
-  margin: 20px;
-  width: 750px;
-  height: 800px;
+#resume-body {
+  margin: auto;
+  height: 810px;
+  padding: 20px;
+  width: 65%;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
   background-color: white;
-  border-radius: 10px;
 }
 
-#resume-name {
-  height: 30%;
-  text-align: center;
+.container-fluid {
+  height: 100%;
 }
 
-#resume-role {
-  height: 20%;
-  text-align: center;
+.base-grid {
+  height: 25%;
 }
 
-#resume-education {
-  height: 30%;
-  text-align: center;
-
+.vertical-text {
+  writing-mode: vertical-rl;
+  border-radius: 15px;
 }
 
-#resume-skills {
-  height: 20%;
-  text-align: center;
-
-}
-
-.row div {
+.side-btn {
+  height: auto;
   border-radius: 20px;
-}
-
-#resume-photo {
-
-  margin: 55px 10px 30px;
-  height: 100px;
-  width: 70px;
-  border: 1px solid black;
 }
