@@ -1,4 +1,4 @@
-* {
+*::after,::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -24,9 +24,14 @@
   height: 100%;
 }
 
-header {
+#header-navbar {
+  position: sticky !important;
+  top: 0;
+  left: 0;
+  background-color: white;
+  right: 0;
   height: 80px;
-  box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+  box-shadow:2px 2px 2px rgb(0 0 0 / 16%);
 }
 
 #main-area {
@@ -36,19 +41,21 @@ header {
 }
 
 #content {
-  background-color: #E0E0E0;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  background-color: #F5F7FA;
   min-height: calc(100vh - 120px);
 }
 
 #footer {
+  border-top: 1px solid black;
+  z-index: 1;
   width: 100%;
   bottom: 0;
   height: 40px;
-  box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
 }
 
 i {
-  padding: 20px;
   cursor: pointer;
 }
 
@@ -74,46 +81,23 @@ i {
   padding-bottom: 7px;
 }
 
-/* Resume Box */
 
-.resume-box {
-  margin: 20px;
-  width: 750px;
-  height: 800px;
-  background-color: white;
-  border-radius: 10px;
+.btn {
+ margin-top: 10px;
 }
 
-#resume-name {
-  height: 30%;
-  text-align: center;
+
+#fade-wrapper {
+  display: none;
+  position: fixed;
+  z-index: 10000000000000;
+  height: 100%;
+  width: 100%;
+  background:white;
 }
 
-#resume-role {
-  height: 20%;
-  text-align: center;
+#personal-details-popup {
+  margin-top: 50px;
 }
 
-#resume-education {
-  height: 30%;
-  text-align: center;
 
-}
-
-#resume-skills {
-  height: 20%;
-  text-align: center;
-
-}
-
-.row div {
-  border-radius: 20px;
-}
-
-#resume-photo {
-
-  margin: 55px 10px 30px;
-  height: 100px;
-  width: 70px;
-  border: 1px solid black;
-}

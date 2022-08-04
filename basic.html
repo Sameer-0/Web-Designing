@@ -14,6 +14,7 @@
 
 <body>
 
+
     <!-- ******************************************Sidebar ****************************************************************-->
 
     <aside id="sidebar">
@@ -71,133 +72,15 @@
         </div>
     </aside>
 
-
-    <!-- **********************************Personal Details Modal ****************************************************-->
-
-    <div class="modal fade" id="personal-details-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="staticBackdropLabel">
-                        Personal Details
-                    </h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form id="modal-form" enctype="multipart/form-data">
-                        <div class="form-group p-2 col-md-12 col-sm-6">
-                            <div class="row">
-                                <div class="col-sm-12 col-md-6 col-lg-6">
-                                    <label for="image">Passport Size Photo</label><span class="error"></span><br />
-                                    <input accept="image/jpeg, image/jpg, image/png" type="file" class="image"
-                                        name="image" id="faculty-modal-input-image"
-                                        onchange="document.getElementById('faculty-modal-image').src = window.URL.createObjectURL(this.files[0])">
-                                </div>
-                                <div class="col-sm-12 col-md-6 col-sm-6">
-                                    <img id="faculty-modal-image" alt="your image" src="" width="100" height="100"
-                                        style="border: 1px solid #ced4da; margin-left:100px;" />
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group p-2 col-md-12 col-sm-12">
-                            <div class="row">
-                                <div class="col-sm-12 col-md-6 col-lg-6">
-                                    <label for="faculty-modal-name">Full Name</label>
-                                    <span id="name-message" class="error"></span>
-                                    <input type="text" class="form-control name=" id="faculty-modal-name">
-                                </div>
-                                <div class="col-sm-12 col-md-6 col-lg-6">
-                                    <label for="faculty-modal-email">Email</label><span id="email-message" class="error"></span><br />
-                                    <input type="text" class="form-control" name="email" id="faculty-modal-email">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group p-2 col-md-12 col-sm-12">
-                            <div class="row">
-                                <div class="col-sm-12 col-md-6 col-lg-6 my-3">
-                                    <label for="male">Male</label>
-                                    <input type="radio" name="gender" id="male">
-                                    <label for="female">Female</label>
-                                    <input type="radio" name="gender" id="female">
-                                    <label for="other">other</label>
-                                    <input type="radio" name="gender" id="other">
-                                </div>
-                                <div class="col-sm-12 col-md-6 col-lg-6">
-                                    <label for="faculty-modal-date-of-birth">date of birth</label><span
-                                        id="email-message" class="error"></span><br />
-                                    <input type="date" class="form-control" name="date-of-birth"
-                                        id="faculty-modal-date-of-birth">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group p-2 col-md-12 col-sm-12">
-                            <div class="row">
-                                <div class="col-sm-12 col-md-6 col-lg-6">
-                                    <label for="name">Contact No.</label>
-                                    <span id="name-message" class="error"></span>
-                                    <input type="text" class="form-control name=" id="faculty-modal-name">
-                                </div>
-                                <div class="col-sm-12 col-md-6 col-lg-6">
-                                    <label for="faculty-modal-aadhar">Aadhar Number</label><span id="email-message"
-                                        class="error"></span><br />
-                                    <input type="text" class="form-control" name="email" id="faculty-modal-aadhar">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group p-2 col-md-12 col-sm-12">
-                            <div class="row">
-                                <div class="col-sm-12 col-md-6 col-lg-6">
-                                    <label for="faculty-modal-pan">Pan Number</label><span id="contact-message"
-                                        class="error"></span>
-                                    <input type="text" class="form-control" name="faculty-modal-pan"
-                                        id="faculty-modal-pan">
-                                </div>
-                                <div class="col-sm-12 col-md-6 col-lg-6">
-                                    <label for="faculty-modal-address">Address</label><span id="aadhar-message"
-                                        class="error"></span><br />
-                                    <input type="text" class="form-control" name="faculty-modal-address"
-                                        id="faculty-modal-address">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group p-2 col-md-12 col-sm-12">
-                            <div class="row">
-                                <div class="col-sm-12 col-md-6 col-lg-6">
-                                    <label for="faculty-modal-city">City</label><span id="pan-message" class="error"></span><br />
-                                    <input type="text" class="form-control pan" name="pan" id="faculty-modal-city">
-                                </div>
-                                <div class="col-sm-12 col-md-6 col-lg-6">
-                                    <label for="faculty-modal-pin">Pincode</label><span id="pan-message" class="error"></span><br />
-                                    <input type="text" class="form-control pan" name="pan" id="faculty-modal-pin">
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                        Close
-                    </button>
-                    <button type="button" id="faculty-modal-submit" class="btn btn-primary">Submit</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
     <main id="main-area">
+
 
         <!-- ******************************************Header ****************************************************************-->
 
-        <header>
-            <div class="d-flex justify-content-between">
-                <i id="menu-toggle-button" class="h4 fa-solid fa-bars"></i>
+        <header id="header-navbar">
+
+            <div class="d-flex header-nav justify-content-between">
+                <i id="menu-toggle-button" class="h4 fa-solid fa-bars" style="padding: 20px !important"></i>
                 <nav id="header" class="navbar navbar-expand-lg navbar-light">
                     <div class="container-fluid">
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -215,62 +98,190 @@
                     </div>
                 </nav>
             </div>
+
         </header>
 
 
-        <!-- ******************************************Content Area ****************************************************************-->
+   <!-- ******************************************Content Area ****************************************************************-->
 
         <section id="content">
 
 
-            <div class="d-flex align-items-center justify-content-center">
+            <!-- ******************************************Personal Info Form Popup ****************************************************************-->
 
-                <div class="resume-box row">
-                    <div id="resume-photo" class="col-2"></div>
-                    <div id="resume-name" class="col-10">
-                        <div>Personal Details<i id="personal-details-edit" class="fa-solid fa-pen-fancy"></i></div>
-                        <div class="m-2"><p>Full Name</p></div>
-                        <div class="row">
-                            <div class="col-3">Gender</div>
-                            <div class="col-3">date of birth</div>
-                            <div class="col-3">email</div>
-                            <div class="col-3">contact no</div>
-                        </div>
-                        <div class="m-3 row">
-                            <div class="mb-1 col-6">Aadhar card no</div>
-                            <div class="mb-1 col-6">Pan card no.</div>
-                            <div class="mb-1 col-12">Address</div>
-                            <div class="mb-1 col-6">City</div>
-                            <div class="mb-1 col-6">Pincode</div>
-                        </div>
-                    </div>
-                    <div id="resume-role" class="col-12">
-                        Job Role<i class="fa-solid fa-pen-fancy"></i>
-                    </div>
+            <div id="fade-wrapper">
+                <div id="personal-details-popup" class="container">
+                    <form id="modal-form" enctype="multipart/form-data">
 
-                    <div id="resume-education" class="col-12">
-                        Education<i class="fa-solid fa-pen-fancy"></i>
-                    </div>
-                    <div id="resume-skills" class="col-6">
-                        Skills<i class="fa-solid fa-pen-fancy"></i>
-                    </div>
-                    <div id="resume-achievements" class="col-6">
-                        Achievements<i class="fa-solid fa-pen-fancy"></i>
+                        <div class="form-group p-2 col-md-12 col-sm-6">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <label for="image">Passport Size Photo</label><span class="error"></span><br />
+                                    <input accept="image/jpeg, image/jpg, image/png" type="file" class="image"
+                                        name="image" id="faculty-modal-input-image"
+                                        onchange="document.getElementById('faculty-modal-image').src = window.URL.createObjectURL(this.files[0])" />
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <img id="faculty-modal-image" alt="your image" src="" width="100" height="100"
+                                        style="border: 1px solid #ced4da;" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group p-2 col-md-12 col-sm-12">
+                            <div class="row">
+                                <div class="col-md-3 col-sm-6">
+                                    <label for="faculty-modal-first-name">First Name</label>
+                                    <input type="text" class="form-control" id="faculty-modal-first-name">
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <label for="faculty-modal-middle-name">Middle Name</label>
+                                    <input type="text" class="form-control" id="faculty-modal-middle-name">
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <label for="faculty-modal-last-name">Last Name</label>
+                                    <input type="text" class="form-control" id="faculty-modal-last-name">
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <label for="faculty-modal-email">Email Id</label>
+                                    <input type="text" class="form-control" id="faculty-modal-email">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group p-2 col-md-12 col-sm-12">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-6 my-3">
+                                    <label for="male">Male</label>
+                                    <input type="radio" name="gender" id="male" />
+                                    <label for="female">Female</label>
+                                    <input type="radio" name="gender" id="female" />
+                                    <label for="other">other</label>
+                                    <input type="radio" name="gender" id="other" />
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <label for="faculty-modal-date-of-birth">date of birth</label><span
+                                        id="email-message" class="error"></span><br />
+                                    <input type="date" class="form-control" name="date-of-birth"
+                                        id="faculty-modal-date-of-birth" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group p-2 col-md-12 col-sm-12">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <label for="faculty-modal-contactNo">Contact No.</label>
+                                    <span id="name-message" class="error"></span>
+                                    <input type="text" class="form-control" name="faculty-modal-contactNo"
+                                        id="faculty-modal-contactNo" />
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <label for="faculty-modal-aadhar">Aadhar Number</label><span id="email-message"
+                                        class="error"></span><br />
+                                    <input type="text" class="form-control" name="email" id="faculty-modal-aadhar" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group p-2 col-md-12 col-sm-12">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <label for="faculty-modal-pan">Pan Number</label><span id="contact-message"
+                                        class="error"></span>
+                                    <input type="text" class="form-control" name="faculty-modal-pan"
+                                        id="faculty-modal-pan" />
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <label for="faculty-modal-address">Address</label><span id="aadhar-message"
+                                        class="error"></span><br />
+                                    <input type="text" class="form-control" name="faculty-modal-address"
+                                        id="faculty-modal-address" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group p-2 col-md-12 col-sm-12">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <label for="faculty-modal-city">City</label><span id="pan-message"
+                                        class="error"></span><br />
+                                    <input type="text" class="form-control pan" name="pan" id="faculty-modal-city" />
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <label for="faculty-modal-pin">Pincode</label><span id="pan-message"
+                                        class="error"></span><br />
+                                    <input type="text" class="form-control pan" name="pan" id="faculty-modal-pin" />
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="d-flex justify-content-center">
+                        <button id="personal-details-form-cancel" class="mx-2 btn btn-danger">Cancel</button>
+                        <button class="mx-2 btn btn-success">Submit</button>
                     </div>
                 </div>
-
             </div>
 
 
 
 
-        </section>
 
+            <div id="resume-body" class="row">
+                <div id="resume-left-box" class="col-2">
+
+
+                    <div class="sidebar-icons">
+                        <button id="personal-details-edit" class="side-btn btn btn-primary btn-sm">
+                            <i class="fa-solid fa-pen-fancy"></i>
+                        </button>
+                    </div>
+
+                    <div class="sidebar-icons">
+                        <button class="side-btn btn btn-primary btn-sm">
+                            <i class="fa-solid fa-pen-fancy"></i>
+                        </button>
+                    </div>
+
+                    <div class="sidebar-icons">
+                        <button class="side-btn btn btn-primary btn-sm">
+                            <i class="fa-solid fa-pen-fancy"></i>
+                        </button>
+                    </div>
+
+                    <div class="sidebar-icons">
+                        <button class="side-btn btn btn-primary btn-sm">
+                            <i id="personal-details-edit" class="fa-solid fa-pen-fancy"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div id="resume-right-box" class="col-10">
+                    <div class="container-fluid">
+
+                        <div id="personal-details-div" class="right-box-columns">
+                            <h4>Personal Details div</h4>
+                        </div>
+                        <div id="academic-details-div" class="right-box-columns">
+                            <h4>Academic Qualification div</h4>
+                        </div>
+                        <div id="experience-details-div" class="right-box-columns">
+                            <h4>Experience div</h4>
+                        </div>
+                        <div id="bank-details-div" class="right-box-columns">
+                            <h4>Bank Details div</h4>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            </div>
+        </section>
 
         <!-- ******************************************Footer ****************************************************************-->
 
         <footer id="footer" class="text-center">@2022 Copyright</footer>
-
     </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -283,7 +294,6 @@
 
     <script>
         $(document).ready(function () {
-
             let MenuToggleButton = document.getElementById("menu-toggle-button");
             let menuVariable = 0;
 
@@ -303,10 +313,18 @@
                 }
             });
 
+
             $(document).on('click', '#personal-details-edit', function () {
-                $("#personal-details-modal").modal("toggle");
+
+                $('#fade-wrapper').fadeIn();
+
             })
-        })
+
+            $('#personal-details-form-cancel').click(function () {
+                $('#fade-wrapper').fadeOut();
+            });
+
+        });
     </script>
 </body>
 
