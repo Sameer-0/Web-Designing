@@ -9,28 +9,34 @@ body {
 }
 
 #resume-box {
-  color: #434a54;
   margin-top: 100px;
+  color: #434a54;
   width: 70%;
   margin-left: auto;
   margin-right: auto;
-  padding: 20px;
 }
 
 .cover-div {
-  background-color: #418ff6;
+  background-color: #5b9ff8;
   background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMDAnIGhlaWdodD0nMTAwJyB2aWV3Qm94PScwIDAgMTAwIDEwMCc+PGcgZmlsbC1ydWxlPSdldmVub2RkJz48ZyBmaWxsPScjZmZmZmZmJyBmaWxsLW9wYWNpdHk9JzAuMTInPjxwYXRoIG9wYWNpdHk9Jy41JyBkPSdNOTYgOTVoNHYxaC00djRoLTF2LTRoLTl2NGgtMXYtNGgtOXY0aC0xdi00aC05djRoLTF2LTRoLTl2NGgtMXYtNGgtOXY0aC0xdi00aC05djRoLTF2LTRoLTl2NGgtMXYtNGgtOXY0aC0xdi00SDB2LTFoMTV2LTlIMHYtMWgxNXYtOUgwdi0xaDE1di05SDB2LTFoMTV2LTlIMHYtMWgxNXYtOUgwdi0xaDE1di05SDB2LTFoMTV2LTlIMHYtMWgxNXYtOUgwdi0xaDE1VjBoMXYxNWg5VjBoMXYxNWg5VjBoMXYxNWg5VjBoMXYxNWg5VjBoMXYxNWg5VjBoMXYxNWg5VjBoMXYxNWg5VjBoMXYxNWg5VjBoMXYxNWg0djFoLTR2OWg0djFoLTR2OWg0djFoLTR2OWg0djFoLTR2OWg0djFoLTR2OWg0djFoLTR2OWg0djFoLTR2OWg0djFoLTR2OXptLTEgMHYtOWgtOXY5aDl6bS0xMCAwdi05aC05djloOXptLTEwIDB2LTloLTl2OWg5em0tMTAgMHYtOWgtOXY5aDl6bS0xMCAwdi05aC05djloOXptLTEwIDB2LTloLTl2OWg5em0tMTAgMHYtOWgtOXY5aDl6bS0xMCAwdi05aC05djloOXptLTktMTBoOXYtOWgtOXY5em0xMCAwaDl2LTloLTl2OXptMTAgMGg5di05aC05djl6bTEwIDBoOXYtOWgtOXY5em0xMCAwaDl2LTloLTl2OXptMTAgMGg5di05aC05djl6bTEwIDBoOXYtOWgtOXY5em0xMCAwaDl2LTloLTl2OXptOS0xMHYtOWgtOXY5aDl6bS0xMCAwdi05aC05djloOXptLTEwIDB2LTloLTl2OWg5em0tMTAgMHYtOWgtOXY5aDl6bS0xMCAwdi05aC05djloOXptLTEwIDB2LTloLTl2OWg5em0tMTAgMHYtOWgtOXY5aDl6bS0xMCAwdi05aC05djloOXptLTktMTBoOXYtOWgtOXY5em0xMCAwaDl2LTloLTl2OXptMTAgMGg5di05aC05djl6bTEwIDBoOXYtOWgtOXY5em0xMCAwaDl2LTloLTl2OXptMTAgMGg5di05aC05djl6bTEwIDBoOXYtOWgtOXY5em0xMCAwaDl2LTloLTl2OXptOS0xMHYtOWgtOXY5aDl6bS0xMCAwdi05aC05djloOXptLTEwIDB2LTloLTl2OWg5em0tMTAgMHYtOWgtOXY5aDl6bS0xMCAwdi05aC05djloOXptLTEwIDB2LTloLTl2OWg5em0tMTAgMHYtOWgtOXY5aDl6bS0xMCAwdi05aC05djloOXptLTktMTBoOXYtOWgtOXY5em0xMCAwaDl2LTloLTl2OXptMTAgMGg5di05aC05djl6bTEwIDBoOXYtOWgtOXY5em0xMCAwaDl2LTloLTl2OXptMTAgMGg5di05aC05djl6bTEwIDBoOXYtOWgtOXY5em0xMCAwaDl2LTloLTl2OXptOS0xMHYtOWgtOXY5aDl6bS0xMCAwdi05aC05djloOXptLTEwIDB2LTloLTl2OWg5em0tMTAgMHYtOWgtOXY5aDl6bS0xMCAwdi05aC05djloOXptLTEwIDB2LTloLTl2OWg5em0tMTAgMHYtOWgtOXY5aDl6bS0xMCAwdi05aC05djloOXptLTktMTBoOXYtOWgtOXY5em0xMCAwaDl2LTloLTl2OXptMTAgMGg5di05aC05djl6bTEwIDBoOXYtOWgtOXY5em0xMCAwaDl2LTloLTl2OXptMTAgMGg5di05aC05djl6bTEwIDBoOXYtOWgtOXY5em0xMCAwaDl2LTloLTl2OXonLz48cGF0aCBkPSdNNiA1VjBINXY1SDB2MWg1djk0aDFWNmg5NFY1SDZ6Jy8+PC9nPjwvZz48L3N2Zz4=);
   border-radius: 15px 15px 0 0;
 }
 
-#personal-details-div {
+.shadow-lg {
   background-color: #fff;
+}
+
+#research {
+  color: #fff;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  background-color: #434a54;
+  border-radius: 0 0 20px 20px;
 }
 
 hr {
   margin: 25px 0;
   color: #adb5bd;
-  background-color: currentColor;
   border: 0;
   opacity: 0.25;
 }
@@ -43,6 +49,7 @@ hr {
   margin-left: auto;
   margin-right: auto;
 }
+
 .avatar img {
   width: 100%;
 }
@@ -57,9 +64,128 @@ hr {
 #download-btn:focus {
   transform: translateY(-0.25em);
 }
-@media (min-width: 768px) {
+
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-left: 2px solid #4e7bb6;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content : '';
+  position: absolute;
+  width: 6px;
+  background-color: #5b9ff8;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* text-block around work-experience-card */
+.text-block {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  border-left: 1px solid #191b1c;
+ 
+}
+
+/* The circles on the timeline */
+.text-block::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: #fff;
+  border: 2px solid #5b9ff8;
+  top: 20px;
+  border-radius: 80%;
+}
+
+/* Add arrows to the right text-block (pointing left) */
+.right::before {
+  
+  content:  '';
+  display: inline-block;
+  position: absolute;
+  background-color: #5b9ff8;
+  width: 29px;
+  height: 2px;
+  top: 31px;
+  left: 12px;
+  
+}
+
+/* Fix the circle for text-blocks on the right side */
+.right::after {
+  left: -13px;
+}
+
+/* The actual work-experience-card */
+.card-body{
+  padding: 32px;
+  background-color:fff;
+  position: relative;
+  border-radius: 6px;
+  border-left: 3px solid #5b9ff8;
+  box-shadow: -1px 0px 5px -1px
+
+}
+
+@media screen and (min-width: 768px) {
   .avatar {
     margin-bottom: -80px;
     margin-left: 0;
   }
+
+   
+  /* Full-width text-blocks */
+  .text-block {
+    width: 100%;
+    padding: 10px 40px;
+    margin-left: 20px;
+    }
+  
+    /* Make sure that all arrows are pointing leftwards */
+    .text-block::before {
+    left: 12px;
+    border-color: transparent #4e7bb6 transparent transparent;
+    }
+   
+}
+
+.personal-information-div:hover {
+
+  transform: scale(1.1);
+  background-color: #fff;
+}
+
+#education-div:hover{
+  transform: scale(1.1);
+  background-color: #fff;
+}
+#work-experience-div:hover {
+  transform: scale(1.1);
+  background-color: #fff;
+}
+
+#bank-details:hover {
+  transform: scale(1.1);
+  background-color: #fff;
+}
+
+#publications:hover {
+  transform: scale(1.1);
+  background-color: #fff;
+}
+
+#research:hover {
+  transform: scale(1.1);
+  background-color: #434a54 ;
 }
