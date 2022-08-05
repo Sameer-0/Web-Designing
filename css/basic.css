@@ -1,4 +1,5 @@
-*::after,::before {
+*::after,
+::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -31,7 +32,7 @@
   background-color: white;
   right: 0;
   height: 80px;
-  box-shadow:2px 2px 2px rgb(0 0 0 / 16%);
+  box-shadow: 2px 2px 2px rgb(0 0 0 / 16%);
 }
 
 #main-area {
@@ -43,7 +44,7 @@
 #content {
   padding-top: 15px;
   padding-bottom: 20px;
-  background-color: #F5F7FA;
+  background-color: #f5f7fa;
   min-height: calc(100vh - 120px);
 }
 
@@ -81,11 +82,9 @@ i {
   padding-bottom: 7px;
 }
 
-
 .btn {
- margin-top: 10px;
+  margin-top: 10px;
 }
-
 
 #fade-wrapper {
   display: none;
@@ -93,11 +92,9 @@ i {
   z-index: 10000000000000;
   height: 100%;
   width: 100%;
-  background:white;
+  background: white;
 }
 
 #personal-details-popup {
   margin-top: 50px;
 }
-
-
