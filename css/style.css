@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #f5f7fa;
+  background-color: #eeeef7 !important;
 }
 
 #resume-box {
@@ -64,6 +64,14 @@ hr {
 #download-btn:hover,
 #download-btn:focus {
   transform: translateY(-0.25em);
+}
+
+
+
+.edit_icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
 }
 
 /* **********************************************TimeLine******************************************************** */
@@ -143,6 +151,13 @@ hr {
   background-color: #fff;
 }
 
+.personal-information-div-hover {
+  filter: blur(2px);
+  transition: 0.3s;
+  transform: scale(1.1);
+  background-color: #fff;
+}
+
 /* ********************************Hover effect for edit ***************************************/
 
 #education-div:hover {
@@ -180,6 +195,142 @@ hr {
   transform: scale(1.1);
 }
 
+/* ********************************Personal Details Div Styling***************************************/
+
+#main-form-area {
+  margin-top: 50px !important;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.22);
+  overflow: hidden;
+  width: 70%;
+  max-width: 100%;
+  position: relative;
+  min-height: 90vh;
+}
+
+#left-form-area {
+  color: white !important;
+  background: linear-gradient(to right, #34373a, #5a626d);
+  height: 100%;
+  position: absolute;
+}
+
+h1 {
+  font-weight: bold;
+  margin: 0;
+}
+
+input {
+  height: 50px;
+  background-color: #eee;
+}
+
+input:focus {
+  border: 3px solid red !important;
+}
+
+label {
+  padding-bottom: 10px;
+}
+
+#name-row {
+  padding-bottom: 50px;
+  padding-top: 10px;
+}
+
+#left-third-row {
+  padding-top: 50px;
+}
+
+#left-fourth-row {
+  padding-top: 50px;
+}
+
+#gender-row {
+  font-size: larger;
+  padding-left: 50px;
+  padding-top: 30px;
+}
+
+/* ********************************Styling for Work Experience Modal***************************************/
+.work-experience-modal {
+  display: none;
+  height: 100%;
+  width: 100%;
+}
+.full-screen {
+  margin: auto;
+  margin-top: 100px;
+}
+
+table thead tr {
+  height: 60px;
+  background: #36304a;
+}
+
+.main-content {
+  width: 100%;
+  background: linear-gradient(to left, #34373a, #5a626d);
+  border-radius: 5px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.22);
+
+}
+
+table,
+th,
+td {
+  text-align: center;
+}
+
+th {
+  height: 30px;
+  padding: 15px;
+}
+
+td {
+  height: 50px;
+  vertical-align: bottom;
+  padding: 15px;
+}
+
+.table-head {
+  background-color: transparent;
+}
+
+input {
+  height: 30px;
+}
+
+
+table-head th {
+  margin: 0 30px !important;
+}
+
+#table-data tr {
+  height: 50px;
+  padding: 30px 0;
+}
+
+#add-button {
+  padding: 20px;
+}
+
+
+/* ********************************Styling to Use Modal***************************************/
+.personal-details-modal {
+  display: none;
+  height: 100%;
+  width: 100%;
+}
+
+fade-in-button {
+  display: none;
+}
+
 /* ********************************Media Query For different device widths ***************************************/
 
 @media screen and (min-width: 768px) {
@@ -199,5 +350,23 @@ hr {
   .text-block::before {
     left: 12px;
     border-color: transparent #434a54 transparent transparent;
+  }
+
+
+
+  /* Personal Details Div  */
+  #name-row {
+    padding-bottom: 10px;
+    padding-top: 20px;
+  }
+
+  #left-third-row {
+    padding-top: 50px;
+  }
+
+  #gender-row {
+    font-size: smaller;
+    padding-left: 20px;
+    padding-top: 10px;
   }
 }

@@ -109,120 +109,6 @@
 
             <!-- ******************************************Personal Info Form Popup ****************************************************************-->
 
-            <div id="fade-wrapper">
-                <div id="personal-details-popup" class="container">
-                    <form id="modal-form" enctype="multipart/form-data">
-
-                        <div class="form-group p-2 col-md-12 col-sm-6">
-                            <div class="row">
-                                <div class="col-sm-12 col-md-6 col-lg-6">
-                                    <label for="image">Passport Size Photo</label><span class="error"></span><br />
-                                    <input accept="image/jpeg, image/jpg, image/png" type="file" class="image"
-                                        name="image" id="faculty-modal-input-image"
-                                        onchange="document.getElementById('faculty-modal-image').src = window.URL.createObjectURL(this.files[0])" />
-                                </div>
-                                <div class="col-sm-12 col-md-6 col-lg-6">
-                                    <img id="faculty-modal-image" alt="your image" src="" width="100" height="100"
-                                        style="border: 1px solid #ced4da;" />
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group p-2 col-md-12 col-sm-12">
-                            <div class="row">
-                                <div class="col-md-3 col-sm-6">
-                                    <label for="faculty-modal-first-name">First Name</label>
-                                    <input type="text" class="form-control" id="faculty-modal-first-name">
-                                </div>
-                                <div class="col-md-3 col-sm-6">
-                                    <label for="faculty-modal-middle-name">Middle Name</label>
-                                    <input type="text" class="form-control" id="faculty-modal-middle-name">
-                                </div>
-                                <div class="col-md-3 col-sm-6">
-                                    <label for="faculty-modal-last-name">Last Name</label>
-                                    <input type="text" class="form-control" id="faculty-modal-last-name">
-                                </div>
-                                <div class="col-md-3 col-sm-6">
-                                    <label for="faculty-modal-email">Email Id</label>
-                                    <input type="text" class="form-control" id="faculty-modal-email">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group p-2 col-md-12 col-sm-12">
-                            <div class="row">
-                                <div class="col-sm-12 col-md-6 col-lg-6 my-3">
-                                    <label for="male">Male</label>
-                                    <input type="radio" name="gender" id="male" />
-                                    <label for="female">Female</label>
-                                    <input type="radio" name="gender" id="female" />
-                                    <label for="other">other</label>
-                                    <input type="radio" name="gender" id="other" />
-                                </div>
-                                <div class="col-sm-12 col-md-6 col-lg-6">
-                                    <label for="faculty-modal-date-of-birth">date of birth</label><span
-                                        id="email-message" class="error"></span><br />
-                                    <input type="date" class="form-control" name="date-of-birth"
-                                        id="faculty-modal-date-of-birth" />
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group p-2 col-md-12 col-sm-12">
-                            <div class="row">
-                                <div class="col-sm-12 col-md-6 col-lg-6">
-                                    <label for="faculty-modal-contactNo">Contact No.</label>
-                                    <span id="name-message" class="error"></span>
-                                    <input type="text" class="form-control" name="faculty-modal-contactNo"
-                                        id="faculty-modal-contactNo" />
-                                </div>
-                                <div class="col-sm-12 col-md-6 col-lg-6">
-                                    <label for="faculty-modal-aadhar">Aadhar Number</label><span id="email-message"
-                                        class="error"></span><br />
-                                    <input type="text" class="form-control" name="email" id="faculty-modal-aadhar" />
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group p-2 col-md-12 col-sm-12">
-                            <div class="row">
-                                <div class="col-sm-12 col-md-6 col-lg-6">
-                                    <label for="faculty-modal-pan">Pan Number</label><span id="contact-message"
-                                        class="error"></span>
-                                    <input type="text" class="form-control" name="faculty-modal-pan"
-                                        id="faculty-modal-pan" />
-                                </div>
-                                <div class="col-sm-12 col-md-6 col-lg-6">
-                                    <label for="faculty-modal-address">Address</label><span id="aadhar-message"
-                                        class="error"></span><br />
-                                    <input type="text" class="form-control" name="faculty-modal-address"
-                                        id="faculty-modal-address" />
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group p-2 col-md-12 col-sm-12">
-                            <div class="row">
-                                <div class="col-sm-12 col-md-6 col-lg-6">
-                                    <label for="faculty-modal-city">City</label><span id="pan-message"
-                                        class="error"></span><br />
-                                    <input type="text" class="form-control pan" name="pan" id="faculty-modal-city" />
-                                </div>
-                                <div class="col-sm-12 col-md-6 col-lg-6">
-                                    <label for="faculty-modal-pin">Pincode</label><span id="pan-message"
-                                        class="error"></span><br />
-                                    <input type="text" class="form-control pan" name="pan" id="faculty-modal-pin" />
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                    <div class="d-flex justify-content-center">
-                        <button id="personal-details-form-cancel" class="mx-2 btn btn-danger">Cancel</button>
-                        <button class="mx-2 btn btn-success">Submit</button>
-                    </div>
-                </div>
-            </div>
-
 
 
 
@@ -283,6 +169,121 @@
 
         <footer id="footer" class="text-center">@2022 Copyright</footer>
     </main>
+
+    <div id="fade-wrapper">
+        <div id="personal-details-popup" class="container">
+            <form id="modal-form" enctype="multipart/form-data">
+
+                <div class="form-group p-2 col-md-12 col-sm-6">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <label for="image">Passport Size Photo</label><span class="error"></span><br />
+                            <input accept="image/jpeg, image/jpg, image/png" type="file" class="image"
+                                name="image" id="faculty-modal-input-image"
+                                onchange="document.getElementById('faculty-modal-image').src = window.URL.createObjectURL(this.files[0])" />
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <img id="faculty-modal-image" alt="your image" src="" width="100" height="100"
+                                style="border: 1px solid #ced4da;" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group p-2 col-md-12 col-sm-12">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <label for="faculty-modal-first-name">First Name</label>
+                            <input type="text" class="form-control" id="faculty-modal-first-name">
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <label for="faculty-modal-middle-name">Middle Name</label>
+                            <input type="text" class="form-control" id="faculty-modal-middle-name">
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <label for="faculty-modal-last-name">Last Name</label>
+                            <input type="text" class="form-control" id="faculty-modal-last-name">
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <label for="faculty-modal-email">Email Id</label>
+                            <input type="text" class="form-control" id="faculty-modal-email">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group p-2 col-md-12 col-sm-12">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-6 my-3">
+                            <label for="male">Male</label>
+                            <input type="radio" name="gender" id="male" />
+                            <label for="female">Female</label>
+                            <input type="radio" name="gender" id="female" />
+                            <label for="other">other</label>
+                            <input type="radio" name="gender" id="other" />
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <label for="faculty-modal-date-of-birth">date of birth</label><span
+                                id="email-message" class="error"></span><br />
+                            <input type="date" class="form-control" name="date-of-birth"
+                                id="faculty-modal-date-of-birth" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group p-2 col-md-12 col-sm-12">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <label for="faculty-modal-contactNo">Contact No.</label>
+                            <span id="name-message" class="error"></span>
+                            <input type="text" class="form-control" name="faculty-modal-contactNo"
+                                id="faculty-modal-contactNo" />
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <label for="faculty-modal-aadhar">Aadhar Number</label><span id="email-message"
+                                class="error"></span><br />
+                            <input type="text" class="form-control" name="email" id="faculty-modal-aadhar" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group p-2 col-md-12 col-sm-12">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <label for="faculty-modal-pan">Pan Number</label><span id="contact-message"
+                                class="error"></span>
+                            <input type="text" class="form-control" name="faculty-modal-pan"
+                                id="faculty-modal-pan" />
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <label for="faculty-modal-address">Address</label><span id="aadhar-message"
+                                class="error"></span><br />
+                            <input type="text" class="form-control" name="faculty-modal-address"
+                                id="faculty-modal-address" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group p-2 col-md-12 col-sm-12">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <label for="faculty-modal-city">City</label><span id="pan-message"
+                                class="error"></span><br />
+                            <input type="text" class="form-control pan" name="pan" id="faculty-modal-city" />
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <label for="faculty-modal-pin">Pincode</label><span id="pan-message"
+                                class="error"></span><br />
+                            <input type="text" class="form-control pan" name="pan" id="faculty-modal-pin" />
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="d-flex justify-content-center">
+                <button id="personal-details-form-cancel" class="mx-2 btn btn-danger">Cancel</button>
+                <button class="mx-2 btn btn-success">Submit</button>
+            </div>
+        </div>
+    </div>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
