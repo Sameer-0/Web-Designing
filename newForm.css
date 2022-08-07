@@ -1,38 +1,34 @@
-*{
+* {
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: #eeeef7 !important;
 }
-#main-form-area {
+
+#bank-form-area {
     margin-top: 50px !important;
     margin: auto;
-    background-color: #fff;
-    border-radius: 10px;
+    background: linear-gradient(to top, #34373a, #5a626d);
+    border-radius: 20px;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
         0 10px 10px rgba(0, 0, 0, 0.22);
     overflow: hidden;
-    width: 70%;
+    width: 60%;
     max-width: 100%;
-    position: relative;
-    min-height: 90vh;
+    color: white;
+    padding-bottom: 30px;
 }
 
-#left-form-area {
-    color: white !important;
-    background: linear-gradient(to right, #34373a, #5a626d);
-    height: 100%;
-    position: absolute;
-}
-
-h1 {
-    font-weight: bold;
-    margin: 0;
+#check-preview {
+    padding: 20px 0 10px 40px;
 }
 
 input {
-    height: 50px;
+    outline: none;
+    border: none;
+    padding: 5px;
+    border-radius: 25px !important;
     background-color: #eee;
 }
 
@@ -40,46 +36,7 @@ input:focus {
     border: 3px solid red !important;
 }
 
-label {
-    padding-bottom: 10px;
+button{
+    border-radius: 25px !important;
 }
 
-#name-row {
-   padding-bottom: 50px;
-   padding-top: 10px ;
-}
-
-#left-third-row {
-    padding-top: 50px;
-}
-
-#left-fourth-row {
-    padding-top: 50px;
-}
-
-#gender-row {
-    font-size: larger;
-    padding-left: 50px;
-    padding-top: 30px;
-}
-
-
-
-@media screen and (max-width: 768px) {
-    
-    
-#name-row {
-    padding-bottom: 10px;
-    padding-top: 20px ;
- }
- 
- #left-third-row {
-     padding-top: 50px;
- }
- 
- #gender-row {
-     font-size: smaller;
-     padding-left: 20px;
-     padding-top: 10px;
- }
-}

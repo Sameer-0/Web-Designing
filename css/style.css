@@ -11,7 +11,7 @@ body {
 #resume-box {
   margin-top: 50px;
   color: #434a54;
-  width: 70%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -167,6 +167,13 @@ hr {
   background-color: #fff;
 }
 
+#skills-div:hover {
+  filter: blur(2px);
+  transition: 0.3s;
+  transform: scale(1.1);
+  background-color: #fff;
+}
+
 #work-experience-div:hover {
   filter: blur(2px);
   transition: 0.3s;
@@ -195,6 +202,99 @@ hr {
   transform: scale(1.1);
 }
 
+
+/*************************************************************** Skills **************************************************/
+
+
+.card-big-shadow {
+  max-width: 80%;
+  margin: auto;
+  position: relative;
+}
+
+.coloured-cards .card {
+  margin-top: 30px;
+}
+
+.card[data-radius="none"] {
+  border-radius: 0px;
+}
+
+.card {
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(204, 197, 185, 0.5);
+  background-color: #FFFFFF;
+  color: #252422;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.title {
+  color: white;
+}
+
+.card .content {
+  padding: 25px 40px;
+}
+
+.card[data-color="grey"] .category {
+  color: white;
+}
+
+.card .category,
+.card .label {
+  font-size: 14px;
+  margin-bottom: 0px;
+}
+
+.card-big-shadow:before {
+  background-image: url("http://static.tumblr.com/i21wc39/coTmrkw40/shadow.png");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  bottom: -12%;
+  content: "";
+  display: block;
+  left: -12%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+}
+
+.title {
+  font-size: 1.5em;
+  font-weight: 600;
+  line-height: 1.2em;
+}
+
+.card .description {
+  font-size: 16px;
+  color: #66615b;
+}
+
+/*======== COLORS ===========*/
+.card[data-color="grey"] {
+  background: linear-gradient(to right, #34373a, #5a626d);
+}
+
+.card[data-color="grey"] .description {
+  color: white;
+}
+
+.card[data-color="green"] {
+  background: linear-gradient(to left, #34373a, #5a626d);
+}
+
+.card[data-color="green"] .description {
+  color: white;
+}
+
+.card[data-color="green"] .category {
+  color: white;
+}
+
 /* ********************************Personal Details Div Styling***************************************/
 
 #main-form-area {
@@ -207,15 +307,11 @@ hr {
   overflow: hidden;
   width: 70%;
   max-width: 100%;
-  position: relative;
-  min-height: 90vh;
 }
 
 #left-form-area {
   color: white !important;
   background: linear-gradient(to right, #34373a, #5a626d);
-  height: 100%;
-  position: absolute;
 }
 
 h1 {
@@ -224,11 +320,13 @@ h1 {
 }
 
 input {
-  height: 50px;
+  padding: 5px;
+  border-radius: 25px !important;
   background-color: #eee;
 }
 
 input:focus {
+  outline: none;
   border: 3px solid red !important;
 }
 
@@ -237,8 +335,8 @@ label {
 }
 
 #name-row {
-  padding-bottom: 50px;
   padding-top: 10px;
+  padding-bottom: 20px;
 }
 
 #left-third-row {
@@ -250,9 +348,7 @@ label {
 }
 
 #gender-row {
-  font-size: larger;
-  padding-left: 50px;
-  padding-top: 30px;
+  font-size: 16px;
 }
 
 /* ********************************Styling for Work Experience Modal***************************************/
@@ -261,6 +357,7 @@ label {
   height: 100%;
   width: 100%;
 }
+
 .full-screen {
   margin: auto;
   margin-top: 100px;
@@ -301,11 +398,6 @@ td {
   background-color: transparent;
 }
 
-input {
-  height: 30px;
-}
-
-
 table-head th {
   margin: 0 30px !important;
 }
@@ -319,6 +411,9 @@ table-head th {
   padding: 20px;
 }
 
+button {
+  border-radius: 25px !important;
+}
 
 /* ********************************Styling to Use Modal***************************************/
 .personal-details-modal {
@@ -331,14 +426,25 @@ fade-in-button {
   display: none;
 }
 
-/* ********************************Media Query For different device widths ***************************************/
 
-@media screen and (min-width: 768px) {
-  .avatar {
-    margin-bottom: -80px;
-    margin-left: 0;
+/* ********************************Media Query For different device widths less than 768px**************************************/
+
+
+@media screen and (max-width: 768px) {
+
+  /* main resume box */
+  #resume-box {
+    min-width: 100%;
+    margin: 0 !important;
   }
 
+  .avatar {
+    height: 100%;
+    margin-bottom: 40px;
+  }
+
+  /*
+  ****************************************************** timeline *****************************************8*/
   /* Full-width text-blocks */
   .text-block {
     width: 100%;
@@ -353,20 +459,34 @@ fade-in-button {
   }
 
 
-
-  /* Personal Details Div  */
+  /* ************************************************Personal Details Form Div *********************************************/
   #name-row {
     padding-bottom: 10px;
     padding-top: 20px;
   }
 
   #left-third-row {
-    padding-top: 50px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+
+  }
+
+  #left-fourth-row {
+    padding-top: 20px;
+    padding-bottom: 10px;
+
   }
 
   #gender-row {
     font-size: smaller;
-    padding-left: 20px;
-    padding-top: 10px;
+    padding-top: 0 !important;
+    padding-bottom: 10px;
+
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .city-line {
+    padding-top: 20px;
   }
 }

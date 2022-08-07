@@ -20,138 +20,64 @@
 <body>
 
 
-    <div class="personal-details-modal" id="main-form-area">
+    <div class="personal-details-modal" id="bank-form-area">
 
-        <div class="row">
-            <div id="left-form-area" class="col-md-8 col-sm-12 col-12 bg-white">
-                <div class="d-flex justify-content-center align-items-center">
-                    <h1 class="p-3">Personal Details</h1>
+        <div class="container">
+            <div class="d-flex justify-content-center align-items-center my-4">
+                <h2>Bank Details</h2>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <label for="bank-name" class="py-md-2">Name of the Bank</label>
+                    <input type="text" class="form-control" id="bank-name">
                 </div>
-                <div class="container">
-                    <div id="name-row" class="row mb-3">
-                        <div class="col-md-4 col-sm-12">
-                            <label for="first-name" cl>First Name</label>
-                            <span id="first-name-message" class="error"></span>
-                            <input type="text" class="form-control" id="first-name" placeholder="First Name">
-                        </div>
-                        <div class="col-md-4 col-sm-12">
-                            <label for="middle-name">Middle Name</label>
-                            <span id="middle-name-message" class="error"></span>                           
-                            <input type="text" class="form-control" id="middle-name" placeholder="Middle Name">
-                        </div>
-                        <div class="col-md-4 col-sm-12">
-                            <label for="last-name">last Name</label>
-                            <span id="last-name-message" class="error"></span>  
-                            <input type="text" class="form-control" id="last-name" placeholder="Last Name">
-                        </div>
+                <div class="col-md-6 col-sm-12">
+                    <label for="bank-branch" class="py-md-2">Branch</label>
+                    <input type="text" class="form-control" id="bank-branch">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <label for="bank-ifsc-code" class="py-md-2">IFSC Code</label>
+                    <input type="text" class="form-control" id="bank-ifsc-code">
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <label for="bank-micr-code" class="py-md-2">MICR code</label>
+                    <input type="text"class="form-control" id="bank-micr-code">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <label for="bank-account-number" class="py-md-2">Account Number</label>
+                    <input type="text" class="form-control" id="bank-account-number">
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <label for="bank-account-type" class="py-md-2">Account Type</label>
+                    <input type="text" class="form-control" id="bank-account-type">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div>
+                        <label for="pp_size_photo">Passport Size Photo</label>
+                        <input type="file" name="pp_size_photo" id="pp_size_photo" class="form-control"
+                            onchange="document.getElementById('check-preview').src = window.URL.createObjectURL(this.files[0])">
                     </div>
                 </div>
-
-                <div class="container">
-                    <div id="left-second-row" class="row">
-                        <div id="gender-row" class="col-md-4 ">
-                            <label for="male">Male</label>
-                            <input style="height: auto ;" type="radio" name="gender" id="male" />
-                            <label for="female">Female</label>
-                            <input style="height: auto ;" type="radio" name="gender" id="female" />
-                            <label for="other">other</label>
-                            <input style="height: auto ;" type="radio" name="gender" id="other" />
-                        </div>
-                        <div class="col-md-4">
-                            <label for="date-of-birth">date of birth</label>
-                            <span id="date-of-birth-message" class="error"></span>  
-                            <input type="date" class="form-control" name="date-of-birth" id="date-of-birth" />
-                        </div>
-                        <div class="col-md-4">
-                            <label for="photo">passport Size Photo</label>
-                            <span id="photo-message" class="error"></span>
-                            <input type="file" class="form-control" id="photo">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="container">
-                    <div id="left-third-row" class="row">
-                        <div class="col-md-6">
-                            <label for="contact-number">Contact No.</label>
-                            <span id="contact-number-message" class="error"></span>
-                            <input type="text" class="form-control" name="contact-number" id="contact-number" />
-                        </div>
-                        <div class="col-md-6">
-                            <label for="email">Email Id</label>
-                            <span id="email-message" class="error"></span>
-                            <input type="text" class="form-control" id="email">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="container">
-                    <div id="left-fourth-row" class="row">
-                        <div class="col-md-6">
-                            <label for="pan-number">Pan Card Number</label>
-                            <span id="pan-number-message" class="error"></span>
-                            <input type="text" class="form-control" id="pan-number" />
-                        </div>
-                        <div class="col-md-6">
-                            <label for="pan-photo">Pan Card Photo</label>
-                            <span id="pan-photo-message" class="error"></span>
-                            <input type="file" class="form-control" id="pan-photo">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="container">
-                    <div id="left-fourth-row" class="row">
-                        <div class="col-md-6">
-                            <label for="aadhar-number">Aadhar Card Number</label>
-                            <span id="name-message" class="error"></span>
-                            <input type="text" class="form-control" name="aadhar-number" id="aadhar-number" />
-                        </div>
-                        <div class="col-md-6">
-                            <label for="aadhar-photo">Aadhar Card Photo</label>
-                            <span id="aadhar-photo-message" class="error"></span>
-                            <input type="file" class="form-control" id="aadhar-photo">
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="container">
-                    <div id="left-fourth-row" class="row">
-                        <div class="col-md-6">
-                            <label for="address">Address</label>
-                            <span id="address-message" class="error"></span>
-                            <input type="text" class="form-control" name="address" id="address" />
-                        </div>
-                        <div class="col-md-6">
-                            <label for="pincode">Pincode</label>
-                            <span id="pincode-message" class="error"></span>
-                            <input type="text" class="form-control" id="pincode">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="container">
-                    <div id="left-fourth-row" class="row">
-                        <div class="col-md-6">
-                            <label for="city">City</label>
-                            <span id="city-message" class="error"></span>
-                            <input type="text" class="form-control" name="city" id="city" />
-                        </div>
-                        <div class="col-md-6">
-                            <label for="state">State</label>
-                            <span id="state-message" class="error"></span>
-                            <input type="text" class="form-control" id="state">
-                        </div>
+                <div class="col-md-6 col-sm-12">
+                    <div>
+                        <img id="check-preview" alt="your image" width="150" />
                     </div>
                 </div>
             </div>
 
-
-
-
-            <div id="right-form-area" class="col-md-4 col-sm-12 col-12">
-
+            <div class="d-flex justify-content-center">
+                <button id="bank-details-cancel-button" class="btn btn-danger m-4">Cancel</button>
+                <button id="bank-details-submit-button" class="btn btn-success m-4">Submit</button>
             </div>
         </div>
     </div>
