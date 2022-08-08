@@ -14,7 +14,7 @@
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
   <link rel="preload" href="https://builder.zety.com/resume/build/rwzv2/main.bundle-1.0.0.503.js" as="script">
-  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./style.css" />
   <title>Resume</title>
 </head>
 
@@ -105,16 +105,17 @@
 
               </div>
               <div class="edit_icon d-none">
-                <i class="fas fa-eye fa-4x"></i>
+                <i class="fas fa-pen fa-4x"></i>
               </div>
             </div>
           </div>
           <hr />
 
-          <!------------------------------------------------ Education Section ------------------------------------------------>
-          <div id="education-div">
+          <!------------------------------------------------ Qualification Section ------------------------------------------------>
+
+          <div id="qualification-div">
             <div class="d-flex justify-content-center align-items-center">
-              <h3>Education</h3>
+              <h3>Qualification</h3>
             </div>
             <div class="text-block right">
               <div class="card-body">
@@ -140,6 +141,9 @@
             </div>
           </div>
           <hr />
+
+
+          <!------------------------------------------------ Work Experience Section ------------------------------------------------>
 
           <div id="work-experience-div">
             <div class="d-flex justify-content-center align-items-center">
@@ -218,9 +222,9 @@
           </div>
           <hr>
 
-          <!------------------------------------------- Publications Section  ----------------------------------------->
+          <!------------------------------------------- Publication Section  ----------------------------------------->
 
-          <div id="publications" class="px-3 px-sm-4 px-lg-4">
+          <div id="publication-div" class="px-3 px-sm-4 px-lg-4">
             <div class="d-flex justify-content-center align-items-center">
               <h3 class="mb-4 h3">Publications</h3>
             </div>
@@ -246,7 +250,7 @@
           <hr />
 
           <!------------------------------------------- Research Section  ----------------------------------------->
-          <div id="research" class="px-3 px-sm-4 px-lg-4">
+          <div id="research-div" class="px-3 px-sm-4 px-lg-4">
             <div class="d-flex justify-content-center align-items-center">
               <h3 class="mb-4 pt-2 h3">Research</h3>
             </div>
@@ -270,7 +274,10 @@
           </div>
           <hr />
 
-          <div id="bank-details">
+
+          <!------------------------------------------- Research Section  ----------------------------------------->
+
+          <div id="bank-details-div">
             <div class="px-3 px-sm-4 px-lg-4">
               <div class="d-flex justify-content-center align-items-center">
                 <h3 class="p-md-3 pb-sm-3">Bank Details</h3>
@@ -313,8 +320,10 @@
         </div>
       </div>
     </div>
-    <!-- ************************************************************************Personal Details Div******************************************************************************************** -->
   </div>
+
+
+  <!-- ************************************************************************Personal Details Div******************************************************************************************** -->
 
   <div class="personal-details-modal">
     <div id="main-form-area">
@@ -346,7 +355,7 @@
 
           <div class="container">
             <div id="left-second-row" class="row">
-              <div id="gender-row" class="col-md-4 ">
+              <div id="gender-row" class="col-md-4 pt-md-4">
                 <input style="height: auto ;" type="radio" name="gender" id="male" />
                 <label for="male">Male</label>
                 <label for="female">Female</label>
@@ -458,6 +467,87 @@
   </div>
 
 
+  <!-- ************************************************************************Qualification Div******************************************************************************************** -->
+
+  <div class="qualification-modal">
+    <div class="full-screen container ">
+      <div class="main-content">
+        <div class="container d-flex justify-content-center align-items-center text-white pt-md-5">
+          <h3>Qualification</h3>
+        </div>
+        <hr>
+        <div class="d-flex align-items-centre justify-content-centre">
+          <div class="container resume-box">
+            <div class="row table">
+              <div class="table-responsive">
+                <table>
+                  <thead class="text-white">
+                    <tr class="table-head">
+                      <th>Title</th>
+                      <th>Major-subject</th>
+                      <th>University</th>
+                      <th>College</th>
+                      <th>Percentile/CGPA</th>
+                      <th>Year-of-passing</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody id="bachelors-degree-data">
+                    <tr data-toggle="collapse" class="collapsed">
+                      <td class="text-white">Bachelor's Degree</td>
+                      <td><input class="form-control" type="text"></td>
+                      <td><input class="form-control" type="text"></td>
+                      <td><input class="form-control" type="text"></td>
+                      <td><input class="form-control" type="text"></td>
+                      <td><input class="form-control" type="text"></td>
+                      <td><i id="bachelors-degree-add-button" class="fa-solid text-white fa-circle-plus "></i></td>
+                    </tr>
+                  </tbody>
+                  <tbody id="masters-degree-data">
+                    <tr data-toggle="collapse" class="collapsed">
+                      <td class="text-white">Master's Degree</td>
+                      <td><input class="form-control" type="text"></td>
+                      <td><input class="form-control" type="text"></td>
+                      <td><input class="form-control" type="text"></td>
+                      <td><input class="form-control" type="text"></td>
+                      <td><input class="form-control" type="text"></td>
+                      <td><i id="masters-degree-add-button" class="fa-solid text-white fa-circle-plus "></i></td>
+                    </tr>
+                  </tbody>
+                  <tbody id="phd-data">
+                    <tr data-toggle="collapse" class="collapsed">
+                      <td class="text-white">PHD</td>
+                      <td><input class="form-control" type="text"></td>
+                      <td><input class="form-control" type="text"></td>
+                      <td><input class="form-control" type="text"></td>
+                      <td><input class="form-control" type="text"></td>
+                      <td><input class="form-control" type="text"></td>
+                      <td><i id="phd-add-button" class="fa-solid text-white fa-circle-plus"></i></td>
+                    </tr>
+                  </tbody>
+                  <tbody id="professionaL-certification-data">
+                    <tr data-toggle="collapse" class="collapsed">
+                      <td class="text-white">Certification</td>
+                      <td><input class="form-control" type="text"></td>
+                      <td><input class="form-control" type="text"></td>
+                      <td><input class="form-control" type="text"></td>
+                      <td><input class="form-control" type="text"></td>
+                      <td><input class="form-control" type="text"></td>
+                      <td><i id="professionaL-certification-add-button" class="fa-solid text-white fa-circle-plus"></i></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center">
+        <button id="qualification-cancel-button" class="btn btn-danger m-4">Cancel</button>
+        <button id="qualification-submit-button" class="btn btn-success m-4">Submit</button>
+      </div>
+    </div>
+  </div>
 
   <!-- ************************************************************************Work Experience Div******************************************************************************************** -->
 
@@ -471,7 +561,7 @@
         </div>
         <hr>
         <div class="d-flex align-items-centre justify-content-centre">
-          <div class="container resume-box">
+          <div class="container">
             <div class="row table">
               <div class="table-responsive">
                 <table>
@@ -503,10 +593,205 @@
           </div>
         </div>
       </div>
+      <div class="d-flex justify-content-center">
+        <button id="work-experience-cancel-button" class="btn btn-danger m-4">Cancel</button>
+        <button id="work-experience-submit-button" class="btn btn-success m-4">Submit</button>
+      </div>
     </div>
   </div>
 
 
+  <!-- ************************************************************************Skills Div******************************************************************************************** -->
+
+  <div class="skills-modal">
+
+
+  </div>
+
+  <!-- ************************************************************************Publication Div******************************************************************************************** -->
+
+  <div class="publication-modal">
+
+    <div class="full-screen container ">
+      <div class="main-content">
+        <div class="container d-flex justify-content-between">
+          <h3 class="text-white h3 py-4">Books published</h3>
+          <i id="publication-add-button" class="fa-solid text-white fa-circle-plus fa-2x"></i>
+
+        </div>
+        <hr>
+        <div class="d-flex align-items-centre justify-content-centre">
+          <div class="container resume-box">
+            <div class="row table">
+              <div class="table-responsive">
+                <div id="no-more-tables">
+                  <table>
+                    <thead class="text-white">
+                      <tr class="table-head">
+                        <th>Title</th>
+                        <th>Role ?</th>
+                        <th>No.-of-Authors</th>
+                        <th>Book-Title</th>
+                        <th>Publisher</th>
+                        <th>Year-of-publication</th>
+                        <th>Action</th>
+                      </tr>
+                    </thead>
+                    <tbody id="publication-data">
+                      <tr data-toggle="collapse" class="collapsed">
+                        <td><input data-title="Title" class="form-control" type="text"></td>
+                        <td><select data-title="Role ?" class="form-control" id="role">
+                            <option>-Select-</option>
+                            <option value="Edited">Edited</option>
+                            <option value="Authored">Authored</option>
+                          </select>
+                        </td>
+                        <td><input data-title="No.-of-Authors" class="form-control" type="text">
+                        </td>
+                        <td><input data-title="Book-Title" class="form-control" type="text"></td>
+                        <td><input data-title="Publisher" class="form-control" type="text"></td>
+                        <td><input data-title="Year-of-publication" class="form-control" type="text">
+                        </td>
+                        <td></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center">
+        <button id="publication-cancel-button" class="btn btn-danger m-4">Cancel</button>
+        <button id="publication-submit-button" class="btn btn-success m-4">Submit</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ************************************************************************Research Div******************************************************************************************** -->
+
+  <div class="research-modal">
+
+
+    <div class="full-screen container ">
+      <div class="main-content">
+        <div class="container d-flex justify-content-between">
+          <h3 class="text-white h3 py-4">Research papers published</h3>
+          <i id="research-add-button" class="fa-solid text-white fa-circle-plus fa-2x"></i>
+        </div>
+        <hr>
+        <div class="d-flex align-items-centre justify-content-centre">
+          <div class="container resume-box">
+            <div class="row table">
+              <div class="table-responsive">
+                <div id="no-more-tables">
+                  <table>
+                    <thead class="text-white">
+                      <tr class="table-head">
+                        <th>Title</th>
+                        <th>Role-?</th>
+                        <th>Journal-name</th>
+                        <th>Volume-year</th>
+                        <th>Number</th>
+                        <th>Category</th>
+                        <th>Action</th>
+                      </tr>
+                    </thead>
+                    <tbody id="research-data">
+                      <tr data-toggle="collapse" class="collapsed">
+                        <td><input data-title="Title" class="form-control" type="text"></td>
+                        <td><select data-title="Role-?" class="form-control" id="role">
+                            <option>-Select-</option>
+                            <option value="Sole">Sole</option>
+                            <option value="Author">Author</option>
+                          </select></td>
+                        <td><input data-title="Journal-name" class="form-control" type="text"></td>
+                        <td><input data-title="Volume-year" class="form-control" type="text"></td>
+                        <td><input data-title="Number" class="form-control" type="text"></td>
+                        <td><input data-title="Category" class="form-control" type="text">
+                        </td>
+                        <td></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center">
+        <button id="research-cancel-button" class="btn btn-danger m-4">Cancel</button>
+        <button id="research-submit-button" class="btn btn-success m-4">Submit</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ************************************************************************Bank Details Div******************************************************************************************** -->
+  <div class="bank-details-modal">
+
+    <div id="bank-form-area">
+      <div class="container">
+        <div class="d-flex justify-content-center align-items-center my-4">
+          <h2>Bank Details</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <label for="bank-name" class="py-md-2">Name of the Bank</label>
+            <input type="text" class="form-control" id="bank-name">
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <label for="bank-branch" class="py-md-2">Branch</label>
+            <input type="text" class="form-control" id="bank-branch">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <label for="bank-ifsc-code" class="py-md-2">IFSC Code</label>
+            <input type="text" class="form-control" id="bank-ifsc-code">
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <label for="bank-micr-code" class="py-md-2">MICR code</label>
+            <input type="text" class="form-control" id="bank-micr-code">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <label for="bank-account-number" class="py-md-2">Account Number</label>
+            <input type="text" class="form-control" id="bank-account-number">
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <label for="bank-account-type" class="py-md-2">Account Type</label>
+            <input type="text" class="form-control" id="bank-account-type">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <div>
+              <label for="pp_size_photo">Passport Size Photo</label>
+              <input type="file" name="pp_size_photo" id="pp_size_photo" class="form-control"
+                onchange="document.getElementById('check-preview').src = window.URL.createObjectURL(this.files[0])">
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div>
+              <img id="check-preview" alt="your image" width="150" />
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-center">
+          <button id="bank-details-cancel-button" class="btn btn-danger m-4">Cancel</button>
+          <button id="bank-details-submit-button" class="btn btn-success m-4">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- INCLUDE JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"
@@ -553,12 +838,10 @@
 
 
       $('.personal-information-div').on('mouseover', function () {
-        // console.log('mouseover is aCTIVE')
         $('.edit_icon').removeClass('d-none')
 
       })
       $('.personal-information-div-wrapper').on('mouseleave', function () {
-        // console.log('mouseover is aCTIVE')
         $('.edit_icon').addClass('d-none')
         $('.personal-information-div').removeClass('personal-information-div-hover')
 
@@ -570,11 +853,8 @@
 
 
       $(document).on('click', '.edit-personal-details', function () {
-        console.log("ENtered")
         $('#body').css('display', 'none')
-        console.log("ENtered111111")
         $('.personal-details-modal').fadeIn();
-        console.log("Entered 2")
 
       })
 
@@ -584,7 +864,6 @@
         $('#body').css('display', 'block')
 
       });
-
 
 
       $(document).on('click', '#work-experience-add-button', function () {
@@ -607,19 +886,204 @@
 
 
       $(document).on('click', '#work-experience-div', function () {
-        console.log("ENtered")
         $('#body').css('display', 'none')
-        console.log("ENtered111111")
         $('.work-experience-modal').fadeIn();
-        console.log("Entered 2")
 
       })
 
-      $('#personal-details-cancel-button').click(function () {
-        $('.work-experience-div').fadeOut();
+      $('#work-experience-cancel-button').click(function () {
+        $('.work-experience-modal').fadeOut();
         $('#body').css('display', 'block')
 
       });
+
+
+      $(document).on('click', '#qualification-div', function () {
+        $('#body').css('display', 'none')
+        $('.qualification-modal').fadeIn();
+
+      })
+
+      $('#qualification-cancel-button').click(function () {
+        $('.qualification-modal').fadeOut();
+        $('#body').css('display', 'block')
+
+      });
+
+      $(document).on('click', '#bachelors-degree-add-button', function () {
+        console.log("graduation-clicked")
+        let table = ` <tr data-toggle="collapse" class="collapsed">
+                                        <td class="text-white">Bachelor's Degree</td>
+                                        <td><input class="form-control" type="text"></td>
+                                        <td><input class="form-control" type="text"></td>
+                                        <td><input class="form-control" type="text"></td>
+                                        <td><input class="form-control" type="text"></td>
+                                        <td><input class="form-control" type="text"></td>
+                <td>
+                  <i class="fa-solid fa-trash-can text-white" id="bachelors-degree-delete-button"></i>
+                  </td>
+                                    </tr>
+       `
+        $('#bachelors-degree-data').append(table);
+
+      })
+      $(document).on('click', '#bachelors-degree-delete-button', function () {
+        $(this).closest('tr').remove()
+      })
+
+      $(document).on('click', '#masters-degree-add-button', function () {
+        console.log("post-graduation-clicked")
+        let table = ` <tr data-toggle="collapse" class="collapsed">
+          <td class="text-white">Master's Degree</td>
+          <td><input class="form-control" type="text"></td>
+                                        <td><input class="form-control" type="text"></td>
+                                        <td><input class="form-control" type="text"></td>
+                                        <td><input class="form-control" type="text"></td>
+                                        <td><input class="form-control" type="text"></td>
+                <td>
+                  <i class="fa-solid fa-trash-can text-white" id="masters-degree-delete-button"></i>
+                </td>
+                                    </tr>
+       `
+        $('#masters-degree-data').append(table);
+
+      })
+      $(document).on('click', '#masters-degree-delete-button', function () {
+        $(this).closest('tr').remove()
+      })
+
+      $(document).on('click', '#phd-add-button', function () {
+        console.log("phd-clicked")
+
+        let table = ` <tr data-toggle="collapse" class="collapsed">
+          <td class="text-white">PHD</td>
+                                        <td><input class="form-control" type="text"></td>
+                                        <td><input class="form-control" type="text"></td>
+                                        <td><input class="form-control" type="text"></td>
+                                        <td><input class="form-control" type="text"></td>
+                                        <td><input class="form-control" type="text"></td>
+                <td>
+                  <i class="fa-solid fa-trash-can text-white" id="phd-delete-button"></i>
+               </td>
+                                    </tr>
+       `
+        $('#phd-data').append(table);
+
+      })
+      $(document).on('click', '#phd-delete-button', function () {
+        $(this).closest('tr').remove()
+      })
+
+      $(document).on('click', '#professionaL-certification-add-button', function () {
+        console.log("post-graduation-clicked")
+        let table = ` <tr data-toggle="collapse" class="collapsed">
+          <td class="text-white">Certification</td>
+          <td><input class="form-control" type="text"></td>
+                                        <td><input class="form-control" type="text"></td>
+                                        <td><input class="form-control" type="text"></td>
+                                        <td><input class="form-control" type="text"></td>
+                                        <td><input class="form-control" type="text"></td>
+                <td>
+                  <i class="fa-solid fa-trash-can text-white" id="professionaL-certification-delete-button"></i>
+                </td>
+                                    </tr>
+       `
+        $('#professionaL-certification-data').append(table);
+
+      })
+      $(document).on('click', '#professionaL-certification-delete-button', function () {
+        $(this).closest('tr').remove()
+      })
+
+
+      $(document).on('click', '#publication-div', function () {
+        $('#body').css('display', 'none')
+        $('.publication-modal').fadeIn();
+
+      })
+
+      $('#publication-cancel-button').click(function () {
+        $('.publication-modal').fadeOut();
+        $('#body').css('display', 'block')
+
+      });
+
+
+      $(document).on('click', '#publication-add-button', function () {
+        let table = ` <tr data-toggle="collapse" class="collapsed">
+                                            <td><input data-title="Title" class="form-control" type="text"></td>
+                                            <td><select data-title="Role ?" class="form-control" id="role">
+                                                    <option>-Select-</option>
+                                                    <option value="Edited">Edited</option>
+                                                    <option value="Authored">Authored</option>
+                                                </select>
+                                            </td>
+                                            <td><input data-title="No.-of-Authors" class="form-control" type="text">
+                                            </td>
+                                            <td><input data-title="Book-Title" class="form-control" type="text"></td>
+                                            <td><input data-title="Publisher" class="form-control" type="text"></td>
+                                            <td><input data-title="Year-of-publication" class="form-control"
+                                                    type="text">
+                                            </td>
+                                            <td> <i class="fa-solid fa-trash-can text-white h4" data-title=" Action" id="publication-delete-button"></i></td>
+                                        </tr>
+       `
+        $('#publication-data').append(table);
+
+      })
+      $(document).on('click', '#publication-delete-button', function () {
+        $(this).closest('tr').remove()
+      })
+
+      $(document).on('click', '#research-div', function () {
+        $('#body').css('display', 'none')
+        $('.research-modal').fadeIn();
+
+      })
+
+      $('#research-cancel-button').click(function () {
+        $('.research-modal').fadeOut();
+        $('#body').css('display', 'block')
+
+      });
+
+      $(document).on('click', '#research-add-button', function () {
+        let table = `               <tr data-toggle="collapse" class="collapsed">
+                                            <td><input data-title="Title" class="form-control" type="text"></td>
+                                            <td><select data-title="Role-?" class="form-control" id="role">
+                                                    <option>-Select-</option>
+                                                    <option value="Sole">Sole</option>
+                                                    <option value="Author">Author</option>
+                                                </select>
+                                            </td>
+                                            <td><input data-title="Journal-name" class="form-control" type="text"></td>
+                                            <td><input data-title="Volume-year" class="form-control" type="text"></td>
+                                            <td><input data-title="Number" class="form-control" type="text"></td>
+                                            <td><input data-title="Category" class="form-control"
+                                                    type="text">
+                                            </td>
+            <td class="p-2 !important"> <i class="fa-solid fa-trash-can text-white h4" data-title=" Action" id="research-delete-button"></i> </td>
+                                        </tr>
+       `
+        $('#research-data').append(table);
+      })
+      $(document).on('click', '#research-delete-button', function () {
+        $(this).closest('tr').remove()
+      })
+
+      $(document).on('click', '#bank-details-div', function () {
+        $('#body').css('display', 'none')
+        $('.bank-details-modal').fadeIn();
+
+      })
+
+      $('#bank-details-cancel-button').click(function () {
+        $('.bank-details-modal').fadeOut();
+        $('#body').css('display', 'block')
+
+      });
+
+
     })
   </script>
 </body>

@@ -26,7 +26,7 @@ body {
   background-color: #fff;
 }
 
-#bank-details {
+#bank-details-div {
   background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMDAnIGhlaWdodD0nMTAwJyB2aWV3Qm94PScwIDAgMTAwIDEwMCc+PGcgZmlsbC1ydWxlPSdldmVub2RkJz48ZyBmaWxsPScjZmZmZmZmJyBmaWxsLW9wYWNpdHk9JzAuMTInPjxwYXRoIG9wYWNpdHk9Jy41JyBkPSdNOTYgOTVoNHYxaC00djRoLTF2LTRoLTl2NGgtMXYtNGgtOXY0aC0xdi00aC05djRoLTF2LTRoLTl2NGgtMXYtNGgtOXY0aC0xdi00aC05djRoLTF2LTRoLTl2NGgtMXYtNGgtOXY0aC0xdi00SDB2LTFoMTV2LTlIMHYtMWgxNXYtOUgwdi0xaDE1di05SDB2LTFoMTV2LTlIMHYtMWgxNXYtOUgwdi0xaDE1di05SDB2LTFoMTV2LTlIMHYtMWgxNXYtOUgwdi0xaDE1VjBoMXYxNWg5VjBoMXYxNWg5VjBoMXYxNWg5VjBoMXYxNWg5VjBoMXYxNWg5VjBoMXYxNWg5VjBoMXYxNWg5VjBoMXYxNWg5VjBoMXYxNWg0djFoLTR2OWg0djFoLTR2OWg0djFoLTR2OWg0djFoLTR2OWg0djFoLTR2OWg0djFoLTR2OWg0djFoLTR2OWg0djFoLTR2OXptLTEgMHYtOWgtOXY5aDl6bS0xMCAwdi05aC05djloOXptLTEwIDB2LTloLTl2OWg5em0tMTAgMHYtOWgtOXY5aDl6bS0xMCAwdi05aC05djloOXptLTEwIDB2LTloLTl2OWg5em0tMTAgMHYtOWgtOXY5aDl6bS0xMCAwdi05aC05djloOXptLTktMTBoOXYtOWgtOXY5em0xMCAwaDl2LTloLTl2OXptMTAgMGg5di05aC05djl6bTEwIDBoOXYtOWgtOXY5em0xMCAwaDl2LTloLTl2OXptMTAgMGg5di05aC05djl6bTEwIDBoOXYtOWgtOXY5em0xMCAwaDl2LTloLTl2OXptOS0xMHYtOWgtOXY5aDl6bS0xMCAwdi05aC05djloOXptLTEwIDB2LTloLTl2OWg5em0tMTAgMHYtOWgtOXY5aDl6bS0xMCAwdi05aC05djloOXptLTEwIDB2LTloLTl2OWg5em0tMTAgMHYtOWgtOXY5aDl6bS0xMCAwdi05aC05djloOXptLTktMTBoOXYtOWgtOXY5em0xMCAwaDl2LTloLTl2OXptMTAgMGg5di05aC05djl6bTEwIDBoOXYtOWgtOXY5em0xMCAwaDl2LTloLTl2OXptMTAgMGg5di05aC05djl6bTEwIDBoOXYtOWgtOXY5em0xMCAwaDl2LTloLTl2OXptOS0xMHYtOWgtOXY5aDl6bS0xMCAwdi05aC05djloOXptLTEwIDB2LTloLTl2OWg5em0tMTAgMHYtOWgtOXY5aDl6bS0xMCAwdi05aC05djloOXptLTEwIDB2LTloLTl2OWg5em0tMTAgMHYtOWgtOXY5aDl6bS0xMCAwdi05aC05djloOXptLTktMTBoOXYtOWgtOXY5em0xMCAwaDl2LTloLTl2OXptMTAgMGg5di05aC05djl6bTEwIDBoOXYtOWgtOXY5em0xMCAwaDl2LTloLTl2OXptMTAgMGg5di05aC05djl6bTEwIDBoOXYtOWgtOXY5em0xMCAwaDl2LTloLTl2OXptOS0xMHYtOWgtOXY5aDl6bS0xMCAwdi05aC05djloOXptLTEwIDB2LTloLTl2OWg5em0tMTAgMHYtOWgtOXY5aDl6bS0xMCAwdi05aC05djloOXptLTEwIDB2LTloLTl2OWg5em0tMTAgMHYtOWgtOXY5aDl6bS0xMCAwdi05aC05djloOXptLTktMTBoOXYtOWgtOXY5em0xMCAwaDl2LTloLTl2OXptMTAgMGg5di05aC05djl6bTEwIDBoOXYtOWgtOXY5em0xMCAwaDl2LTloLTl2OXptMTAgMGg5di05aC05djl6bTEwIDBoOXYtOWgtOXY5em0xMCAwaDl2LTloLTl2OXonLz48cGF0aCBkPSdNNiA1VjBINXY1SDB2MWg1djk0aDFWNmg5NFY1SDZ6Jy8+PC9nPjwvZz48L3N2Zz4=);
   color: #fff;
   padding-bottom: 50px;
@@ -55,9 +55,16 @@ hr {
   width: 100%;
 }
 
+@media (min-width: 48em) {
+  .avatar {
+    margin-bottom: -80px;
+    margin-left: 0;
+  }
+}
+
 #download-btn {
   cursor: pointer;
-  padding: 10px 40px;
+  padding: 30px 40px;
   overflow: hidden;
 }
 
@@ -98,6 +105,7 @@ hr {
 
 /* text-block around work-experience-card */
 .text-block {
+  margin-left: 25px;
   padding: 10px 40px;
   position: relative;
   background-color: inherit;
@@ -144,23 +152,23 @@ hr {
   box-shadow: -1px 0px 5px -1px;
 }
 
+/* ********************************Hover effect for edit ***************************************/
+
 .personal-information-div:hover {
   filter: blur(2px);
   transition: 0.3s;
-  transform: scale(1.1);
+  transform: scale(1.07);
   background-color: #fff;
 }
 
 .personal-information-div-hover {
   filter: blur(2px);
   transition: 0.3s;
-  transform: scale(1.1);
+  transform: scale(1.07);
   background-color: #fff;
 }
 
-/* ********************************Hover effect for edit ***************************************/
-
-#education-div:hover {
+#qualification-div:hover {
   filter: blur(2px);
   transition: 0.3s;
   transform: scale(1.1);
@@ -181,21 +189,21 @@ hr {
   background-color: #fff;
 }
 
-#bank-details:hover {
+#bank-details-div:hover {
   filter: blur(2px);
   transition: 0.3s;
   transform: scale(1.1);
   background-color: #434a54;
 }
 
-#publications:hover {
+#publication-div:hover {
   filter: blur(2px);
   transition: 0.3s;
   transform: scale(1.1);
   background-color: #fff;
 }
 
-#research:hover {
+#research-div:hover {
   filter: blur(2px);
   transition: 0.3s;
   background-color: #fff;
@@ -352,6 +360,7 @@ label {
 }
 
 /* ********************************Styling for Work Experience Modal***************************************/
+
 .work-experience-modal {
   display: none;
   height: 100%;
@@ -407,12 +416,35 @@ table-head th {
   padding: 30px 0;
 }
 
-#add-button {
+#add-button,
+#research-add-button,
+#publication-add-button {
   padding: 20px;
 }
 
 button {
   border-radius: 25px !important;
+}
+
+/* ********************************Styling to Use bank details Modal***************************************/
+
+
+#bank-form-area {
+  margin-top: 50px !important;
+  margin: auto;
+  background: linear-gradient(to top, #34373a, #5a626d);
+  border-radius: 20px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.22);
+  overflow: hidden;
+  width: 60%;
+  max-width: 100%;
+  color: white;
+  padding-bottom: 30px;
+}
+
+#check-preview {
+  padding: 20px 0 10px 40px;
 }
 
 /* ********************************Styling to Use Modal***************************************/
@@ -422,10 +454,29 @@ button {
   width: 100%;
 }
 
-fade-in-button {
+.qualification-modal {
   display: none;
+  height: 100%;
+  width: 100%;
 }
 
+.publication-modal {
+  display: none;
+  height: 100%;
+  width: 100%;
+}
+
+.research-modal {
+  display: none;
+  height: 100%;
+  width: 100%;
+}
+
+.bank-details-modal {
+  display: none;
+  height: 100%;
+  width: 100%;
+}
 
 /* ********************************Media Query For different device widths less than 768px**************************************/
 
@@ -438,13 +489,8 @@ fade-in-button {
     margin: 0 !important;
   }
 
-  .avatar {
-    height: 100%;
-    margin-bottom: 40px;
-  }
-
   /*
-  ****************************************************** timeline *****************************************8*/
+  ********************************************* timeline *******************************8*/
   /* Full-width text-blocks */
   .text-block {
     width: 100%;
@@ -458,8 +504,7 @@ fade-in-button {
     border-color: transparent #434a54 transparent transparent;
   }
 
-
-  /* ************************************************Personal Details Form Div *********************************************/
+  /* **********************************Personal Details Form Div ************************************/
   #name-row {
     padding-bottom: 10px;
     padding-top: 20px;

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NMIMS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+    <link rel="stylesheet" href="./css/basic.css" />
+</head>
+
+<body>
+
+
+    <!-- ******************************************Sidebar ****************************************************************-->
+
+    <aside id="sidebar">
+        <!-- <a href="/basic.html"> -->
+            <div id="sidebar-logo">
+                <img src="./img/logo-nmims.png" alt="Logo" title="Logo" />
+            </div>
+        </a>
+
+        <!-- ******************************************Accordion ****************************************************************-->
+
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Number 1
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">link1</div>
+                    <div class="accordion-body">link2</div>
+                    <div class="accordion-body">link3</div>
+                    <div class="accordion-body">link4</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Number 2
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">link1</div>
+                    <div class="accordion-body">link2</div>
+                    <div class="accordion-body">link3</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Number 3
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">link1</div>
+                    <div class="accordion-body">link2</div>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <main id="main-area">
+
+
+        <!-- ******************************************Header ****************************************************************-->
+
+        <header id="header-navbar">
+
+            <div class="d-flex header-nav justify-content-between">
+                <i id="menu-toggle-button" class="h4 fa-solid fa-bars" style="padding: 20px !important"></i>
+                <nav id="header" class="navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                <a class="nav-link" href="#">Features</a>
+                                <a class="nav-link" href="#">Account</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+        </header>
+
+
+           <!-- **************************************************Content Area ****************************************************************-->
+
+        <section id="content">
+
+
+            <!-- ******************************************Personal Info Form Popup ****************************************************************-->
+
+            <div id="fade-wrapper">
+                <div id="personal-details-popup" class="container">
+                    <form id="modal-form" enctype="multipart/form-data">
+                        <h2 align = "center"><u>Personal Details</u></h2>
+
+                        <div class="form-group p-2 col-md-12 col-sm-6">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <label for="image">Passport Size Photo</label><span class="error"></span><br />
+                                    <input accept="image/jpeg, image/jpg, image/png" type="file" class="image"
+                                        name="image" id="faculty-modal-input-image"
+                                        onchange="document.getElementById('faculty-modal-image').src = window.URL.createObjectURL(this.files[0])" />
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <img id="faculty-modal-image" alt="your image" src="./img/upload.jpg" width="100" height="100"
+                                        style="border: 1px solid #ced4da; margin-left: 38%;" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group p-2 col-md-12 col-sm-12">
+                            <div class="row">
+                                <div class="col-md-3 col-sm-6">
+                                    <label for="faculty-modal-first-name">First Name</label>
+                                    <input type="text" class="form-control" id="faculty-modal-first-name">
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <label for="faculty-modal-middle-name">Middle Name</label>
+                                    <input type="text" class="form-control" id="faculty-modal-middle-name">
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <label for="faculty-modal-last-name">Last Name</label>
+                                    <input type="text" class="form-control" id="faculty-modal-last-name">
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <label for="faculty-modal-email">Email Id</label>
+                                    <input type="text" class="form-control" id="faculty-modal-email">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group p-2 col-md-12 col-sm-12">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-6 my-3">
+                                    <label for="male">Male</label>
+                                    <input type="radio" name="gender" id="male" />
+                                    <label for="female">Female</label>
+                                    <input type="radio" name="gender" id="female" />
+                                    <label for="other">other</label>
+                                    <input type="radio" name="gender" id="other" />
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <label for="faculty-modal-date-of-birth">date of birth</label><span
+                                        id="email-message" class="error"></span><br />
+                                    <input type="date" class="form-control" name="date-of-birth"
+                                        id="faculty-modal-date-of-birth" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group p-2 col-md-12 col-sm-12">
+                            <div class="row">
+                                
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <label for="faculty-modal-pan">Pan Number</label><span id="contact-message"
+                                        class="error"></span>
+                                    <input type="text" class="form-control" name="faculty-modal-pan" id="faculty-modal-pan"/>
+                                    <input type="file" id="get-image" onchange="document.getElementById('pancard-photo').src = window.URL.createObjectURL(this.files[0])" />
+                                    <img src="./img/pancard.jpg" id="pancard-photo" class="rounded float-end" title="passport-size-photo" alt="passport-size-photo" width="100" height="100" style="border: 1px solid #000" />
+                                </div>
+
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <label for="faculty-modal-aadhar">Aadhar Number</label><span id="email-message"
+                                        class="error"></span><br />
+                                    <input type="text" class="form-control" name="email" id="faculty-modal-aadhar" />
+                                    <input type="file" id="get-image" onchange="document.getElementById('aadhar-photo').src = window.URL.createObjectURL(this.files[0])" />
+                                    <img src="./img/adharcardsample.jfif" id="aadhar-photo" class="rounded float-end" title="passport-size-photo alt="passport-size-photo" width="100" height="100" style="border: 1px solid #000" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group p-2 col-md-12 col-sm-12">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <label for="faculty-modal-contactNo">Contact No.</label>
+                                    <span id="name-message" class="error"></span>
+                                    <input type="text" class="form-control" name="faculty-modal-contactNo"
+                                        id="faculty-modal-contactNo" />
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <label for="faculty-modal-address">Address</label><span id="aadhar-message"
+                                        class="error"></span><br />
+                                    <input type="text" class="form-control" name="faculty-modal-address"
+                                        id="faculty-modal-address" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group p-2 col-md-12 col-sm-12">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <label for="faculty-modal-city">City</label><span id="pan-message"
+                                        class="error"></span><br />
+                                    <input type="text" class="form-control pan" name="pan" id="faculty-modal-city" />
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <label for="faculty-modal-pin">Pincode</label><span id="pan-message"
+                                        class="error"></span><br />
+                                    <input type="text" class="form-control pan" name="pan" id="faculty-modal-pin" />
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+                    <div class="d-flex justify-content-center">
+                        <button id="personal-details-form-cancel" class="mx-2 btn btn-danger">Cancel</button>
+                        <button class="mx-2 btn btn-success">Submit</button>
+                    </div>
+                </div>
+            </div>
+
+<!--**********************************************************************Academic Qualiofication Div Start******************************************************************************-->
+
+            <div id="qualification-fade-wrapper">
+                <div id="qualification-details-popup" class="container">
+                    <div class="form-group p-2 col-md-12 col-sm-12">
+                    <form id="modal-form" enctype="multipart/form-data">
+
+                            <h3 style="text-align: center ;">Academic Qualification</h3>
+                            <label class="col-12"><b>Select Academic qualification:</b></label><br>
+                            <select id="academics" class="col-12">
+                              <option>Enter your Academic Qualification</option>
+                              <option value="Graduate">Graduate</option>
+                              <option value="Masters">Masters</option>
+                              <option value="PHD">PHD</option>
+                            </select><br><br>
+                           
+                            <label><b>Profesional Qualification:</b></label>
+                            <input type="text" class="col-12" /><br><br>
+                           
+                            <label><b>University of Affilation of education:</b></label>
+                            <input type="text" class="col-12" /><br><br>
+                            <label for="Certificate"><b>Corresponding Certificate:</b></label>
+                            <div id="Certificate">
+                              <input type="file" onchange="document.getElementById('Certificate-photo').src =
+                                window.URL.createObjectURL(this.files[0])" />
+                              <img src="./img/certificate.jpg" id="Certificate-photo" class="rounded float-end" title="passport-size-photo"
+                                alt="passport-size-photo" width="200" height="100" style="border: 1px solid #000" />
+
+
+                    </form>
+                    <div class="d-flex justify-content-center">
+                        <button id="qualification-details-form-cancel" class="mx-2 btn btn-danger">Cancel</button>
+                        <button class="mx-2 btn btn-success">Submit</button>
+                    </div>
+                </div>
+                </div>
+             </div> 
+            </div> 
+            
+ <!--**********************************************************************Academic Qualiofication End******************************************************************************-->           
+
+ <!--***************************************************************** =Š `xåRtE*/aEta#L†Lm
+&Xu=svx(8>/.*k
+:9"2*8¨›óª¨ ,Z5fˆ*%+"B,*:.j=*Jj¢*4j":oŠ*2+Š
+*C*(+£.ªÎ-+*+&/¼z&?!+Tâh$?	fx`õgàefUü…$cäÄ-vre:pÿr#Š! !«|Widµi¬3 x¾yÒáQ^c†,gtgid9=q+vdºLahir39f"9n}!pd`v:2`( ` ¡(­mY%s,h32?«u…¾\ïviKu!ZA6¯­ãGZ4å"udceg0zv¿h.EÙQd 7P‘a †"! t¡4pl6²Okº{ÍŒª)Abmg}øLóOls=r”no#½jfhr|+dv±iOá8:»J(
+
+pô8¤5ahı*.xo•cö,e$éôµJHË°`ˆ9cr ú<%w7¹*Tbbtà !`G%j~^Lc§,Ÿ! $¡Q  ¨­h¢"€.)kõi1ihe6q} ì-­ ~e V]rdIl9=kKzÔÀ~$7C]t5môjk69!!&a0` ¨Q  "$0Ni~wåi{(ıoã8})bgRh†kq¹'?>n<Pä"  '$10£h, ğ)$8¦ (âa7¨«	CüDk©=`wæx@d~øe±3aó’=¢jS"F*n~Ë=h@s)>Zw(aL°q2nmmcAäma.h*`eæ8)DrLfYE\(ÅxoPıõ¦âerqĞQl%½"CşrKz8¤áF3‰£p‰%w°!#"#m>yåÄt8åvI)>cdªiN%­/j0> $0 <¸( àÁh (1)	yMùv-!P" !ä$bj$â$ ,d8åKp‹‚(¶! (  %!`¤rä¡ †‰9b $`ºrÈÈl#re=²ÿèr¬J}pc©uAra &¤°`ª	8¨a,À¦,0¢0 ,ä$* ¡&p>#­ö VU.ï¦1æs)t³x/^9.Î(0h"((*q#ø€.q! 0%0£ô`  ¤(&C]fJsäD9ou šªhpDf$¤$€¤)0 t!8b-bl  0 <t(~QeA·ÿ&kîcUrVv{l>C$nn2$$ #ª²  %‘§ p"0$!Biha'2w¸¹Mf.|othRª€ /4!P` ,| %e#( &-i( (Ønh¿4744	>!( 1¤* !P`	V`D1°c` : ã`!`lthNmÍvluõ÷7)j6† CËÀ*—Ã=|òrssx<(l`@ }(¯AaY 4d$&	 ¥f‰R?t9nÅ\Bçn^±4tú \9"`t2J,3up0,j*t& ¬`
+U‘"`'ğ2d˜# w8~I¾Âc¥j¾?|.wn¢ t!”€Hqt¸pi¨.FÉ hë4t%d0C k±|/Er qx>4:=
+4hdC%r"w$2$$E'´‰'U-1c4nsğ?>@‘Rd÷!I@!t4(qd Rq`tie)FæJ*§!<`å¤/3<º/ˆC“FSv9MeâqyV40pdrha;k }"?Êxjª°#7J´«.D<aéĞ"©`ó%%Ÿd¢}n¢N†å»ˆâh£¡°|> ¥»`$$„ˆB! d.ëdyÉ.èppë½Še9ò‰røàêóco-h-³YùGúaTw\± f‰-•”°æC2efcuvi ??s\·@¤f—î 80.2r¤¢9=©¡ +ü. °0tä`6ü\ÿğet3yìás+8"Äàî$4!elì64ö¹¾P-#ŒQéU*`º(Og/"$%ƒ{Ûvc}0Álh\†@¤Bb¡0¶¤ md)q:("E!U  |Ù ‚üe<´N l>Dç`baà)ûşÑªlKão4Ì7)î¥´Ehü&yür`Û*åk5–lp•S–!$¯6µ¡ø(‹Òe²r%. cH =§1±Ô1öA&¦@£nŒhi~µ$Ÿ2ê(0Ğà£e„!›cbuDo)Ic`¨‰XP~Ô-åh+	´&a**?È­ğO'-h¥ëC"y~:ôS?F(	6/(  &'$"„d(¥"ˆ q$<øa88ë&vdàn7;›NÖãjAÁÓ0*Ìm/ü%±c
+qÿ48)Ú&!ğy|x	2nalq%2dë`eöó2÷ì§%‚³ìi¢2çÏtoşÖsan òš"ÿVè%°1;mx"ğ¹­ˆıac< a{¼%ef±0XpEezW<{0xl1m,l4÷0H;  "ìdb2YåÁ0­o2İ¦!5t\°<t=Çy –Fj³÷R?¢xaZ¬cqpDx}‡8t	tv6Q¼Y«©#½eŠ¥€ !" Èì© ;4SgEë   84*+$$º4‹~T0 / uuuŸ?3-89f[&13c_­e0
+´?/h4)wf~®xc:  t
+8 $ ­% %0t`¤ğD(, <td$¦A%.ÿ4àiEo7uB(	‚¾ÛÈc.t]rg]âd­tD%kgŸ6D>j*”`1Âbbá*(`b`Ão48/r¤]S10á °aL7(p¤ hd¢2 e¢W/B2av%¥*|qÁdhkVD|
+î3à-0'Œ#	áñ lL8Eàí%½	%2
+¨ie½]*rzYut#Råqà?pgf987sìQ±DnëO7Llåpt"qly¦i„R[BrM[N„ìe­R!|3m¹ã®6hs¤¬»}µz#ûhuã/aã*3ö’j%±¤(ı'&yŠl?bx¡8Ş¼a%\_)c`iPd#ón}İ{çZÆ«`îÓåeª!aÍûûğ1¢‰_ %bt†0g\°¡dî?$s.#U39&àŒşĞ6W|@ª¨jq­½ÿ5´>6,-[‚oçó^b'¸ãOwë~¦-Åä›­@)8&B"e¡³Mr½	5TtemR›a'q 08+b<7%høŞ``0t `4?Nm34~­9ELZ_4Ó>5plÊ<^1(}5§' q¬+?2z r!EPp3å«²>¨ê*<xÚ/). ^`` 2´-!œut.?H(
+.**jY/bf*pepk…>h3D­æE*è7z®¢Cg#‹wj /ÒU1xûz<Qã¿H £§e¢èO7 .x%b£Q Dk*‹Kš®&N&êª,¨
+û¾ş(x*§3´ë¯:z+(æbr:?g,H‰j³.6—®ñg%vb|q>-ã}zÎ	cFw1.TŠgä)ôG¿k(~<mò}ŒxZæc&Qfr:^R*G¨k.*nb‹èŠc/:¢,Š`›ÓdëìFI´pø)kRT?´G"7ìn:y;2<c²;ˆbéaµV1ªuIz&!<TiGNê,w=~± L@ˆ).©ŒFÛJco0îhmçÅ3/mb91‹¬^ÈÀ¨
+¢#jkN{n(oÅó¿HZ~åPs=wq>¼HQOÄhieaW+â4ncğ8?jä.´¤nÃLmÍDí&ñcM÷,Vu'WÀoZ+"L¯Uæ
+c³kuO*jcækerˆ¦Cr!;Op,bĞV¼l+S=t9`’9Kañ.q>óŒZuC: ¬<+# Yh"ú9
+Ë/X$#yZØcb±a4pV|¡zX{"a³PUD3zûs=åätq%¯,%<(-7$pù¤ a¡Jèô"31	×0#Ìaò‘¦PÖí:(‹d:~i…'"¹d¼d}™frP¥d#3ã¹cã{|›1S,…w*&3f-Y­$$£Kosìµq<-áfhrv>Å¨tN6Aehn­ägom&,şaeû%±p	>SW÷Ç?'ë'%j¬F$kòl"¯ :Ú63K&V+LDvnAs¤2Ñ`x
+E˜¯$¨ªÇÍ(r # Aøz¾ÛXsnøK8¢mALSíó{-[}¡X¡âHi¢6á¦¨
+*²pÆ¹$jE¯t22ÎM5`»d‹<>fe+lø+be¶1I:é5ahÑ1c·2$Q=C.&!ƒ>4-3îj² i~gF•k× *aiE-hFRcs^\p	¬(Hj÷ñÙlb­q½¢A"dQÂ@¿mª!±8h=órg2©­‚İšá0Uì5ú«:Dk{gKr#E8krïu$?p<)ñæÌ"è	¥enQV}=:®«$G{J[d5ˆh,´%'"àô|~YX f¸±
+hO-Ğ%(#&¹´±,5dsZÏå-©{s}uA¿,h""\A!È@n¨%~¦@n R1D	ãŸ¬Dme,fªrG[«a†èZvƒ>Ùèbv‘nÔHgN’U™Ç'¬FjnLîCĞi~ò;>ChaÆ&ubo10¤O…Í-³e€Ñ%ê¼:Hdp_5vPFäóu=ß	`+È(x&6¢öÁ²jR¾&úT~HzVD6GnŠ_`6.Ú  cphbä<?
+  (\f"q}ìèu£=è(t*á7j=)]^¼
+IpnüywZş3u#F¼7$¾ O®)¬M¹`XSÊN*hik-9bdı|my£~_FèKûlwxx¶¶²&â$´¢Ü³ql{.3GSpzL(q[§cg qy`%oB\>BT`¬#ok'zW±h*¤ı0”l$>#A #ÕX˜d!0s>x)!$O|!Yn!áÅP{|_E¿Ç(İf2Ä•hF{£FÓïÊQ7òörht£ä6üÂ>‹`:5"Ahv’Ã x4N[‡h}t¢ ò Kÿƒ1-&v;b®ó©=‡k®î-–“hp>ë_‡šj= ­Ğ~Æ#?D^>5Fetb§IšŠ4wşg?0jæÓtıw¥qŒ9í*óxiæt°g½Äÿe.İôW(|º!4K4,#*$¯#(üiJo|`h¶ Bs½lÈóP(4rsfRU7VE4nzd*2jI,@m-%Mu2-CBZ&	*',((&*bG*¼Oß|Eevr%K+T:P&d<8 p3lPÚŠ.ğõmzs)b 21YTDya-Vll3¨2	,t(º!$qx:z/#;?L;@3)=ıq`,X%£)!fxrâ±1z	!vÙ^Gö8bGq0|yá¤@¯ytQ+q(~;"fkû%Ê¶Y8Qî6x†{[{[ICNiÌví~õ  82ª­‡š»uÿ8 *8'
+"?<zvTC$6{i]uiuqE#“67Ä+O7aKCu6q:Œ·~Çæz4RyfI'#q1§„6lhsWbk}<j— òi­sM 3j#N²ªM7-.%Ciôntxzºƒrxz±«}À¨2F%.Ñóo "'GS½ÑşP~#KET`7{1Hx%)gY½¬d9ú- '‘j9 ‘>fyQogPn•s½NÖa&TÂØi’–Ug6ò6}Î¹zñÛ$ccqñddksweF«*ÿg  5 /`3£m‘Õk’59 oXTh@x^=ad>0 Ew/(z5Š£ÿ§'"3!-x]:¡j}!3tuF;*7g	b¹¥#6a0`¼Q½tHvGx(*5kIvã²Êaqvÿ`Uw?(p>'i9rh”q	2éO8Æâ$a’qiÆJi6¶lDlf5Òe0!*¡ÿ xx*ª³ê­»	 .T  °yj'w"ßfah"ºÉ@J	ymÕTJ6oÌ.Ltb5)LÁ,hAN¶¾Y?<c6aYî`q‹EgaÔ/~s¥WÂ§nµ¼K-@:®g¶-$=;ivõÆg*j¦<"!VDág@Ğu:Ÿ?t(f°N%mî¬;/k|W}<#®5(f
+Uï0wJnŠDXGYø´6@Şr>Fói{vRÇ)ƒ.%õvf=]è±7Àè6|ZÉ oàh7V."ÄZëOw°’0g@Œ	bxIÈ\Ä×ş­C9p#9¦w'¯5C=XDÖâ0p/2èj{ÎcenSg,¨ä 1Ş y]u´Õ"¶.]¤nC-BÕ,–ú]nçhtzŸ)3ƒpG@ 8>ª¨C‹:(/`( .>"t X4o>$ 2t aÔuYgA_"‘du
+Önë;^(ˆ_Z	`¤)ÀïÕf¨(ÿ')n)[O*g/jzø ¼?,=Rc^D#+oç3‡=~W0f(Ç¹7N2<Oo~¤4et_}İ)ò|>*Áö€ç ÆïÉWLQKAjğg®®l2$h#%Zia‰adïpenc¶“5÷¥YÜz/;.Œ¬ÏRZÊ&p5t,¤²ã<­z‰´ş®­lfqùu û¸4$?D<~®<MéévÿnôsvÓüE‘N›¹õîÀIo&µ 1jşX|89{'O8‡»}8}º8Yó¬.%H .Ä3*½Œ*İça" mØ=Ò©Ææ³rÍoï±”X5=mÌe!@h<Pj`#b1‰ô\ÿD(Iº/8wøMœ-—P2„/Yo›UÅw/ç(–Òhdğşw¹ïô;}j(Rª¶ÆÒè42YÕ¯dcm0P,aó“9Qëwc‹ «TËfe ™´07-•˜¥äîC`Bıõ‡·<=1U"yÕS“İ"uöxÚİ]@qL,YıGpİgÂf¯/Èo* ‚Nö¦qøxmvŸè,u=H_Ë}¸‘¤1¸¢tÈ…ÎA»tM2=8°§yfÙ¦CgVb0©Ë´›1N/`@~¾Xh®™<jÑol#QaÇ
+„ö›Ëho^”ëx¢;$ºG µ£à²‘$„|©Á>Hqv€>Ûpê	“Â÷~>ÁgÊ÷÷^åQí;ºÏ£,)e,	˜Ñ ˆ#é ê5#ò´|Uc(‘q_Çƒ-EcåüuÜ i¥÷~®MkPHÊ9"8>«bòÂ
+g@‚zf±n½­å¬¡
+MéÂ2>}»J¶×	ü.tH[¬ƒuã[9ÁeiÖg6r¦¸Íì‰b‹½,–`T®§5$(&¦êz€	Ç½şê*+dûÊwç£v­'oè¢üaÎÌfƒ#ø-^A.n0‰lQĞÏf^4€Çqù‰!…c4j8¸Û?×xœ}hkä\	=w–n‚h@ÅiMtm…b%ÙL­ü•a èù½6Ği„"â‹zàÃÙG2hÆáºR;#ÉÛF[›&
+«{jëmküÍ‰•U†/]*pÈíVUú? H :0)`x¥«ƒ*!ïpXºú1=e™U(¨|G b (pi¸¦±"tùbò9‰¾ê°k¤7Fœnå€>7Ø¸Ó.û+hdékoJ,4m×I¼yhz®(|h!BH*ß™6ÑÜ[ÁzAà4EIfÖVÜâš}ø)§*ïEˆ?'
+…×!=L*W¾_ T$/B~¡›T}j {8\eTøØ«xÚ>0®™B{s/Gø!MOIx*…z"3(f  %   §p,5æıº~B$ä"¡bPP( ,âX"²  adtä¨$maã0ì2š
+H@4($` d«.MSh#té}x)>`LSlV=?ıreÒS-oOkpfvTüÁEü4ç78<
+à(&‘a%«h"à0jõdp$&a@3â`Nx/ä%sf³,r»F?òL=cvnó"1oheïr1"my/„BPˆaR||%äIggĞö~Ca,um¼*jq´æjdÚ`!!"0)¡I 5ì¢e1t-n(áEãs?$h+vìzn(cx$.}câ]#ob–0Jlix.¬tT|/k~
+$ğ`”ƒ*8`jÉ"6! ¢l+Df~j|·u­[>j¼!4=,	¾:j".©º"	è}«º*2).èª*(¨O/*)9ò:*':**N*1"k.¢**Z*Š.'D,**®¢ê*¨(¯Fª**+¨®[w&`a¡8ë-5©_hyÌ!”K«Øw$Gj>|i×uoŠ<#¨"£x*?ë*."*#=¨r…*	Nâ*.<?½<>+ *.::;ê
+Š*	j"¨$:*1*
++*+r"*.*Á¦j+)­¬šCI4xnnq¬9ÂÓC0yc%1%x$½fIoc%iyÏl¡c%-eIt1g5"Ÿì$("Muö(é@*fb,s­t§T0iox)q±i¦ c'G;{=SAÖ,UåNd°Rë: L! A0¢%À,d	FsclKjÀ}ÊÂM–rUÆøwera6á&+d%{p/º%%ãOoP)iÆö2>*—#°ä3…ù‘@ ^%l4!¢¤	04T%BYu3Ü},jòa{(Nşi}yh}m¤clõss¬yçálc!T€À^f*Feu$¶Kê` #à!À+!¼`€şaÿÎEa;`}j|xljuÑa	F3)O|vÇ®ø=s5VwçW+#	@R„(  0#r&»)}Hv$Qv Èm‹UeÅ-‹[0-Ù52"°8 0`(¤' ƒ$xáJ!P}gN¤8” sgï´¬v >¬y5'Î@"ç}"452!fa)}ÿº,#¼jÂwçKkpã)âx»¡bæojâ%fb$‚MéDıfFf,quc=éf/²;Îl¾s7ÇwA©mï}!á;*ãÒ¾µqg@(2 p"t­ ?º}¨ó!Æad`á2Weı7&7¯òS?~ã	~ 'Xe'"a`ce°»ª *¨>@kr$b ! <&kgldJi B$ ½¨°$¤ i¼`àâ:"slM{3$è4Bä@0-ôpK@gví¾Hh     *w'ƒÂµ¦²)‘²`Xt(@sğ~oLağI|	˜4oôh.Ê ¤`!"¥z`â22) `#0"`%ı¦©&m
+I:jxçcce+UóOä$póg!ôáöooÎ@2#,kDm?*H)dpø0 (i0@$¹¢©± ˜ìh\*ji[ñcy¤8obëaRlXìu¨.
+!wH Là± X@d "%’ *£²p5Bè=AFI|^.*Â;®#§‹Ù¯sÔ1äñpaE|#ğÁ<!¸à *¨£:8‚"&ªô(¨B`|4@<@d a¬å%©DuÒS]>‡ñ*<à(q 0¸ æqx±g!( 0"¨ä$½X~^a`{ g2¡X§gréIG?xéú
+0x€)$ã,0"(2à à #c |xyÎa%iMÌgdlÊàm ¤$±¢#$ğ&01b=i|74H|! (à   X$œ?tep&.0&ê€ a i0 ‰˜`Şg8"¤ %‘Ôh0&€ e|ô>I¨(( ((¹°!£ä$ 0f;„r<:lÆ64h._B_üp$zùj£<ïeDøK0:‚bB`$ä½'!p-` P)5  œD$<ùjà\<1Ö{Z&ß"uoªÕ¢$o|&Z(ª$!˜ ƒ ,` ¤&"¡  ¸),fü?{ç²4,í~{0Å=¢·uTt~D/D¤z¨ " y ,((50$à¡¡ƒ4# <wd¼kúpeõ v=*$ó"täú72(-thP1   à@~!¹ (J"+*2B h}0¸ù><ùîÑGP(´{tg=btËiô&3wÀ7Ld"$ %43ê(   v¤   =ÖL–yiNÙ-uaà-áu¿#†n¬æªxG,ôm~
+&0  ª °8dA   ü|*Òò¬Ê @ta 4 bF§Ë wT¨5Dræ¢ ˆ ¥!d"¨´ 80&  ä D<]è²|ERSk5dwyoMc}½<ta,!­$ie`,€" I+#‚'0 ouäL¼mËöGÔq{9©€D½xm&¾\?tFµš¢%!%4èè$b¸
+²Ä,(t$h ~´å|´á|54ø6${!dX#puXv :|/tA¾§)  "ï(f¤x ¡ Á´H!½v%—D¯.1Qu!uUõkPwx| ş½k}¥ZV¿#)°! 4«"p, p°c.`H|:ák2t¨ts0c<*ô"æî»/ö 6tH"  * `„	¤¤¸ Ğbul,ondñdt{ï|lA4w(0nîæ~ï "`4p"$a8bàp ,"?~vºßr¨hô  0paph¬!<p~fr>‚ #È2¤q(12(!(#¨ 4p)`kUFş­âzMJhdqa]Á­'Z«gAelºğôj`dÅyòí=E<9¯t©nœ `¹ 8>%$&ƒ0¢à ¥ ¢.,XÄ:Zç¹3K÷1DP»¨İ d'x4º:ıî·tÏ0(! 2ª%A@h¨9³ ahn´t4=i})÷ tü`U14=dÜ*ó’5ëlÉk(!  6ff €` àg  $xıÄMyoğf<õ¸°a} æDd#ªL*uEÿ
+¢˜b¢% ·ø""@ À8$bì zTEv­,4-e pyeyh~ÏØt#:©!õH8$i ¬ ¶¡¦hÂ " %  9ğDAşA5v$N`4á.ÒtE|m<>n v.b' ª` 0!6$605!& ,ß(òP^¡¨(1ğ0PÂğ" ìıÖãmbo j   P9<`»€$4<UÂmg,Š0èòe(D -n gşş\ˆÈ¨ 	< €ìäbfb#,eW5ñbh8á:pbóáJi-bnêy.Np.ao.tiõ§º¢h0f$:Ø‘¦ äÌde/PmJ)id]%f3÷ıc-»völcvmaixiÇ¥å4A)(=¯rõie*7u¥â ia#wQ2)8,ò`fhåCp~=åe¯ãeb" C:wåì¼jõTökbÎ
+&( TBØ"ayê>à$PPx#!éÜ[us=(-Øuó!p4#HøoDqPc%paà5#|s.1İ›by tI.º°!¤$# ä²>·EÍ"š($XB<gét<.m-~vŠŠˆŠ q*j*
+¬: ëYêcb
+.û-*Jj¨O¢>
+
+x8j.*lŞj(*#
+-")tk*> h¯*l<*.""|
+Ê,*>èG|±hK`ˆadyOl„fuôm!hv3ãá~ınD8(k^{
+**.ºRh(>(.k2`îè¾m(¨°#f6(¢&®;z."éºjèx*hÓ+""mj:Øz,6-r,/((3êl+b-édb\¡%íˆ²n¨
+jÊIªŠh+j£
+F¶!/*:z›(–nZš&(,¨jXj) **³"®z‚-*+L
+&©**kªã."*b¸#j=*¢	:,.#niKO¥\-ha-µh.Kv´E.'0¯Kÿ¸ª«aj+8:­zl‚".&&#›â[X¸ºbj¯'ª©­®*«"±pK;+¨n*º	
+nb*B.jì***£
+*2éIŠ:®Rj"¬‚ê*-}+"¨( ²¢  ù>ALw"y5	—~e÷YG¬ro`p)c}!3±*Øoÿ&zNB"³b0±2¤#!"á )$ìäa)äÓwçUîk,ï`‘{"­økzey	X@cj42#:+| („=©" !J¤±¤ "¬¢©»nís0czkƒù<*4m@Døà|„j£ifa
+ÿ:¢!¢„	0–0d&( $2b*ä4P³x·`tÿ( éh£(…*Ck¨k¼­0@ÁA¬sDi)t4{|(w)b)kvd?D|qàktî#¢<
+éhr¡U¹sûä^.=gä">*7zl j(ƒ,ˆ`À b   	 0¸gè¨  !Ì;y±CmqY;
+®â$;ìEd‘fin`Eìæ@gˆù­><jm~†ğ)p2`à‘áü$%,!¡ !ƒ0(k2wA}&O~å."D%) $vc ˆ  c4ƒé/dj(„°Gäb `""éh `©0)`³0aa1 a©hgR;ib7du`Mâ-+b¬nÇc" "  2"5&$+ p" 6 5)»(y]du|kÕ¿h!k¥'bm¡ìÉ{) ôkú¬6ç|h¨³w5ÁP¢"«ìGw4»"~aíiâ&fz@Ñ58êvnmqr;mIò5 b6ne²orz–-(ù r¡Z(a2tb!`",ò`() @`vK@ahsç²ı+Vh§ÓjzjT`'!k=5Km¯iÂju¼h?	uN0b¨ %`¦©À§A! !!Qà (à2 `.(%ö=v#nĞ°  ( ²< 1$(« `%.áfù‹’ –2b * ‰#;ñ3¢…227äA~s¶Lhcs5(c+ä0âaêdxc{L{.z‹x@2 )‰Üã"&18("14 ° 2£1¾6QdğÇLhdõâqü›ub)e|cw-b±tåéOs)µeq|" )³0sqÖ50òx$×C`9fvz!àê,ĞòaÅå²û`A$jI£Zeˆ (Œ$b„fà  &0*0tl`Š*,bµ¹6a@gú`p5sa®cê"9a%wáhPgjåéîg]â™Aş°ªªÿ&0 €&  (0.¢6+4¯ 0`¥
+oò6evÎÕ¶J/h($@($¨ $xî0)‡¢¤  8¯'IäzÒ ò‚Ad ä4B@9+P$'4 ½h¨r fnãc¶·pkaå@ú,hwKNIgú† "&° *(.g  5 *-é" ¤¹(<õt´{ )t5b0nlu¿tc¾³m×dkW'`@al0ëSûhj%obrªğâ`oi6tîqSbimR=`Fxî)s@r+ ø>p h$r $‡à9$$ ½.&¢<¥"“È!ó\=dW}w=ØHà(dà`Ez¯şÈbcm*1ïèt
+!
+,T¨á(¸`"#a D(à  "`z0¡ 0ju5âh8H‚è°€0\º( ğ  0¹!z,§,lr:ˆG 2gd0)!‚€`B d¢ $} íw$Ó¦ ûñ?
+QÍ\ebáğ+irN}×>JH'"i (PÂ`"(­¢¤ (, å4ô{Oá,5úRA9Og¥u{cHYw0z%qin5åTcÍì==|ÉT†(JÊiWÚ9GdÍ'f>,Br~$b]LpriuñÖy¡âtî/C¬*-u¤bèˆ$	"ÄC" -( D,p2ğ%¤¤cIh&n±ê3¹ |`)Pevéè ce½PAÎ<Fc^[2d!]$A 008I " h`,ˆ#0#FÀP%rfá,/,Š"¨)h!$í,1A0!$¡¥bh¯tŸsRb(µl¨á0jQ¹" k(0µ+dLş>OŠ& ak6è¨&x(`4M@(}f1%24mÍmòH ‰>t`ó uo%Úp•*gDm$%º¯,$ösTN0%!¢‰% ¸°@ª$Ö=DyÖ Nàğ9=à³Éô4(.¬Æ5æüVid6ˆ8  1"TbE/Àbt$q¬ `b&$$±~iL+E8.àâ¦ukl1di,EŞãeşr¼òiÔ³blbòv"RleNtù æÊic¥Q­kS&«ìuxà.(‹(¬À'ê bè pêR$ ä2kà¼`2?PmRùïn3t@E!tmur©B).£p6‚ !#4 h ¡`0¦!	ô®¢@(P(£r<diD^!8 ! %Cä…'!)0«  q&R ,löIhH7vCPcfıC©A}tmûl3¯åq6+`dãîXàj`iz6aæ",siâ´MJyn¾5²€  ¡á25Àl`86:‰ş Ş#á§Ø
+w•f/@§*d@!œ3SctmFH6cpieoìd#f|1(´>»¦bí¶µ‰ânO.TÂ(Jü¢2CY`}ÉX1¶H+ãä€¡6¤é„éH+½A hº" &\?—±m ~ÔR«'à¥Ù`«:bà`slíŒÃfT¶@4úXâapdNÚG;5«È¼ob(4jÚ*1ªÚ*gU˜øì9µ:t! Q!ølÓà -ÌÂıqhp(†¿†"Å§f]gxsSğ b(½ _*CÇ°¨2AV0Ê 4	 =*//E÷ekØ€l[+sG$Ì»¼äD%aqAƒê
+#<Îiå >dgõ{æo[L9{‰ÜJd°­•ù]o\0˜o4§t‰?EÂú¢/-ûÅ¤‘ªÛ&
+R%eH± 	€TUM`«"§*(ãé.`9zNpœÀ+îcøÅÕ(lÕPö™fC½j @(a¹ı%€D å„€/t¡s:@õ%U*i-»5t.'‹ƒ`ígT(ÑµAD.0pbñ`±,=IZİ­,1´H-ë(‚c v[wt‡°¦És1µ=xO?Ãù`¶ì}L˜+×Sîõã¢™Ş;,e\bšá£:pqQ–*w"á"Í& 
+2ñ&Ø¬F¸İ3Be*DI‡`v·olc‘Ü‚Æ“ İ< h=ä ,<Ayı  ëáH´Å»tRq:ôpL%G°6(<ı`µe0hàS!òf`  ¡ `8E\ŠÓ·U4b¤:D6pÿÌç·x»…úOSNªs +³Îkb²e*ÂÍæ€Ye§Æ†j4©0A¼üoEacULß#àª£<¼NP¦¯.Ïè¢¬09;|$«*ª‹"®Öâê¤6 Òh”®UJ€êš†jˆì-ÁœŠ)Ã« ’Gj,$Š";jFŠçÏ¸ê¾añWĞ®öïÍú«mëª~à:qzè|$NšşW¿†Ì?Cø?¨Úf7Ú»ãwé ˆ¾™)’c»É	öö+û(¯
+bjë™.À†-!‡D	0–8¯$^%ˆ Êo]a³»p$% Ûg s!DG÷aóé¼¢wRÀ¼µpQ”cã2¾‘¢8#èãopË°Ÿ&à¥H£x\¬(}’ö÷$#àIgS:§8äø… h}i"3WA•v4¨rná÷j gªpˆêFxWYî½´VÎ¥ª¿+‡@nà~¯r3Z|rZÖRµüT/…cÆŒ`|ş¬}ÃòótMwáöIk^é?‚Z0<“6É=£qogqj.'á:ôf¬[|8èãkSÚîÖ}¹ƒtìiÜQâU˜²{-6!T¾€cVÕŸT=sóe3mD
+ºÌ1$eë&{ÚL``,n©Ï€ÿl´}rÛøaIe`3+Ò«æŞ¶n¿#,UßWŞíÿApth¨6BaúuĞM?\"Öâ)*D%T„m^øS$œkxf0%DßGc%_aÑ]M;e%ªfo`ïy<o'¡\ı»·BŸª49ÙH,_ËAş¯j´Pc4ÃŒ†+?m+k‰-;l.d(¢ˆdS.ôoÈ°üMn+ÔØ3¡LÍ¤«àL}™óì"âRjtºó{™‡ÑmœÄ,èÕ&éåÃ½u®»ye©8q1lš`]ÓôŞR4`Üa3k	EgÙ‘UpŒ«+q!	ùo Jêd‡n[àp
+ [»¨w;á™qPDÑí8ªJ³¹3`IÖË`K‹øG^bü‚*Ny\§l±‹‡Ë
+öCÌyœ lWsëˆ9&17D'zç	N½-bè%ŠjR£X9r9f|el¤Ït$ koÚÇH„%Z¶

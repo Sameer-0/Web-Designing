@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./main-content/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Qualification</title>
+</head>
+
+<body>
+
+    <div class="full-screen container ">
+        <div class="main-content">
+            <div class="container d-flex justify-content-between">
+                <h3 class="text-white h3 py-4">Qualification</h3>
+            </div>
+            <hr>
+            <div class="d-flex align-items-centre justify-content-centre">
+                <div class="container resume-box">
+                    <div class="row table">
+                        <div class="table-responsive">
+                            <table>
+                                <thead class="text-white">
+                                    <tr class="table-head">
+                                        <th>Examination</th>
+                                        <th>Major-subject</th>
+                                        <th>University</th>
+                                        <th>College</th>
+                                        <th>Percentile/CGPA</th>
+                                        <th>Year-of-passing</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="graduation-data">
+                                    <tr data-toggle="collapse" class="collapsed">
+                                        <td class="text-white">Graduation</td>
+                                        <td><input class="form-control" type="text"></td>
+                                        <td><input class="form-control" type="text"></td>
+                                        <td><input class="form-control" type="date"></td>
+                                        <td><input class="form-control" type="date"></td>
+                                        <td><input class="form-control" type="text"></td>
+                                        <td><i id="graduation-add-button"
+                                                class="fa-solid text-white fa-circle-plus "></i></td>
+                                    </tr>
+                                </tbody>
+                                <tbody id="post-graduation-data">
+                                    <tr data-toggle="collapse" class="collapsed">
+                                        <td class="text-white">Post Graduation</td>
+                                        <td><input class="form-control" type="text"></td>
+                                        <td><input class="form-control" type="text"></td>
+                                        <td><input class="form-control" type="date"></td>
+                                        <td><input class="form-control" type="date"></td>
+                                        <td><input class="form-control" type="text"></td>
+                                        <td><i id="post-graduation-add-button"
+                                                class="fa-solid text-white fa-circle-plus "></i></td>
+                                    </tr>
+                                </tbody>
+                                <tbody id="phd-data">
+                                    <tr data-toggle="collapse" class="collapsed">
+                                        <td class="text-white">PHD</td>
+                                        <td><input class="form-control" type="text"></td>
+                                        <td><input class="form-control" type="text"></td>
+                                        <td><input class="form-control" type="date"></td>
+                                        <td><input class="form-control" type="date"></td>
+                                        <td><input class="form-control" type="text"></td>
+                                        <td><i id="phd-add-button" class="fa-solid text-white fa-circle-plus"></i></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        $(document).on('click', '#graduation-add-button', function () {
+            console.log("graduation-clicked")
+            let table = ` <tr data-toggle="collapse" class="collapsed">
+                                        <td><input class="form-control" type="text"></td>
+                                        <td><input class="form-control" type="text"></td>
+                                        <td><input class="form-control" type="text"></td>
+                                        <td><input class="form-control" type="date"></td>
+                                        <td><input class="form-control" type="date"></td>
+                                        <td><input class="form-control" type="text"></td>
+                <td><div><i id="graduation-add-button" class="fa-solid text-white fa-circle-plus "></i><i class="fa-solid fa-trash-can text-white float-end" id="graduation-delete-button"></i></div></td>
+                                    </tr>
+       `
+            $('#graduation-data').append(table);
+
+        })
+        $(document).on('click', '#graduation-delete-button', function () {
+            $(this).closest('tr').remove()
+        })
+
+        $(document).on('click', '#post-graduation-add-button', function () {
+            console.log("post-graduation-clicked")
+            let table = ` <tr data-toggle="collapse" class="collapsed">
+                                        <td><input class="form-control" type="text"></td>
+                                        <td><input class="form-control" type="text"></td>
+                                        <td><input class="form-control" type="text"></td>
+                                        <td><input class="form-control" type="date"></td>
+                                        <td><input class="form-control" type="date"></td>
+                                        <td><input class="form-control" type="text"></td>
+                <td><div><i id="post-graduation-add-button" class="fa-solid text-white fa-circle-plus"></i><i class="fa-solid fa-trash-can text-white float-end" id="post-graduation-delete-button"></i></div></td>
+                                    </tr>
+       `
+            $('#post-graduation-data').append(table);
+
+        })
+        $(document).on('click', '#post-graduation-delete-button', function () {
+            $(this).closest('tr').remove()
+        })
+
+        $(document).on('click', '#phd-add-button', function () {
+            console.log("phd-clicked")
+
+            let table = ` <tr data-toggle="collapse" class="collapsed">
+                                        <td><input class="form-control" type="text"></td>
+                                        <td><input class="form-control" type="text"></td>
+                                        <td><input class="form-control" type="text"></td>
+                                        <td><input class="form-control" type="date"></td>
+                                        <td><input class="form-control" type="date"></td>
+                                        <td><input class="form-control" type="text"></td>
+                <td><div><i id="phd-add-button" class="fa-solid text-white fa-circle-plus"></i><i class="fa-solid fa-trash-can text-white float-end" id="phd-delete-button"></i></div></td>
+                                    </tr>
+       `
+            $('#phd-data').append(table);
+
+        })
+        $(document).on('click', '#phd-delete-button', function () {
+            $(this).closest('tr').remove()
+        })
+    </script>
+</body>
+
+</html>

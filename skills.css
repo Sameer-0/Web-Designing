@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(247, 230, 230);
+}
+
+#skill-div {
+    margin-top: 50px !important;
+    position: relative;
+    margin: auto;
+    height: 80vh;
+    width: 70%;
+    background-color: #fcfcfc;
+}
+
+#left-skill-section ul {
+    list-style: none;
+}
+
+#left-skill-section li {
+    border: 1px solid black;
+}
