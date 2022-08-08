@@ -5,22 +5,118 @@
 }
 
 body {
-    background-color: rgb(247, 230, 230);
+    background-color: #F6F8FA !important;
 }
 
-#skill-div {
-    margin-top: 50px !important;
-    position: relative;
-    margin: auto;
-    height: 80vh;
-    width: 70%;
-    background-color: #fcfcfc;
+#skill-box {
+    background-color: #fff;
+    max-height: 70vh;
+    margin-top: 60px;
+    padding: 30px;
 }
 
-#left-skill-section ul {
-    list-style: none;
+
+.fa-magnifying-glass {
+    margin-left: 30px;
+    color: #3983fa;
+    cursor: pointer;
+
 }
 
-#left-skill-section li {
-    border: 1px solid black;
+#skill-display {
+    
+}
+
+#right-skill-box {
+    min-width: 50%;
+    height: 30vh;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+
+#left-skill-box {
+    min-width: 50%;
+    height: 60vh;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+
+#skill-search {
+    margin: 20px;
+    background-position: 10px 12px;
+    width: 40% !important;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+}
+
+#skill-search:focus {
+    border: 3px solid #3983fa !important;
+}
+
+#skill-search:hover {
+    border: 3px solid #3983fa !important;
+}
+
+#myUL {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#myUL li {
+    border: 1px solid #ddd;
+}
+
+#myUL li a {
+    margin-top: -1px;
+    /* Prevent double borders */
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    display: block
+}
+
+#myUL li {
+    margin: 20px;
+}
+
+.skill-display-row {
+
+    height: 50px;
+    border: 1px solid #ddd;
+    padding: 10px;
+
+}
+
+.skill-add-button i {
+
+    cursor: pointer;
+    color: #3983fa;
+    padding: 10px 20px 0 15px;
+    border-right: 2px solid black;
+    height: 100%;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #3983fa;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to right, #3983fa);
 }
