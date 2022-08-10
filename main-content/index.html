@@ -343,49 +343,47 @@
 
           <!------------------------------------------- Bank Details Section  ----------------------------------------->
 
-          <div class="bank-details-div-wrapper d-flex position-relative" style="cursor: pointer;">
-            <div id="bank-details-div">
-              <div class="px-3 px-sm-4 px-lg-4">
-                <div class="d-flex justify-content-center align-items-center">
-                  <h3 class="p-md-3 pb-sm-3">Bank Details</h3>
-                </div>
-                <div class="row">
-                  <div id="left-side" class="col-12 col-md-6 col-lg-6 col-sm-12">
-                    <div class="row pt-lg-3">
-                      <div class="col-6 col-md-6 col-lg-6 col-sm-6 ps-lg-4 ps-md-0 ps-0 ps-sm-0">
-                        <h6 class="pb-4">Name of Bank</h6>
-                        <h6 class="pb-4">Branch</h6>
-                        <h6 class="pb-4">IFSC Code</h6>
-                      </div>
-                      <div class="col-6 ps-md-0 ps-0 col-md-6 col-lg-6 col-sm-6">
-                        <p id="bank-name-value" >ICICI Bank</p>
-                        <p id="branch-name-value" class="pt-2">Panvel</p>
-                        <p id="ifsc-code-value" class="pt-2">ICIC0000007</p>
-                      </div>
+          <div id="bank-details-div">
+            <div class="px-3 px-sm-4 px-lg-4">
+              <div class="d-flex justify-content-center align-items-center">
+                <h3 class="p-md-3 pb-sm-3">Bank Details</h3>
+              </div>
+              <div class="row">
+                <div id="left-side" class="col-12 col-md-6 col-lg-6 col-sm-12">
+                  <div class="row pt-lg-3">
+                    <div class="col-6 col-md-6 col-lg-6 col-sm-6 ps-lg-4 ps-md-0 ps-0 ps-sm-0">
+                      <h6 class="pb-4">Name of Bank</h6>
+                      <h6 class="pb-4">Branch</h6>
+                      <h6 class="pb-4">IFSC Code</h6>
+                    </div>
+                    <div class="col-6 ps-md-0 ps-0 col-md-6 col-lg-6 col-sm-6">
+                      <p>ICICI Bank</p>
+                      <p class="pt-2">Panvel</p>
+                      <p class="pt-2">ICIC0000007</p>
                     </div>
                   </div>
+                </div>
 
-                  <div id="right-side" class="col-12 col-md-6 col-lg-6 col-sm-12">
-                    <div class="row pt-lg-3">
-                      <div class="col-6 ps-lg-4 col-md-6 ps-md-0 ps-0 ps-sm-0 col-lg-6 col-sm-6">
-                        <h6 class="pb-4">MICR Code</h6>
-                        <h6 class="pb-4">Account Number</h6>
-                        <h6 class="pb-4">Account Type</h6>
-                        <h6 class="pb-4">Cancalled Cheque Photo</h6>
-                      </div>
-                      <div class="col-6 ps-md-0 ps-0 col-md-6 col-lg-6 col-sm-6">
-                        <p id="micr-code-value" >600002025</p>
-                        <p id="account-number-value" class="pt-2">778866445523</p>
-                        <p id="account-type-value" class="pt-2">Current Account</p>
-                        <p id="cancelled-check-photo" class="pt-3 h5">
-                          <i class="fa-solid fa-ban"></i>
-                        </p>
-                      </div>
+                <div id="right-side" class="col-12 col-md-6 col-lg-6 col-sm-12">
+                  <div class="row pt-lg-3">
+                    <div class="col-6 ps-lg-4 col-md-6 ps-md-0 ps-0 ps-sm-0 col-lg-6 col-sm-6">
+                      <h6 class="pb-4">MICR Code</h6>
+                      <h6 class="pb-4">Account Number</h6>
+                      <h6 class="pb-4">Account Type</h6>
+                      <h6 class="pb-4">Cancalled Cheque Photo</h6>
+                    </div>
+                    <div class="col-6 ps-md-0 ps-0 col-md-6 col-lg-6 col-sm-6">
+                      <p>600002025</p>
+                      <p class="pt-2">778866445523</p>
+                      <p class="pt-2">Current Account</p>
+                      <p class="pt-3 h5"><i class="fa-solid fa-ban"></i></p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
             <div class="d-none bank-details-edit-box d-flex justify-content-center align-items-center">
               <i class="fa-solid fa-pen fa-2x text-white "></i>
             </div>
@@ -1017,60 +1015,14 @@
 
     $(document).ready(function () {
 
-      $('.personal-information-div-wrapper').on('mouseover', function () {
-        $('.personal-details-edit-box').removeClass('d-none')
+
+      $('.personal-information-div').on('mouseover', function () {
+        $('.personal_details_edit_icon').removeClass('d-none')
       })
 
       $('.personal-information-div-wrapper').on('mouseleave', function () {
-        $('.personal-details-edit-box').addClass('d-none')
-      })
-
-      $('.qualification-div-wrapper').on('mouseover', function () {
-        $('.qualification-edit-box').removeClass('d-none')
-      })
-
-      $('.qualification-div-wrapper').on('mouseleave', function () {
-        $('.qualification-edit-box').addClass('d-none')
-      })
-
-      $('.work-experience-div-wrapper').on('mouseover', function () {
-        $('.work-experience-edit-box').removeClass('d-none')
-      })
-
-      $('.work-experience-div-wrapper').on('mouseleave', function () {
-        $('.work-experience-edit-box').addClass('d-none')
-      })
-
-      $('.skills-div-wrapper').on('mouseover', function () {
-        $('.skills-edit-box').removeClass('d-none')
-      })
-
-      $('.skills-div-wrapper').on('mouseleave', function () {
-        $('.skills-edit-box').addClass('d-none')
-      })
-
-      $('.achievement-div-wrapper').on('mouseover', function () {
-        $('.achievement-edit-box').removeClass('d-none')
-      })
-
-      $('.achievement-div-wrapper').on('mouseleave', function () {
-        $('.achievement-edit-box').addClass('d-none')
-      })
-
-      $('.publication-div-wrapper').on('mouseover', function () {
-        $('.publication-edit-box').removeClass('d-none')
-      })
-
-      $('.publication-div-wrapper').on('mouseleave', function () {
-        $('.publication-edit-box').addClass('d-none')
-      })
-
-      $('.research-div-wrapper').on('mouseover', function () {
-        $('.research-edit-box').removeClass('d-none')
-      })
-
-      $('.research-div-wrapper').on('mouseleave', function () {
-        $('.research-edit-box').addClass('d-none')
+        $('.personal_details_edit_icon').addClass('d-none')
+        $('.personal-information-div').removeClass('personal-information-div-hover')
       })
 
       $('.bank-details-div-wrapper').on('mouseover', function () {
@@ -1410,57 +1362,12 @@
         $(this).closest('tr').remove()
       })
 
-      document.querySelector('.bank-details-edit-box').addEventListener('click', function () {
-        let editBankDetailsForm = new FormData()
-        
-        editBankDetailsForm.append('editBankName', document.getElementById('bank-name-value').innerText)
-        editBankDetailsForm.append('editBranchName', document.getElementById('branch-name-value').innerText)
-        editBankDetailsForm.append('editIfscCode', document.getElementById('ifsc-code-value').innerText)
-        editBankDetailsForm.append('editMicrCode', document.getElementById('micr-code-value').innerText)
-        editBankDetailsForm.append('editAccoutNumber', document.getElementById('account-number-value').innerText)
-        editBankDetailsForm.append('editAccountType', document.getElementById('account-type-value').innerText)
-        
-        document.getElementById('bank-name').value = editBankDetailsForm.get('editBankName')
-        document.getElementById('bank-branch').value = editBankDetailsForm.get('editBranchName')
-        document.getElementById('bank-ifsc-code').value = editBankDetailsForm.get('editIfscCode')
-        document.getElementById('bank-micr-code').value = editBankDetailsForm.get('editMicrCode')
-        document.getElementById('bank-account-number').value = editBankDetailsForm.get('editAccoutNumber')
-        document.getElementById('bank-account-type').value = editBankDetailsForm.get('editAccountType')
-        
-        
+      document.querySelector('#bank-details-div').addEventListener('click', function () {
         document.getElementById('body').classList.add('bodyremove');
         document.querySelector('.bank-details-modal').classList.replace('bank-details-modal', 'showdiv');
       });
 
       document.querySelector('#bank-details-cancel-button').addEventListener('click', function () {
-        document.getElementById('body').classList.remove('bodyremove');
-        document.querySelector('.showdiv').classList.replace('showdiv', 'bank-details-modal');
-      });
-
-      document.querySelector('#bank-details-submit-button').addEventListener('click', function () {
-        let submitBankDetailsForm = new FormData()
-
-        submitBankDetailsForm.append('bankName', document.getElementById('bank-name').value)
-        submitBankDetailsForm.append('branchName', document.getElementById('bank-branch').value)
-        submitBankDetailsForm.append('ifscCode', document.getElementById('bank-ifsc-code').value)
-        submitBankDetailsForm.append('micrCode', document.getElementById('bank-micr-code').value)
-        submitBankDetailsForm.append('accoutNumber', document.getElementById('bank-account-number').value)
-        submitBankDetailsForm.append('accountType', document.getElementById('bank-account-type').value)
-        submitBankDetailsForm.append('cancelledCheckPhoto', document.getElementById('cancelled_cheque_Photo').value)
-
-        document.getElementById('bank-name-value').innerText = submitBankDetailsForm.get('bankName')
-        document.getElementById('branch-name-value').innerText = submitBankDetailsForm.get('branchName')
-        document.getElementById('ifsc-code-value').innerText = submitBankDetailsForm.get('ifscCode')
-        document.getElementById('micr-code-value').innerText = submitBankDetailsForm.get('micrCode')
-        document.getElementById('account-number-value').innerText = submitBankDetailsForm.get('accoutNumber')
-        document.getElementById('account-type-value').innerText = submitBankDetailsForm.get('accountType')
-
-        if(submitBankDetailsForm.get('cancelledCheckPhoto').length != 0) {
-          document.getElementById('cancelled-check-photo').firstElementChild.classList.remove('fa-ban')
-          document.getElementById('cancelled-check-photo').firstElementChild.classList.add('fa-circle-check')
-          document.getElementById('cancelled-check-photo').firstElementChild.classList.add('text-success')
-        }
-       
         document.getElementById('body').classList.remove('bodyremove');
         document.querySelector('.showdiv').classList.replace('showdiv', 'bank-details-modal');
       });
