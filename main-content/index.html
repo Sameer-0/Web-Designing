@@ -322,9 +322,9 @@
                       <h6 class="pb-4">IFSC Code</h6>
                     </div>
                     <div class="col-6 ps-md-0 ps-0 col-md-6 col-lg-6 col-sm-6">
-                      <p>ICICI Bank</p>
-                      <p class="pt-2">Panvel</p>
-                      <p class="pt-2">ICIC0000007</p>
+                      <p id="bank-name-value">ICICI Bank</p>
+                      <p id="branch-name-value" class="pt-2">Panvel</p>
+                      <p id="ifsc-code-value" class="pt-2">ICIC0000007</p>
                     </div>
                   </div>
                 </div>
@@ -338,10 +338,10 @@
                       <h6 class="pb-4">Cancalled Cheque Photo</h6>
                     </div>
                     <div class="col-6 ps-md-0 ps-0 col-md-6 col-lg-6 col-sm-6">
-                      <p>600002025</p>
-                      <p class="pt-2">778866445523</p>
-                      <p class="pt-2">Current Account</p>
-                      <p class="pt-3 h5"><i class="fa-solid fa-ban"></i></p>
+                      <p id="micr-code-value">600002025</p>
+                      <p id="account-number-value" class="pt-2">778866445523</p>
+                      <p id="account-type-value" class="pt-2">Current Account</p>
+                      <p id="cancelled-cheque-photo" class="pt-3 h5"><i class="fa-solid fa-ban"></i></p>
                     </div>
                   </div>
                 </div>
@@ -1242,13 +1242,40 @@
       $(document).on('click', '.research-delete-button', function () {
         $(this).closest('tr').remove()
       })
-
+      
       document.querySelector('#bank-details-div').addEventListener('click', function () {
+       
+        let getNameOfBank =  document.getElementById('bank-name-value').innerText
+        document.getElementById('bank-name').value = getNameOfBank
+
+        let getNameOfBranch =  document.getElementById('branch-name-value').innerText
+        document.getElementById('bank-branch').value = getNameOfBranch
+
+        let getIfscCode =  document.getElementById('ifsc-code-value').innerText
+        document.getElementById('bank-ifsc-code').value = getIfscCode
+
+        let micrCode =  document.getElementById('micr-code-value').innerText
+        document.getElementById('bank-micr-code').value = micrCode
+
+        let accountNumber =  document.getElementById('account-number-value').innerText
+        document.getElementById('bank-account-number').value = accountNumber
+
+        let accountType =  document.getElementById('account-type-value').innerText
+        document.getElementById('bank-account-type').value = accountType
+
         document.getElementById('body').classList.add('bodyremove');
         document.querySelector('.bank-details-modal').classList.replace('bank-details-modal', 'showdiv');
       });
 
       document.querySelector('#bank-details-cancel-button').addEventListener('click', function () {
+        document.getElementById('body').classList.remove('bodyremove');
+        document.querySelector('.showdiv').classList.replace('showdiv', 'bank-details-modal');
+      });
+
+      document.querySelector('#bank-details-submit-button').addEventListener('click', function () {
+        let setNameOfBank =  document.getElementById('bank-name').value
+        document.getElementById('bank-name-value').innerText = setNameOfBank
+
         document.getElementById('body').classList.remove('bodyremove');
         document.querySelector('.showdiv').classList.replace('showdiv', 'bank-details-modal');
       });
