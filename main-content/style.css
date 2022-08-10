@@ -468,6 +468,14 @@ button {
   padding-bottom: 30px;
 }
 
+#bank-form-area label {
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+#bank-form-area img {
+  text-align: center;
+}
 #check-preview {
   padding: 20px 0 10px 40px;
 }

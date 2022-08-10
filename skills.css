@@ -23,9 +23,6 @@ body {
 
 }
 
-#skill-display {
-    
-}
 
 #right-skill-box {
     min-width: 50%;
@@ -34,6 +31,9 @@ body {
     scroll-behavior: smooth;
 }
 
+#right-skill-box li {
+    width: 50%;
+}
 #left-skill-box {
     min-width: 50%;
     height: 60vh;

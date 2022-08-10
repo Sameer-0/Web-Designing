@@ -1097,7 +1097,7 @@
       })
 
 
-      document.querySelector('.edit-personal-details').addEventListener('click', function () {
+      document.querySelector('.personal-details-edit-box').addEventListener('click', function () {
         document.getElementById('body').classList.add('bodyremove');
         document.querySelector('.personal-details-modal').classList.replace('personal-details-modal',
           'showdiv');
@@ -1147,7 +1147,7 @@
         $(this).closest('tr').remove()
       })
 
-      document.querySelector(".work-experience-div-wrapper").addEventListener('click', function () {
+      document.querySelector(".work-experience-edit-box").addEventListener('click', function () {
         document.getElementById('body').classList.add('bodyremove');
         document.querySelector('.work-experience-modal').classList.replace('work-experience-modal',
           'showdiv');
@@ -1159,7 +1159,7 @@
 
       });
 
-      document.querySelector(".qualification-div-wrapper").addEventListener('click', function () {
+      document.querySelector(".qualification-edit-box").addEventListener('click', function () {
         document.getElementById('body').classList.add('bodyremove');
         document.querySelector('.qualification-modal').classList.replace('qualification-modal', 'showdiv');
       });
@@ -1251,7 +1251,7 @@
         $(this).closest('tr').remove()
       })
 
-      document.querySelector(".achievement-div-wrapper").addEventListener('click', function () {
+      document.querySelector(".achievement-edit-box").addEventListener('click', function () {
         document.getElementById('body').classList.add('bodyremove');
         document.querySelector('.achievement-modal').classList.replace('achievement-modal', 'showdiv');
       });
@@ -1285,7 +1285,7 @@
 
 
 
-      document.querySelector(".publication-div-wrapper").addEventListener('click', function () {
+      document.querySelector(".publication-edit-box").addEventListener('click', function () {
         document.getElementById('body').classList.add('bodyremove');
         document.querySelector('.publication-modal').classList.replace('publication-modal', 'showdiv');
       });
@@ -1320,7 +1320,7 @@
         $(this).closest('tr').remove()
       })
 
-      document.querySelector(".research-div-wrapper").addEventListener('click', function () {
+      document.querySelector(".research-edit-box").addEventListener('click', function () {
         document.getElementById('body').classList.add('bodyremove');
         document.querySelector('.research-modal').classList.replace('research-modal', 'showdiv');
       });
@@ -1329,6 +1329,7 @@
         document.getElementById('body').classList.remove('bodyremove');
         document.querySelector('.showdiv').classList.replace('showdiv', 'research-modal');
       });
+
 
       document.getElementById('research-add-button').addEventListener('click', function () {
         let table = ` <tr data-toggle="collapse" class="collapsed">
@@ -1352,7 +1353,7 @@
         $(this).closest('tr').remove()
       })
 
-      document.querySelector('.bank-details-div-wrapper').addEventListener('click', function () {
+      document.querySelector('.bank-details-edit-box').addEventListener('click', function () {
         document.getElementById('body').classList.add('bodyremove');
         document.querySelector('.bank-details-modal').classList.replace('bank-details-modal', 'showdiv');
       });

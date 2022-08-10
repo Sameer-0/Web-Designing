@@ -32,7 +32,7 @@
                     <li>
                         <div class="row">
                             <div class="col-md-2 skill-add-button"><i class="fa-solid fa-circle-plus fa-2x"></i></div>
-                            <div class="col-md-10"><a href="#">Skill1</a></div>
+                            <div class="col-md-10"><a href="#">Skill2</a></div>
                         </div>
                     </li>
                     <li>
@@ -134,8 +134,8 @@
         </div>
     </div>
 
-
     <script>
+
         let skillSearchButton = document.getElementById('skill-search')
         skillSearchButton.addEventListener('keyup', function myFunction() {
             // Declare variables
@@ -171,10 +171,10 @@
                             <div class="col-md-2 skill-add-button"><i class="fa-solid fa-circle-plus fa-2x"></i></div>
                             <div class="col-md-10"><a href="#">${text}</a></div>
                         </div>
-                    </li>
-                
-                `
+                    </li> `
+
                 skillDisplay.insertAdjacentHTML('afterend', div)
+
                 addSkillButton[i].parentElement.parentElement.setAttribute('style', 'display:none')
             })
         }
