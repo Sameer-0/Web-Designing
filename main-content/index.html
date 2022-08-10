@@ -104,9 +104,9 @@
                 </div>
 
               </div>
-              <div class="edit_icon d-none">
-                <i class="fas fa-pen fa-4x"></i>
-              </div>
+              <!-- <div class="personal_details_edit_icon d-none">
+                <i class="fas fa-pen fa-3x"></i>
+              </div> -->
             </div>
           </div>
           <hr />
@@ -221,6 +221,37 @@
             </div>
           </div>
           <hr>
+
+          <!-------------------------------------------------- Achievement Section----------------------------------------------->
+
+          <div id="achievement-div">
+            <div class="d-flex justify-content-center align-items-center">
+              <h3>Achievement</h3>
+            </div>
+            <div class="text-block right">
+              <div class="card-body">
+                <h2>2000</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
+                  admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea
+                  quis iuvaret expetendis his, te elit voluptua dignissim per,
+                  habeo iusto primis ea eam.
+                </p>
+              </div>
+            </div>
+            <div class="text-block right">
+              <div class="card-body">
+                <h2>2004</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+                  aliquam nisi blanditiis possimus, minima commodi vitae qui,
+                  dolore perferendis id corporis voluptatum. Id cumque odit
+                  quasi perspiciatis hic cum harum.
+                </p>
+              </div>
+            </div>
+          </div>
+          <hr />
 
           <!------------------------------------------- Publication Section  ----------------------------------------->
 
@@ -527,7 +558,7 @@
                   </tbody>
                   <tbody id="professionaL-certification-data">
                     <tr data-toggle="collapse" class="collapsed">
-                      <td class="text-white">Certification</td>
+                      <td class="text-white">Professional Certification</td>
                       <td><input class="form-control" type="text"></td>
                       <td><input class="form-control" type="text"></td>
                       <td><input class="form-control" type="text"></td>
@@ -558,7 +589,7 @@
       <div class="main-content">
         <div class="container d-flex justify-content-between">
           <h3 class="text-white h3 py-4">Teaching Experience</h3>
-          <i id="work-experience-add-button" class="fa-solid text-white fa-circle-plus fa-2x px-4 py-4"></i>
+          <i id="teaching-experience-add-button" class="fa-solid text-white fa-circle-plus fa-2x px-4 py-4"></i>
         </div>
         <hr>
         <div class="d-flex align-items-centre justify-content-centre">
@@ -571,14 +602,57 @@
                       <th>University</th>
                       <th>Subject taught</th>
                       <th>Program</th>
+                      <th>Designation</th>
                       <th>From</th>
                       <th>To</th>
                       <th>Duration of teaching</th>
                       <th>Action</th>
                     </tr>
                   </thead>
-                  <tbody id="table-data">
+                  <tbody id="teaching-experience-data">
                     <tr data-toggle="collapse" class="collapsed">
+                      <td><input class="form-control" type="text"></td>
+                      <td><input class="form-control" type="text"></td>
+                      <td><input class="form-control" type="text"></td>
+                      <td><input class="form-control" type="text"></td>
+                      <td><input class="form-control" type="date"></td>
+                      <td><input class="form-control" type="date"></td>
+                      <td><input class="form-control" type="text"></td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-content middle-screen container">
+        <div class="container d-flex justify-content-between">
+          <h3 class="text-white h3 py-4">Industrial Experience</h3>
+          <i id="industrial-experience-add-button" class="fa-solid text-white fa-circle-plus fa-2x px-4 py-4"></i>
+        </div>
+        <hr>
+        <div class="d-flex align-items-centre justify-content-centre">
+          <div class="container">
+            <div class="row table">
+              <div class="table-responsive">
+                <table>
+                  <thead class="text-white">
+                    <tr class="table-head">
+                      <th>University</th>
+                      <th>Subject taught</th>
+                      <th>Program</th>
+                      <th>Designation</th>
+                      <th>From</th>
+                      <th>To</th>
+                      <th>Duration of teaching</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody id="industrial-experience-data">
+                    <tr data-toggle="collapse" class="collapsed">
+                      <td><input class="form-control" type="text"></td>
                       <td><input class="form-control" type="text"></td>
                       <td><input class="form-control" type="text"></td>
                       <td><input class="form-control" type="text"></td>
@@ -607,6 +681,62 @@
   <div class="skills-modal">
 
 
+  </div>
+
+  <!-- ************************************************************************Achievement Div******************************************************************************************** -->
+
+  <div class="achievement-modal">
+    <div class="full-screen container">
+      <div class="main-content">
+        <div class="container d-flex justify-content-between">
+          <h3 class="text-white h3 py-4"> Achievement</h3>
+          <i id="achievement-add-button" class="fa-solid text-white fa-circle-plus fa-2x px-4 py-4"></i>
+        </div>
+        <hr>
+        <div class="d-flex align-items-centre justify-content-centre">
+          <div class="container">
+            <div class="row table">
+              <div class="table-responsive">
+                <table>
+                  <thead class="text-white">
+                    <tr class="table-head">
+                      <th>Type</th>
+                      <th>Achievement name</th>
+                      <th>Organisation</th>
+                      <th>Organisation type</th>
+                      <th>Place</th>
+                      <th>Achievement date</th>
+                      <th>Certificate</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody id="achievement-data">
+                    <tr data-toggle="collapse" class="collapsed">
+                      <td><select class="form-control">
+                          <option>Select</option>
+                          <option>Award</option>
+                          <option>Publication</option>
+                        </select></td>
+                      <td><input class="form-control" type="text"></td>
+                      <td><input class="form-control" type="text"></td>
+                      <td><input class="form-control" type="text"></td>
+                      <td><input class="form-control" type="text"></td>
+                      <td><input class="form-control" type="date"></td>
+                      <td><input class="form-control" type="file"></td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center">
+        <button id="achievement-cancel-button" class="btn btn-danger m-4">Cancel</button>
+        <button id="achievement-submit-button" class="btn btn-success m-4">Submit</button>
+      </div>
+    </div>
   </div>
 
   <!-- ************************************************************************Publication Div******************************************************************************************** -->
@@ -663,417 +793,468 @@
             </div>
           </div>
         </div>
-        <div class="d-flex justify-content-center">
-          <button id="publication-cancel-button" class="btn btn-danger m-4">Cancel</button>
-          <button id="publication-submit-button" class="btn btn-success m-4">Submit</button>
-        </div>
+      </div>
+      <div class="d-flex justify-content-center">
+        <button id="publication-cancel-button" class="btn btn-danger m-4">Cancel</button>
+        <button id="publication-submit-button" class="btn btn-success m-4">Submit</button>
       </div>
     </div>
   </div>
 
-    <!-- ************************************************************************Research Div******************************************************************************************** -->
+  <!-- ************************************************************************Research Div******************************************************************************************** -->
 
-    <div class="research-modal">
+  <div class="research-modal">
 
 
-      <div class="full-screen container ">
-        <div class="main-content">
-          <div class="container d-flex justify-content-between">
-            <h3 class="text-white h3 py-4">Research papers published</h3>
-            <i id="research-add-button" class="fa-solid text-white fa-circle-plus fa-2x"></i>
-          </div>
-          <hr>
-          <div class="d-flex align-items-centre justify-content-centre">
-            <div class="container resume-box">
-              <div class="row table">
-                <div class="table-responsive">
-                  <div id="no-more-tables">
-                    <table>
-                      <thead class="text-white">
-                        <tr class="table-head">
-                          <th>Title</th>
-                          <th>Role-?</th>
-                          <th>Journal-name</th>
-                          <th>Volume-year</th>
-                          <th>Number</th>
-                          <th>Category</th>
-                          <th>Action</th>
-                        </tr>
-                      </thead>
-                      <tbody id="research-data">
-                        <tr data-toggle="collapse" class="collapsed">
-                          <td><input data-title="Title" class="form-control" type="text"></td>
-                          <td><select data-title="Role-?" class="form-control" id="role">
-                              <option>-Select-</option>
-                              <option value="Sole">Sole</option>
-                              <option value="Author">Author</option>
-                            </select></td>
-                          <td><input data-title="Journal-name" class="form-control" type="text"></td>
-                          <td><input data-title="Volume-year" class="form-control" type="text"></td>
-                          <td><input data-title="Number" class="form-control" type="text"></td>
-                          <td><input data-title="Category" class="form-control" type="text">
-                          </td>
-                          <td></td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
+    <div class="full-screen container ">
+      <div class="main-content">
+        <div class="container d-flex justify-content-between">
+          <h3 class="text-white h3 py-4">Research papers published</h3>
+          <i id="research-add-button" class="fa-solid text-white fa-circle-plus fa-2x"></i>
+        </div>
+        <hr>
+        <div class="d-flex align-items-centre justify-content-centre">
+          <div class="container resume-box">
+            <div class="row table">
+              <div class="table-responsive">
+                <div id="no-more-tables">
+                  <table>
+                    <thead class="text-white">
+                      <tr class="table-head">
+                        <th>Title</th>
+                        <th>Role-?</th>
+                        <th>Journal-name</th>
+                        <th>Volume-year</th>
+                        <th>Number</th>
+                        <th>Category</th>
+                        <th>Action</th>
+                      </tr>
+                    </thead>
+                    <tbody id="research-data">
+                      <tr data-toggle="collapse" class="collapsed">
+                        <td><input data-title="Title" class="form-control" type="text"></td>
+                        <td><select data-title="Role-?" class="form-control" id="role">
+                            <option>-Select-</option>
+                            <option value="Sole">Sole</option>
+                            <option value="Author">Author</option>
+                          </select></td>
+                        <td><input data-title="Journal-name" class="form-control" type="text"></td>
+                        <td><input data-title="Volume-year" class="form-control" type="text"></td>
+                        <td><input data-title="Number" class="form-control" type="text"></td>
+                        <td><input data-title="Category" class="form-control" type="text">
+                        </td>
+                        <td></td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
+      <div class="d-flex justify-content-center ">
+        <button id="research-cancel-button" class="btn btn-danger m-4">Cancel</button>
+        <button id="research-submit-button" class="btn btn-success m-4">Submit</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ************************************************************************Bank Details Div******************************************************************************************** -->
+  <div class="bank-details-modal">
+
+    <div id="bank-form-area">
+      <div class="container">
+        <div class="d-flex justify-content-center align-items-center my-4">
+          <h2>Bank Details</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <label for="bank-name" class="py-md-2">Name of the Bank</label>
+            <input type="text" class="form-control" id="bank-name">
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <label for="bank-branch" class="py-md-2">Branch</label>
+            <input type="text" class="form-control" id="bank-branch">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <label for="bank-ifsc-code" class="py-md-2">IFSC Code</label>
+            <input type="text" class="form-control" id="bank-ifsc-code">
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <label for="bank-micr-code" class="py-md-2">MICR code</label>
+            <input type="text" class="form-control" id="bank-micr-code">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <label for="bank-account-number" class="py-md-2">Account Number</label>
+            <input type="text" class="form-control" id="bank-account-number">
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <label for="bank-account-type" class="py-md-2">Account Type</label>
+            <input type="text" class="form-control" id="bank-account-type">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <div>
+              <label for="cancalled_cheque_Photo" class="py-md-2">Cancalled Cheque Photo</label>
+              <input type="file" name="cancalled_cheque_Photo" id="cancalled_cheque_Photo" class="form-control"
+                onchange="document.getElementById('check-preview').src = window.URL.createObjectURL(this.files[0])">
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12 py-md-2">
+            <div>
+              <img id="check-preview" alt="Cancalled Cheque photo" width="150" />
+            </div>
+          </div>
+        </div>
+
         <div class="d-flex justify-content-center">
-          <button id="research-cancel-button" class="btn btn-danger m-4">Cancel</button>
-          <button id="research-submit-button" class="btn btn-success m-4">Submit</button>
+          <button id="bank-details-cancel-button" class="btn btn-danger m-4">Cancel</button>
+          <button id="bank-details-submit-button" class="btn btn-success m-4">Submit</button>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- ************************************************************************Bank Details Div******************************************************************************************** -->
-    <div class="bank-details-modal">
+  <!-- INCLUDE JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"
+    integrity="sha512-YcsIPGdhPK4P/uRW6/sruonlYj+Q7UHWeKfTAkBW+g83NKM+jMJFJ4iAPfSnVp7BKD4dKMHmVSvICUbE/V1sSw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+    integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous">
+  </script>
+  <script>
+    let downloadButton = document.getElementById("download-btn");
 
-      <div id="bank-form-area">
-        <div class="container">
-          <div class="d-flex justify-content-center align-items-center my-4">
-            <h2>Bank Details</h2>
-          </div>
+    downloadButton.addEventListener("click", function () {
+      let elementHTML = document.getElementById("download-page");
+      let confirmDownload = confirm("Do you want to download this Resume??");
 
-          <div class="row">
-            <div class="col-md-6 col-sm-12">
-              <label for="bank-name" class="py-md-2">Name of the Bank</label>
-              <input type="text" class="form-control" id="bank-name">
-            </div>
-            <div class="col-md-6 col-sm-12">
-              <label for="bank-branch" class="py-md-2">Branch</label>
-              <input type="text" class="form-control" id="bank-branch">
-            </div>
-          </div>
+      if (confirmDownload) {
+        let opt = {
+          margin: 1,
+          filename: "Resume.pdf",
+          html2canvas: {
+            scale: 1
+          },
+          jsPDF: {
+            unit: "in",
+            format: "a1",
+            orientation: "portrait"
+          },
+        };
+        html2pdf().set({
+          pagebreak: {
+            mode: ["avoid-all", "css", "legacy"]
+          },
+        });
 
-          <div class="row">
-            <div class="col-md-6 col-sm-12">
-              <label for="bank-ifsc-code" class="py-md-2">IFSC Code</label>
-              <input type="text" class="form-control" id="bank-ifsc-code">
-            </div>
-            <div class="col-md-6 col-sm-12">
-              <label for="bank-micr-code" class="py-md-2">MICR code</label>
-              <input type="text" class="form-control" id="bank-micr-code">
-            </div>
-          </div>
+        // New Promise-based usage:
+        html2pdf().set(opt).from(elementHTML).save();
+      }
+    });
 
-          <div class="row">
-            <div class="col-md-6 col-sm-12">
-              <label for="bank-account-number" class="py-md-2">Account Number</label>
-              <input type="text" class="form-control" id="bank-account-number">
-            </div>
-            <div class="col-md-6 col-sm-12">
-              <label for="bank-account-type" class="py-md-2">Account Type</label>
-              <input type="text" class="form-control" id="bank-account-type">
-            </div>
-          </div>
+    $(document).ready(function () {
 
-          <div class="row">
-            <div class="col-md-6 col-sm-12">
-              <div>
-                <label for="pp_size_photo">Passport Size Photo</label>
-                <input type="file" name="pp_size_photo" id="pp_size_photo" class="form-control"
-                  onchange="document.getElementById('check-preview').src = window.URL.createObjectURL(this.files[0])">
-              </div>
-            </div>
-            <div class="col-md-6 col-sm-12">
-              <div>
-                <img id="check-preview" alt="your image" width="150" />
-              </div>
-            </div>
-          </div>
 
-          <div class="d-flex justify-content-center">
-            <button id="bank-details-cancel-button" class="btn btn-danger m-4">Cancel</button>
-            <button id="bank-details-submit-button" class="btn btn-success m-4">Submit</button>
-          </div>
-        </div>
-      </div>
-    </div>
+      $('.personal-information-div').on('mouseover', function () {
+        $('.personal_details_edit_icon').removeClass('d-none')
+      })
 
-    <!-- INCLUDE JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"
-      integrity="sha512-YcsIPGdhPK4P/uRW6/sruonlYj+Q7UHWeKfTAkBW+g83NKM+jMJFJ4iAPfSnVp7BKD4dKMHmVSvICUbE/V1sSw=="
-      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
-      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
-      integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous">
-    </script>
-    <script>
-      let downloadButton = document.getElementById("download-btn");
+      $('.personal-information-div-wrapper').on('mouseleave', function () {
+        $('.personal_details_edit_icon').addClass('d-none')
+        $('.personal-information-div').removeClass('personal-information-div-hover')
+      })
 
-      downloadButton.addEventListener("click", function () {
-        let elementHTML = document.getElementById("download-page");
-        let confirmDownload = confirm("Do you want to download this Resume??");
+      $('.personal_details_edit_icon').on('mouseover', function () {
+        $('.personal-information-div').addClass('personal-information-div-hover')
+      })
 
-        if (confirmDownload) {
-          let opt = {
-            margin: 1,
-            filename: "Resume.pdf",
-            html2canvas: {
-              scale: 1
-            },
-            jsPDF: {
-              unit: "in",
-              format: "a1",
-              orientation: "portrait"
-            },
-          };
-          html2pdf().set({
-            pagebreak: {
-              mode: ["avoid-all", "css", "legacy"]
-            },
-          });
+      $('.qualification-div').on('mouseover', function () {
+        $('.qualification_edit_icon').removeClass('d-none')
+      })
 
-          // New Promise-based usage:
-          html2pdf().set(opt).from(elementHTML).save();
-        }
+
+
+      document.querySelector('.edit-personal-details').addEventListener('click', function () {
+        document.getElementById('body').classList.add('bodyremove');
+        document.querySelector('.personal-details-modal').classList.replace('personal-details-modal',
+          'showdiv');
       });
-      $(document).ready(function () {
 
 
-        $('.personal-information-div').on('mouseover', function () {
-          $('.edit_icon').removeClass('d-none')
+      document.querySelector('#personal-details-cancel-button').addEventListener('click', function () {
+        document.getElementById('body').classList.remove('bodyremove');
+        document.querySelector('.showdiv').classList.replace('showdiv', 'personal-details-modal')
+      });
 
-        })
-        $('.personal-information-div-wrapper').on('mouseleave', function () {
-          $('.edit_icon').addClass('d-none')
-          $('.personal-information-div').removeClass('personal-information-div-hover')
-
-        })
-        $('.edit_icon').on('mouseover', function () {
-          $('.personal-information-div').addClass('personal-information-div-hover')
-        })
-
-
-
-        document.querySelector('.edit-personal-details').addEventListener('click', function () {
-          (document).getElementById('body').classList.add('bodyremove');
-          (document).querySelector('.personal-details-modal').classList.replace('personal-details-modal',
-            'showdiv');
-        });
-
-
-        document.querySelector('#personal-details-cancel-button').addEventListener('click', function () {
-          (document).getElementById('body').classList.remove('bodyremove');
-          (document).querySelector('.showdiv').classList.replace('showdiv', 'personal-details-modal')
-        });
-
-
-        $(document).on('click', '#work-experience-add-button', function () {
-          let table = ` <tr data-toggle="collapse" class="collapsed">
+      document.getElementById('teaching-experience-add-button').addEventListener('click',function(){
+        let table = ` <tr data-toggle="collapse" class="collapsed">
+        <td><input class="form-control" type="text"></td>
         <td><input class="form-control" type="text"></td>
         <td><input class="form-control" type="text"></td>
         <td><input class="form-control" type="text"></td>
         <td><input class="form-control" type="date"></td>
         <td><input class="form-control" type="date"></td>
         <td><input class="form-control" type="text"></td>
-        <td class="p-2 !important"><i class="fa-solid fa-trash-can text-white h4 work-experience-delete-button"></i></td>
+        <td class="p-2 !important"><i class="fa-solid fa-trash-can text-white h4 teaching-experience-delete-button"></i></td>
         </tr>
        `
-          $('#table-data').append(table);
-        })
-        $(document).on('click', '.work-experience-delete-button', function () {
-          $(this).closest('tr').remove()
-        })
 
-        document.querySelector("#work-experience-div").addEventListener('click', function () {
-          document.getElementById('body').classList.add('bodyremove');
-          document.querySelector('.work-experience-modal').classList.replace('work-experience-modal',
-            'showdiv');
-        });
+       document.getElementById('teaching-experience-data').insertAdjacentHTML("beforeend",table);
+      })
+      $(document).on('click', '.teaching-experience-delete-button', function () {
+        $(this).closest('tr').remove()
+      })
 
-        document.querySelector("#work-experience-cancel-button").addEventListener('click', function () {
-          document.getElementById('body').classList.remove('bodyremove');
-          document.querySelector('.showdiv').classList.replace('showdiv', 'work-experience-modal')
-
-        });
-
-        document.querySelector("#qualification-div").addEventListener('click', function () {
-          document.getElementById('body').classList.add('bodyremove');
-          document.querySelector('.qualification-modal').classList.replace('qualification-modal', 'showdiv');
-        });
-
-        document.querySelector("#qualification-cancel-button").addEventListener('click', function () {
-          document.getElementById('body').classList.remove('bodyremove');
-          document.querySelector('.showdiv').classList.replace('showdiv', 'qualification-modal');
-        });
-        $(document).on('click', '#bachelors-degree-add-button', function () {
-          console.log("graduation-clicked")
-          let table = ` <tr data-toggle="collapse" class="collapsed">
-                                        <td class="text-white">Bachelor's Degree</td>
-                                        <td><input class="form-control" type="text"></td>
-                                        <td><input class="form-control" type="text"></td>
-                                        <td><input class="form-control" type="text"></td>
-                                        <td><input class="form-control" type="text"></td>
-                                        <td><input class="form-control" type="text"></td>
-                <td>
-                  <i class="fa-solid fa-trash-can text-white bachelors-degree-delete-button"></i>
-                  </td>
-                                    </tr>
+      document.getElementById('industrial-experience-add-button').addEventListener('click',function(){
+        let table = ` <tr data-toggle="collapse" class="collapsed">
+        <td><input class="form-control" type="text"></td>
+        <td><input class="form-control" type="text"></td>
+        <td><input class="form-control" type="text"></td>
+        <td><input class="form-control" type="text"></td>
+        <td><input class="form-control" type="date"></td>
+        <td><input class="form-control" type="date"></td>
+        <td><input class="form-control" type="text"></td>
+        <td class="p-2 !important"><i class="fa-solid fa-trash-can text-white h4 industrial-experience-delete-button"></i></td>
+        </tr>
        `
-          $('#bachelors-degree-data').append(table);
 
-        })
-        $(document).on('click', '.bachelors-degree-delete-button', function () {
-          $(this).closest('tr').remove()
-        })
+       document.getElementById('industrial-experience-data').insertAdjacentHTML("beforeend",table);
+      })
+      $(document).on('click', '.industrial-experience-delete-button', function () {
+        $(this).closest('tr').remove()
+      })
 
-        $(document).on('click', '#masters-degree-add-button', function () {
-          console.log("post-graduation-clicked")
-          let table = ` <tr data-toggle="collapse" class="collapsed">
+      document.querySelector("#work-experience-div").addEventListener('click', function () {
+        document.getElementById('body').classList.add('bodyremove');
+        document.querySelector('.work-experience-modal').classList.replace('work-experience-modal',
+          'showdiv');
+      });
+
+      document.querySelector("#work-experience-cancel-button").addEventListener('click', function () {
+        document.getElementById('body').classList.remove('bodyremove');
+        document.querySelector('.showdiv').classList.replace('showdiv', 'work-experience-modal')
+
+      });
+
+      document.querySelector("#qualification-div").addEventListener('click', function () {
+        document.getElementById('body').classList.add('bodyremove');
+        document.querySelector('.qualification-modal').classList.replace('qualification-modal', 'showdiv');
+      });
+
+      document.querySelector("#qualification-cancel-button").addEventListener('click', function () {
+        document.getElementById('body').classList.remove('bodyremove');
+        document.querySelector('.showdiv').classList.replace('showdiv', 'qualification-modal');
+      });
+
+      document.getElementById('bachelors-degree-add-button').addEventListener('click',function(){
+        let table = ` <tr data-toggle="collapse" class="collapsed">
+          <td class="text-white">Bachelor's Degree</td>
+          <td><input class="form-control" type="text"></td>
+          <td><input class="form-control" type="text"></td>
+          <td><input class="form-control" type="text"></td>
+          <td><input class="form-control" type="text"></td>
+          <td><input class="form-control" type="text"></td>
+          <td>
+              <i class="fa-solid fa-trash-can text-white bachelors-degree-delete-button"></i>
+          </td>
+          </tr>`
+
+       document.getElementById('bachelors-degree-data').insertAdjacentHTML("beforeend",table);
+      })
+
+      $(document).on('click', '.bachelors-degree-delete-button', function () {
+        $(this).closest('tr').remove()
+      })
+
+      document.getElementById('masters-degree-add-button').addEventListener('click',function(){
+        let table = ` <tr data-toggle="collapse" class="collapsed">
           <td class="text-white">Master's Degree</td>
           <td><input class="form-control" type="text"></td>
-                                        <td><input class="form-control" type="text"></td>
-                                        <td><input class="form-control" type="text"></td>
-                                        <td><input class="form-control" type="text"></td>
-                                        <td><input class="form-control" type="text"></td>
-                <td>
-                  <i class="fa-solid fa-trash-can text-white masters-degree-delete-button"></i>
-                </td>
-                                    </tr>
-       `
-          $('#masters-degree-data').append(table);
-
-        })
-        $(document).on('click', '.masters-degree-delete-button', function () {
-          $(this).closest('tr').remove()
-        })
-
-        $(document).on('click', '#phd-add-button', function () {
-          console.log("phd-clicked")
-
-          let table = ` <tr data-toggle="collapse" class="collapsed">
-          <td class="text-white">PHD</td>
-                                        <td><input class="form-control" type="text"></td>
-                                        <td><input class="form-control" type="text"></td>
-                                        <td><input class="form-control" type="text"></td>
-                                        <td><input class="form-control" type="text"></td>
-                                        <td><input class="form-control" type="text"></td>
-                <td>
-                  <i class="fa-solid fa-trash-can text-white phd-delete-button"></i>
-               </td>
-                                    </tr>
-       `
-          $('#phd-data').append(table);
-
-        })
-        $(document).on('click', '.phd-delete-button', function () {
-          $(this).closest('tr').remove()
-        })
-
-        $(document).on('click', '#professionaL-certification-add-button', function () {
-          console.log("post-graduation-clicked")
-          let table = ` <tr data-toggle="collapse" class="collapsed">
-          <td class="text-white">Certification</td>
           <td><input class="form-control" type="text"></td>
-                                        <td><input class="form-control" type="text"></td>
-                                        <td><input class="form-control" type="text"></td>
-                                        <td><input class="form-control" type="text"></td>
-                                        <td><input class="form-control" type="text"></td>
-                <td>
-                  <i class="fa-solid fa-trash-can text-white professionaL-certification-delete-button"></i>
-                </td>
+          <td><input class="form-control" type="text"></td>
+          <td><input class="form-control" type="text"></td>
+          <td><input class="form-control" type="text"></td>
+          <td>
+             <i class="fa-solid fa-trash-can text-white masters-degree-delete-button"></i>
+          </td>
+          </tr>`
+
+       document.getElementById('masters-degree-data').insertAdjacentHTML("beforeend",table);
+      })
+
+      $(document).on('click', '.masters-degree-delete-button', function () {
+        $(this).closest('tr').remove()
+      })
+
+      document.getElementById('phd-add-button').addEventListener('click',function(){
+        let table = ` <tr data-toggle="collapse" class="collapsed">
+          <td class="text-white">PHD</td>
+          <td><input class="form-control" type="text"></td>
+          <td><input class="form-control" type="text"></td>
+          <td><input class="form-control" type="text"></td>
+          <td><input class="form-control" type="text"></td>
+          <td><input class="form-control" type="text"></td>
+          <td>
+             <i class="fa-solid fa-trash-can text-white phd-delete-button"></i>
+          </td>
+          </tr>`
+
+       document.getElementById('phd-data').insertAdjacentHTML("beforeend",table);
+      })
+
+      $(document).on('click', '.phd-delete-button', function () {
+        $(this).closest('tr').remove()
+      })
+
+      document.getElementById('professionaL-certification-add-button').addEventListener('click',function(){
+        console.log("post-graduation-clicked")
+        let table = ` <tr data-toggle="collapse" class="collapsed">
+          <td class="text-white">Professional Certification</td>
+          <td><input class="form-control" type="text"></td>
+          <td><input class="form-control" type="text"></td>
+          <td><input class="form-control" type="text"></td>
+          <td><input class="form-control" type="text"></td>
+          <td><input class="form-control" type="text"></td>
+          <td>
+              <i class="fa-solid fa-trash-can text-white professionaL-certification-delete-button"></i>
+          </td>
                                     </tr>
        `
-          $('#professionaL-certification-data').append(table);
 
-        })
-        $(document).on('click', '.professionaL-certification-delete-button', function () {
-          $(this).closest('tr').remove()
-        })
-
-
-        document.querySelector("#publication-div").addEventListener('click', function () {
-          document.getElementById('body').classList.add('bodyremove');
-          document.querySelector('.publication-modal').classList.replace('publication-modal', 'showdiv');
-        });
-
-        document.querySelector("#publication-cancel-button").addEventListener('click', function () {
-          document.getElementById('body').classList.remove('bodyremove');
-          document.querySelector('.showdiv').classList.replace('showdiv', 'publication-modal');
-        });
-
-
-        $(document).on('click', '#publication-add-button', function () {
-          let table = ` <tr data-toggle="collapse" class="collapsed">
-                                            <td><input data-title="Title" class="form-control" type="text"></td>
-                                            <td><select data-title="Role ?" class="form-control" id="role">
-                                                    <option>-Select-</option>
-                                                    <option value="Edited">Edited</option>
-                                                    <option value="Authored">Authored</option>
-                                                </select>
-                                            </td>
-                                            <td><input data-title="No.-of-Authors" class="form-control" type="text">
-                                            </td>
-                                            <td><input data-title="Book-Title" class="form-control" type="text"></td>
-                                            <td><input data-title="Publisher" class="form-control" type="text"></td>
-                                            <td><input data-title="Year-of-publication" class="form-control"
-                                                    type="text">
-                                            </td>
-                                            <td> <i class="fa-solid fa-trash-can text-white h4 publication-delete-button" data-title="Action"></i></td>
-                                        </tr>
-       `
-          $('#publication-data').append(table);
-
-        })
-        $(document).on('click', '.publication-delete-button', function () {
-          $(this).closest('tr').remove()
-        })
-
-        document.querySelector("#research-div").addEventListener('click', function () {
-          document.getElementById('body').classList.add('bodyremove');
-          document.querySelector('.research-modal').classList.replace('research-modal', 'showdiv');
-        });
-
-        document.querySelector("#research-cancel-button").addEventListener('click', function () {
-          document.getElementById('body').classList.remove('bodyremove');
-          document.querySelector('.showdiv').classList.replace('showdiv', 'research-modal');
-        });
-
-        $(document).on('click', '#research-add-button', function () {
-          let table = `               <tr data-toggle="collapse" class="collapsed">
-                                            <td><input data-title="Title" class="form-control" type="text"></td>
-                                            <td><select data-title="Role-?" class="form-control" id="role">
-                                                    <option>-Select-</option>
-                                                    <option value="Sole">Sole</option>
-                                                    <option value="Author">Author</option>
-                                                </select>
-                                            </td>
-                                            <td><input data-title="Journal-name" class="form-control" type="text"></td>
-                                            <td><input data-title="Volume-year" class="form-control" type="text"></td>
-                                            <td><input data-title="Number" class="form-control" type="text"></td>
-                                            <td><input data-title="Category" class="form-control"
-                                                    type="text">
-                                            </td>
-            <td class="p-2 !important"> <i class="fa-solid fa-trash-can text-white h4 research-delete-button" data-title=" Action"></i> </td>
-                                        </tr>
-       `
-          $('#research-data').append(table);
-        })
-        $(document).on('click', '.research-delete-button', function () {
-          $(this).closest('tr').remove()
-        })
-        document.querySelector('#bank-details-div').addEventListener('click', function () {
-          document.getElementById('body').classList.add('bodyremove');
-          document.querySelector('.bank-details-modal').classList.replace('bank-details-modal', 'showdiv');
-        });
-
-        document.querySelector('#bank-details-cancel-button').addEventListener('click', function () {
-          document.getElementById('body').classList.remove('bodyremove');
-          document.querySelector('.showdiv').classList.replace('showdiv', 'bank-details-modal');
-        });
-
-
+       document.getElementById('professionaL-certification-data').insertAdjacentHTML("beforeend",table);
       })
-    </script>
+      $(document).on('click', '.professionaL-certification-delete-button', function () {
+        $(this).closest('tr').remove()
+      })
+
+      document.querySelector("#achievement-div").addEventListener('click', function () {
+        document.getElementById('body').classList.add('bodyremove');
+        document.querySelector('.achievement-modal').classList.replace('achievement-modal', 'showdiv');
+      });
+
+      document.querySelector("#achievement-cancel-button").addEventListener('click', function () {
+        document.getElementById('body').classList.remove('bodyremove');
+        document.querySelector('.showdiv').classList.replace('showdiv', 'achievement-modal');
+      });
+
+      document.getElementById('achievement-add-button').addEventListener('click',function(){
+        let table = `   <tr data-toggle="collapse" class="collapsed">
+                        <td><select class="form-control">
+                          <option>Select</option>
+                          <option>Award</option>
+                          <option>Publication</option>
+                        </select></td>
+                        <td><input class="form-control" type="text"></td>
+                        <td><input class="form-control" type="text"></td>
+                        <td><input class="form-control" type="text"></td>
+                        <td><input class="form-control" type="text"></td>
+                        <td><input class="form-control" type="date"></td>
+                        <td><input class="form-control" type="file"></td>
+                        <td class="p-2 !important"><i class="fa-solid fa-trash-can text-white h4 achievement-delete-button"></i></td>
+                      </tr>
+       `
+       document.getElementById('achievement-data').insertAdjacentHTML("beforeend",table);
+      })
+      $(document).on('click', '.achievement-delete-button', function () {
+        $(this).closest('tr').remove()
+      })
+
+
+
+      document.querySelector("#publication-div").addEventListener('click', function () {
+        document.getElementById('body').classList.add('bodyremove');
+        document.querySelector('.publication-modal').classList.replace('publication-modal', 'showdiv');
+      });
+
+      document.querySelector("#publication-cancel-button").addEventListener('click', function () {
+        document.getElementById('body').classList.remove('bodyremove');
+        document.querySelector('.showdiv').classList.replace('showdiv', 'publication-modal');
+      });
+
+      document.getElementById('publication-add-button').addEventListener('click',function(){
+        let table = ` <tr data-toggle="collapse" class="collapsed">
+            <td><input data-title="Title" class="form-control" type="text"></td>
+            <td><select data-title="Role ?" class="form-control" id="role">
+                    <option>-Select-</option>
+                    <option value="Edited">Edited</option>
+                    <option value="Authored">Authored</option>
+                </select>
+            </td>
+            <td><input data-title="No.-of-Authors" class="form-control" type="text">
+            </td>
+            <td><input data-title="Book-Title" class="form-control" type="text"></td>
+            <td><input data-title="Publisher" class="form-control" type="text"></td>
+            <td><input data-title="Year-of-publication" class="form-control"
+                    type="text">
+            </td>
+            <td> <i class="fa-solid fa-trash-can text-white h4 publication-delete-button" data-title="Action"></i></td>
+                       </tr>`
+      document.getElementById('publication-data').insertAdjacentHTML("beforeend",table);
+      })
+
+      $(document).on('click', '.publication-delete-button', function () {
+        $(this).closest('tr').remove()
+      })
+
+      document.querySelector("#research-div").addEventListener('click', function () {
+        document.getElementById('body').classList.add('bodyremove');
+        document.querySelector('.research-modal').classList.replace('research-modal', 'showdiv');
+      });
+
+      document.querySelector("#research-cancel-button").addEventListener('click', function () {
+        document.getElementById('body').classList.remove('bodyremove');
+        document.querySelector('.showdiv').classList.replace('showdiv', 'research-modal');
+      });
+
+      document.getElementById('research-add-button').addEventListener('click',function(){
+        let table = ` <tr data-toggle="collapse" class="collapsed">
+            <td><input data-title="Title" class="form-control" type="text"></td>
+            <td><select data-title="Role-?" class="form-control" id="role">
+                    <option>-Select-</option>
+                    <option value="Sole">Sole</option>
+                    <option value="Author">Author</option>
+                </select></td>
+            <td><input data-title="Journal-name" class="form-control" type="text"></td>
+            <td><input data-title="Volume-year" class="form-control" type="text"></td>
+            <td><input data-title="Number" class="form-control" type="text"></td>
+            <td><input data-title="Category" class="form-control" type="text"></td>
+            <td class="p-2 !important"> <i class="fa-solid fa-trash-can text-white h4 research-delete-button" data-title=" Action"></i> </td>
+                  </tr>`
+
+        document.getElementById('research-data').insertAdjacentHTML("beforeend",table);
+      })
+
+      $(document).on('click', '.research-delete-button', function () {
+        $(this).closest('tr').remove()
+      })
+
+      document.querySelector('#bank-details-div').addEventListener('click', function () {
+        document.getElementById('body').classList.add('bodyremove');
+        document.querySelector('.bank-details-modal').classList.replace('bank-details-modal', 'showdiv');
+      });
+
+      document.querySelector('#bank-details-cancel-button').addEventListener('click', function () {
+        document.getElementById('body').classList.remove('bodyremove');
+        document.querySelector('.showdiv').classList.replace('showdiv', 'bank-details-modal');
+      });
+
+    })
+  </script>
 </body>
 
 </html>

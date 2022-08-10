@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin" />
+  <link rel="preload" as="style"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+  <link rel="preload" href="https://builder.zety.com/resume/build/rwzv2/main.bundle-1.0.0.503.js" as="script">
+  <link rel="stylesheet" href="./main-content/style.css" />
+    <title>Achievement</title>
+</head>
+<body>
+    <div class="full-screen container">
+        <div class="main-content">
+          <div class="container d-flex justify-content-between">
+            <h3 class="text-white h3 py-4"> Achievement</h3>
+            <i id="achievement-add-button" class="fa-solid text-white fa-circle-plus fa-2x px-4 py-4"></i>
+          </div>
+          <hr>
+          <div class="d-flex align-items-centre justify-content-centre">
+            <div class="container">
+              <div class="row table">
+                <div class="table-responsive">
+                  <table>
+                    <thead class="text-white">
+                      <tr class="table-head">
+                        <th>Type</th>
+                        <th>Achievement name</th>
+                        <th>Organisation</th>
+                        <th>Organisation type</th>
+                        <th>Place</th>
+                        <th>Achievement date</th>
+                        <th>Certificate</th>
+                        <th>Action</th>
+                      </tr>
+                    </thead>
+                    <tbody id="achievement-data">
+                      <tr data-toggle="collapse" class="collapsed">
+                        <td><select class="form-control">
+                          <option>Select</option>
+                          <option>Award</option>
+                          <option>Publication</option>
+                        </select></td>
+                        <td><input class="form-control" type="text"></td>
+                        <td><input class="form-control" type="text"></td>
+                        <td><input class="form-control" type="text"></td>
+                        <td><input class="form-control" type="text"></td>
+                        <td><input class="form-control" type="date"></td>
+                        <td><input class="form-control" type="file"></td>
+                        <td></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+     </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+     
+  $(document).on('click', '#achievement-add-button', function () {
+console.log("button clicked")
+        let table = `   <tr data-toggle="collapse" class="collapsed">
+                        <td><select class="form-control">
+                          <option>Select</option>
+                          <option>Award</option>
+                          <option>Publication</option>
+                        </select></td>
+                        <td><input class="form-control" type="text"></td>
+                        <td><input class="form-control" type="text"></td>
+                        <td><input class="form-control" type="text"></td>
+                        <td><input class="form-control" type="text"></td>
+                        <td><input class="form-control" type="date"></td>
+                        <td><input class="form-control" type="file"></td>
+                        <td class="p-2 !important"><i class="fa-solid fa-trash-can text-white h4 achievement-delete-button"></i></td>
+                      </tr>
+       `
+        $('#achievement-data').append(table);
+      })
+      $(document).on('click', '.achievement-delete-button', function () {
+        $(this).closest('tr').remove()
+      })
+      
+    </script>
+</body>
+</html>

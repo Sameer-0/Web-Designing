@@ -73,9 +73,13 @@ hr {
   transform: translateY(-0.25em);
 }
 
+.personal_details_edit_icon {
+  position: absolute;
+  top: 34%;
+  left: 99%;
+}
 
-
-.edit_icon {
+.qualification_edit_icon {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -155,59 +159,75 @@ hr {
 /* ********************************Hover effect for edit ***************************************/
 
 .personal-information-div:hover {
-  filter: blur(2px);
+  /* border-style: groove; */
+  /* filter: blur(2px); */
   transition: 0.3s;
-  transform: scale(1.07);
+  transform: scale(1.037);
   background-color: #fff;
 }
 
 .personal-information-div-hover {
-  filter: blur(2px);
+  /* border-style: double; */
+  /* filter: blur(2px); */
   transition: 0.3s;
-  transform: scale(1.07);
+  transform: scale(1.037);
   background-color: #fff;
 }
 
 #qualification-div:hover {
-  filter: blur(2px);
+  /* border-style: groove; */
+  /* filter: blur(2px); */
   transition: 0.3s;
-  transform: scale(1.1);
+  transform: scale(1.037);
   background-color: #fff;
 }
 
 #skills-div:hover {
-  filter: blur(2px);
+  /* border-style: groove; */
+  /* filter: blur(2px); */
   transition: 0.3s;
-  transform: scale(1.1);
+  transform: scale(1.037);
   background-color: #fff;
 }
 
 #work-experience-div:hover {
-  filter: blur(2px);
+  /* border-style: groove; */
+  /* filter: blur(2px); */
   transition: 0.3s;
-  transform: scale(1.1);
+  transform: scale(1.037);
   background-color: #fff;
 }
 
 #bank-details-div:hover {
-  filter: blur(2px);
+  /* border-style: groove; */
+  /* filter: blur(2px); */
   transition: 0.3s;
-  transform: scale(1.1);
+  transform: scale(1.037);
   background-color: #434a54;
 }
 
 #publication-div:hover {
-  filter: blur(2px);
+  /* border-style: groove; */
+  /* filter: blur(2px); */
   transition: 0.3s;
-  transform: scale(1.1);
+  transform: scale(1.037);
   background-color: #fff;
 }
 
 #research-div:hover {
-  filter: blur(2px);
+  /* border-style: groove; */
+  /* filter: blur(2px); */
   transition: 0.3s;
   background-color: #fff;
-  transform: scale(1.1);
+  transform: scale(1.037);
+}
+
+#achievement-div:hover {
+  /* border-style: groove; */
+  /* filter: blur(2px); */
+  transition: 0.3s;
+  transform: scale(1.037);
+  background-color: #fff;
 }
 
 
@@ -377,6 +397,15 @@ label {
   margin-top: 100px;
 }
 
+.middle-screen {
+  margin-top: 60px;
+}
+
+.container {
+  min-width: 800px;
+  max-width: 1500px;
+}
+
 table thead tr {
   height: 60px;
   background: #36304a;
@@ -460,6 +489,12 @@ button {
 }
 
 .qualification-modal {
+  display: none;
+  height: 100%;
+  width: 100%;
+}
+
+.achievement-modal {
   display: none;
   height: 100%;
   width: 100%;
