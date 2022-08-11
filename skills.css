@@ -23,7 +23,6 @@ body {
 
 }
 
-
 #right-skill-box {
     min-width: 50%;
     height: 30vh;
@@ -31,9 +30,13 @@ body {
     scroll-behavior: smooth;
 }
 
+#right-skill-box ul {
+    padding:10px 0 0 0 !important;
+}
+
 #right-skill-box li {
     border: 1px solid #ddd;
-    margin: 20px;
+    margin: 20px 20px 20px 0;
     height: 45px;
     width: 90%;
 }
@@ -60,10 +63,11 @@ body {
     scroll-behavior: smooth;
 }
 
+
 #skill-search {
-    margin: 20px;
+    margin: 20px 20px 20px 0 !important;
     background-position: 10px 12px;
-    width: 40% !important;
+    width: 43% !important;
     font-size: 16px;
     padding: 12px 20px 12px 40px;
     border: 1px solid #ddd;
@@ -102,7 +106,7 @@ body {
 
     height: 50px;
     border: 1px solid #ddd;
-    padding: 10px;
+    /* padding: 10px; */
 
 }
 
@@ -146,6 +150,10 @@ body {
 
     .skill-add-button i {
         padding: 7px 5px 0 4px ;
+    }
+
+    #right-skill-box li a {
+        padding-left: 20px;
     }
     
 }

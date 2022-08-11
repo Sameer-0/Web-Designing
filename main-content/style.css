@@ -451,7 +451,162 @@ button {
   border-radius: 25px !important;
 }
 
-/* ********************************Styling to Use bank details Modal***************************************/
+
+/* ********************************Styling for Skills Modal***************************************/
+
+
+
+#skill-box {
+  background-color: #fff;
+  min-height: 70vh;
+  margin-top: 60px;
+  padding: 30px;
+}
+
+
+.fa-magnifying-glass {
+  margin-left: 30px;
+  color: #3983fa;
+  cursor: pointer;
+
+}
+
+#right-skill-box {
+  min-width: 50%;
+  height: 30vh;
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+
+#right-skill-box ul {
+  padding:10px 0 0 0 !important;
+}
+
+#right-skill-box li {
+  border: 1px solid #ddd;
+  margin: 20px 20px 20px 0;
+  height: 45px;
+  width: 90%;
+}
+
+#right-skill-box li i {
+  padding: 6px 15px 6px;
+  border-right: 1px solid black;
+}
+
+#right-skill-box li a {
+  padding-top: 10px;
+  margin-top: -1px;
+  /* Prevent double borders */
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#left-skill-box {
+  min-width: 50%;
+  height: 65vh;
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+
+
+#skill-search {
+  margin: 20px 20px 20px 0 !important;
+  background-position: 10px 12px;
+  width: 43% !important;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+}
+
+#skill-search:focus {
+  border: 2px solid #3983fa !important;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+#myUL li {
+  border: 1px solid #ddd;
+}
+
+#myUL li a {
+  margin-top: -1px;
+  /* Prevent double borders */
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL li {
+  margin: 20px;
+}
+
+.skill-display-row {
+
+  height: 50px;
+  border: 1px solid #ddd;
+  /* padding: 10px; */
+
+}
+
+.skill-add-button i {
+
+  cursor: pointer;
+  color: #3983fa;
+  padding: 10px 20px 0 15px;
+  border-right: 1px solid black;
+  height: 100%;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #3983fa;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to right, #3983fa);
+}
+
+#buttons-row {
+  margin-top: 30%;
+  bottom: 0;
+}
+
+@media screen and (max-width: 1000px) {
+
+  .skill-add-button i {
+      padding: 7px 5px 0 4px ;
+  }
+
+  #right-skill-box li a {
+      padding-left: 20px;
+  }
+  
+}
+
+/* ********************************Styling for bank details Modal***************************************/
 
 
 #bank-form-area {
@@ -478,52 +633,6 @@ button {
 }
 #check-preview {
   padding: 20px 0 10px 40px;
-}
-
-/* ********************************Styling to Use Modal***************************************/
-.personal-details-modal {
-  display: none;
-  height: 100%;
-  width: 100%;
-}
-
-.qualification-modal {
-  display: none;
-  height: 100%;
-  width: 100%;
-}
-
-.achievement-modal {
-  display: none;
-  height: 100%;
-  width: 100%;
-}
-
-.publication-modal {
-  display: none;
-  height: 100%;
-  width: 100%;
-}
-
-.research-modal {
-  display: none;
-  height: 100%;
-  width: 100%;
-}
-
-.bank-details-modal {
-  display: none;
-  height: 100%;
-  width: 100%;
-}
-
-.showdiv {
-  height: 100%;
-  width: 100%;
-}
-
-.bodyremove {
-  display: none;
 }
 
 /* ********************************Media Query For different device widths less than 768px**************************************/
