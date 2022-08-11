@@ -42,7 +42,7 @@
                     </div>
 
                     <div id="right-cover" class="col-md-8 col-sm-12 col-lg-9 text-white">
-                      <h3 p-3 id="full-name-value">Full Name</h3>
+                      <h3 p-3>Full Name</h3>
                       <h5 class="ms-3">Role</h5>
                       <p>
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -69,11 +69,11 @@
                         </div>
                         <div class="col-6 ps-md-0 ps-0 col-md-6 col-lg-6 col-sm-6">
                           <p>Male</p>
-                          <p id="date-of-birth-value" class="pt-2">2000-07-06</p>
-                          <p id ="pancard-value" class="pt-3">AAAAA1111A</p>
-                          <p id ="pancard-photo" class="pt-3"><i class="fa-solid fa-ban"></i></p>
-                          <p id ="aadhar-card-value" class="pt-2">1111 2222 3333 4444</p>
-                          <p id ="aadhar-card-photo" class="pt-2"><i class="fa-solid fa-ban"></i></p>
+                          <p class="pt-2">06-07-2000</p>
+                          <p class="pt-3">AAAAA1111A</p>
+                          <p class="pt-3"><i class="fa-solid fa-ban"></i></p>
+                          <p class="pt-2">1111 2222 3333 4444</p>
+                          <p class="pt-2"><i class="fa-solid fa-ban"></i></p>
                         </div>
                       </div>
                     </div>
@@ -90,13 +90,13 @@
                           <h6 class="pt-sm-1">Country</h6>
                         </div>
                         <div class="col-6 ps-md-0 ps-0 col-md-6 col-lg-6 col-sm-6">
-                          <p id="contact-number-value" >9876543210</p>
-                          <p id="email-value" class="pt-2">example@gmail.com</p>
-                          <p id="address-value" class="pt-1 mb-3">Room No.101 Lane 1 Downtown</p>
-                          <p id="city-value" class="pt-1">Mumbai</p>
-                          <p id="state-value" class="pt-1">Maharashtra</p>
-                          <p id="pincode-value" class="pt-1">400001</p>
-                          <p id="country-value" class="pt-1">India</p>
+                          <p>9876543210</p>
+                          <p class="pt-2">example@gmail.com</p>
+                          <p class="pt-1 mb-3">Room No.101 Lane 1 Downtown</p>
+                          <p class="pt-1">Mumbai</p>
+                          <p class="pt-1">Maharashtra</p>
+                          <p class="pt-1">400001</p>
+                          <p class="pt-1">India</p>
                         </div>
                       </div>
                     </div>
@@ -343,51 +343,53 @@
 
           <!------------------------------------------- Bank Details Section  ----------------------------------------->
 
-          <div id="bank-details-div">
-            <div class="px-3 px-sm-4 px-lg-4">
-              <div class="d-flex justify-content-center align-items-center">
-                <h3 class="p-md-3 pb-sm-3">Bank Details</h3>
-              </div>
-              <div class="row">
-                <div id="left-side" class="col-12 col-md-6 col-lg-6 col-sm-12">
-                  <div class="row pt-lg-3">
-                    <div class="col-6 col-md-6 col-lg-6 col-sm-6 ps-lg-4 ps-md-0 ps-0 ps-sm-0">
-                      <h6 class="pb-4">Name of Bank</h6>
-                      <h6 class="pb-4">Branch</h6>
-                      <h6 class="pb-4">IFSC Code</h6>
-                    </div>
-                    <div class="col-6 ps-md-0 ps-0 col-md-6 col-lg-6 col-sm-6">
-                      <p>ICICI Bank</p>
-                      <p class="pt-2">Panvel</p>
-                      <p class="pt-2">ICIC0000007</p>
+          <div class="bank-details-div-wrapper d-flex position-relative" style="cursor: pointer;">
+            <div id="bank-details-div">
+              <div class="px-3 px-sm-4 px-lg-4">
+                <div class="d-flex justify-content-center align-items-center">
+                  <h3 class="p-md-3 pb-sm-3">Bank Details</h3>
+                </div>
+                <div class="row">
+                  <div id="left-side" class="col-12 col-md-6 col-lg-6 col-sm-12">
+                    <div class="row pt-lg-3">
+                      <div class="col-6 col-md-6 col-lg-6 col-sm-6 ps-lg-4 ps-md-0 ps-0 ps-sm-0">
+                        <h6 class="pb-4">Name of Bank</h6>
+                        <h6 class="pb-4">Branch</h6>
+                        <h6 class="pb-4">IFSC Code</h6>
+                      </div>
+                      <div class="col-6 ps-md-0 ps-0 col-md-6 col-lg-6 col-sm-6">
+                        <p>ICICI Bank</p>
+                        <p class="pt-2">Panvel</p>
+                        <p class="pt-2">ICIC0000007</p>
+                      </div>
                     </div>
                   </div>
-                </div>
 
-                <div id="right-side" class="col-12 col-md-6 col-lg-6 col-sm-12">
-                  <div class="row pt-lg-3">
-                    <div class="col-6 ps-lg-4 col-md-6 ps-md-0 ps-0 ps-sm-0 col-lg-6 col-sm-6">
-                      <h6 class="pb-4">MICR Code</h6>
-                      <h6 class="pb-4">Account Number</h6>
-                      <h6 class="pb-4">Account Type</h6>
-                      <h6 class="pb-4">Cancalled Cheque Photo</h6>
-                    </div>
-                    <div class="col-6 ps-md-0 ps-0 col-md-6 col-lg-6 col-sm-6">
-                      <p>600002025</p>
-                      <p class="pt-2">778866445523</p>
-                      <p class="pt-2">Current Account</p>
-                      <p class="pt-3 h5"><i class="fa-solid fa-ban"></i></p>
+                  <div id="right-side" class="col-12 col-md-6 col-lg-6 col-sm-12">
+                    <div class="row pt-lg-3">
+                      <div class="col-6 ps-lg-4 col-md-6 ps-md-0 ps-0 ps-sm-0 col-lg-6 col-sm-6">
+                        <h6 class="pb-4">MICR Code</h6>
+                        <h6 class="pb-4">Account Number</h6>
+                        <h6 class="pb-4">Account Type</h6>
+                        <h6 class="pb-4">Cancalled Cheque Photo</h6>
+                      </div>
+                      <div class="col-6 ps-md-0 ps-0 col-md-6 col-lg-6 col-sm-6">
+                        <p>600002025</p>
+                        <p class="pt-2">778866445523</p>
+                        <p class="pt-2">Current Account</p>
+                        <p class="pt-3 h5"><i class="fa-solid fa-ban"></i></p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
             <div class="d-none bank-details-edit-box d-flex justify-content-center align-items-center">
               <i class="fa-solid fa-pen fa-2x text-white "></i>
             </div>
           </div>
+
+
         </div>
       </div>
     </div>
@@ -509,20 +511,15 @@
 
           <div class="container">
             <div id="left-fourth-row" class="row">
-              <div class="col-md-4">
+              <div class="col-md-6">
                 <label for="city">City</label>
                 <span id="city-message" class="error"></span>
                 <input type="text" class="form-control" name="city" id="city" />
               </div>
-              <div class="col-md-4">
+              <div class="col-md-6">
                 <label for="state">State</label>
                 <span id="state-message" class="error"></span>
                 <input type="text" class="form-control" id="state">
-              </div>
-              <div class="col-md-4">
-                <label for="country">Country</label>
-                <span id="country-message" class="error"></span>
-                <input type="text" class="form-control" id="country">
               </div>
             </div>
           </div>
@@ -950,8 +947,8 @@
         <div class="row">
           <div class="col-md-6 col-sm-12">
             <div>
-              <label for="cancelled_cheque_Photo" class="py-md-2">Cancelled Cheque Photo</label>
-              <input type="file" name="cancelled_cheque_Photo" id="cancelled_cheque_Photo" class="form-control"
+              <label for="cancalled_cheque_Photo" class="py-md-2">Cancalled Cheque Photo</label>
+              <input type="file" name="cancalled_cheque_Photo" id="cancalled_cheque_Photo" class="form-control"
                 onchange="document.getElementById('check-preview').src = window.URL.createObjectURL(this.files[0])">
             </div>
           </div>
@@ -982,8 +979,7 @@
     integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous">
   </script>
   <script>
-   
-   let downloadButton = document.getElementById("download-btn");
+    let downloadButton = document.getElementById("download-btn");
 
     downloadButton.addEventListener("click", function () {
       let elementHTML = document.getElementById("download-page");
@@ -1016,109 +1012,104 @@
     $(document).ready(function () {
 
 
-      $('.personal-information-div').on('mouseover', function () {
-        $('.personal_details_edit_icon').removeClass('d-none')
+      $('.personal-information-div-wrapper').on('mouseover', function () {
+        $('.personal-details-edit-box').removeClass('d-none')
+
       })
 
       $('.personal-information-div-wrapper').on('mouseleave', function () {
-        $('.personal_details_edit_icon').addClass('d-none')
-        $('.personal-information-div').removeClass('personal-information-div-hover')
+        $('.personal-details-edit-box').addClass('d-none')
       })
+
+
+      $('.qualification-div-wrapper').on('mouseover', function () {
+        $('.qualification-edit-box').removeClass('d-none')
+
+      })
+
+      $('.qualification-div-wrapper').on('mouseleave', function () {
+        $('.qualification-edit-box').addClass('d-none')
+
+      })
+
+      $('.work-experience-div-wrapper').on('mouseover', function () {
+        $('.work-experience-edit-box').removeClass('d-none')
+
+      })
+
+      $('.work-experience-div-wrapper').on('mouseleave', function () {
+        $('.work-experience-edit-box').addClass('d-none')
+
+      })
+
+      $('.skills-div-wrapper').on('mouseover', function () {
+        $('.skills-edit-box').removeClass('d-none')
+
+      })
+
+      $('.skills-div-wrapper').on('mouseleave', function () {
+        $('.skills-edit-box').addClass('d-none')
+
+      })
+
+
+      $('.achievement-div-wrapper').on('mouseover', function () {
+        $('.achievement-edit-box').removeClass('d-none')
+
+      })
+
+      $('.achievement-div-wrapper').on('mouseleave', function () {
+        $('.achievement-edit-box').addClass('d-none')
+
+      })
+
+
+      $('.publication-div-wrapper').on('mouseover', function () {
+        $('.publication-edit-box').removeClass('d-none')
+
+      })
+
+      $('.publication-div-wrapper').on('mouseleave', function () {
+        $('.publication-edit-box').addClass('d-none')
+
+      })
+
+
+      $('.research-div-wrapper').on('mouseover', function () {
+        $('.research-edit-box').removeClass('d-none')
+
+      })
+
+      $('.research-div-wrapper').on('mouseleave', function () {
+        $('.research-edit-box').addClass('d-none')
+
+      })
+
 
       $('.bank-details-div-wrapper').on('mouseover', function () {
         $('.bank-details-edit-box').removeClass('d-none')
+
       })
 
       $('.bank-details-div-wrapper').on('mouseleave', function () {
         $('.bank-details-edit-box').addClass('d-none')
+
       })
 
+
       document.querySelector('.personal-details-edit-box').addEventListener('click', function () {
-
-        let editPersonalDetailsForm = new FormData()
-
-        editPersonalDetailsForm.append('editDateOfBirth', document.getElementById('date-of-birth-value').innerText)
-        editPersonalDetailsForm.append('editPancardNumber', document.getElementById('pancard-value').innerText)
-        editPersonalDetailsForm.append('editAadharCardNumber', document.getElementById('aadhar-card-value').innerText)
-        editPersonalDetailsForm.append('editContactNumber', document.getElementById('contact-number-value').innerText)
-        editPersonalDetailsForm.append('editEmail', document.getElementById('email-value').innerText)
-        editPersonalDetailsForm.append('editAddress', document.getElementById('address-value').innerText)
-        editPersonalDetailsForm.append('editCity', document.getElementById('city-value').innerText)
-        editPersonalDetailsForm.append('editState', document.getElementById('state-value').innerText)
-        editPersonalDetailsForm.append('editPincode', document.getElementById('pincode-value').innerText)
-        editPersonalDetailsForm.append('editCountry', document.getElementById('country-value').innerText)
-
-        document.getElementById('date-of-birth').value = editPersonalDetailsForm.get('editDateOfBirth')
-        document.getElementById('pan-number').value = editPersonalDetailsForm.get('editPancardNumber')
-        document.getElementById('aadhar-number').value = editPersonalDetailsForm.get('editAadharCardNumber')
-        document.getElementById('contact-number').value = editPersonalDetailsForm.get('editContactNumber')
-        document.getElementById('email').value = editPersonalDetailsForm.get('editEmail')
-        document.getElementById('address').value = editPersonalDetailsForm.get('editAddress')
-        document.getElementById('city').value = editPersonalDetailsForm.get('editCity')
-        document.getElementById('state').value = editPersonalDetailsForm.get('editState')
-        document.getElementById('pincode').value = editPersonalDetailsForm.get('editPincode')
-        document.getElementById('country').value = editPersonalDetailsForm.get('editCountry')
-
         document.getElementById('body').classList.add('bodyremove');
         document.querySelector('.personal-details-modal').classList.replace('personal-details-modal',
           'showdiv');
       });
+
 
       document.querySelector('#personal-details-cancel-button').addEventListener('click', function () {
         document.getElementById('body').classList.remove('bodyremove');
         document.querySelector('.showdiv').classList.replace('showdiv', 'personal-details-modal')
       });
 
-      document.querySelector('#personal-details-submit-button').addEventListener('click', function () {
-        
-        let submitPersonalDetailsForm = new FormData()
-
-        submitPersonalDetailsForm.append('dateOfBirth', document.getElementById('date-of-birth').value)
-        submitPersonalDetailsForm.append('pancardNumber', document.getElementById('pan-number').value)
-        submitPersonalDetailsForm.append('aadharCardNumber', document.getElementById('aadhar-number').value)
-        submitPersonalDetailsForm.append('contactNumber', document.getElementById('contact-number').value)
-        submitPersonalDetailsForm.append('email', document.getElementById('email').value)
-        submitPersonalDetailsForm.append('address', document.getElementById('address').value)
-        submitPersonalDetailsForm.append('city', document.getElementById('city').value)
-        submitPersonalDetailsForm.append('state', document.getElementById('state').value)
-        submitPersonalDetailsForm.append('pincode', document.getElementById('pincode').value)
-        submitPersonalDetailsForm.append('country', document.getElementById('country').value)
-        submitPersonalDetailsForm.append('pancardPhoto', document.getElementById('pan-photo').value)
-        submitPersonalDetailsForm.append('aadharCardPhoto', document.getElementById('aadhar-photo').value)
-        submitPersonalDetailsForm.append('firstName', document.getElementById('first-name').value)
-        submitPersonalDetailsForm.append('middleName', document.getElementById('middle-name').value)
-        submitPersonalDetailsForm.append('lastName', document.getElementById('last-name').value)
-
-        document.getElementById('date-of-birth-value').innerText = submitPersonalDetailsForm.get('dateOfBirth')
-        document.getElementById('pancard-value').innerText = submitPersonalDetailsForm.get('pancardNumber')
-        document.getElementById('aadhar-card-value').innerText = submitPersonalDetailsForm.get('aadharCardNumber')
-        document.getElementById('contact-number-value').innerText = submitPersonalDetailsForm.get('contactNumber')
-        document.getElementById('email-value').innerText = submitPersonalDetailsForm.get('email')
-        document.getElementById('address-value').innerText = submitPersonalDetailsForm.get('address')
-        document.getElementById('city-value').innerText = submitPersonalDetailsForm.get('city')
-        document.getElementById('state-value').innerText = submitPersonalDetailsForm.get('state')
-        document.getElementById('pincode-value').innerText = submitPersonalDetailsForm.get('pincode')
-        document.getElementById('country-value').innerText = submitPersonalDetailsForm.get('country')
-        document.getElementById('full-name-value').innerText = submitPersonalDetailsForm.get('firstName') + " " + submitPersonalDetailsForm.get('middleName')  + " " + submitPersonalDetailsForm.get('lastName') 
-
-        if(submitPersonalDetailsForm.get('pancardPhoto').length != 0) {
-        document.getElementById('pancard-photo').firstElementChild.classList.remove('fa-ban')
-        document.getElementById('pancard-photo').firstElementChild.classList.add('fa-circle-check')
-        document.getElementById('pancard-photo').firstElementChild.classList.add('text-success')
-        }
-
-        if(submitPersonalDetailsForm.get('aadharCardPhoto').length != 0) {
-        document.getElementById('aadhar-card-photo').firstElementChild.classList.remove('fa-ban')
-        document.getElementById('aadhar-card-photo').firstElementChild.classList.add('fa-circle-check')
-        document.getElementById('aadhar-card-photo').firstElementChild.classList.add('text-success')
-        }
-        
-        document.getElementById('body').classList.remove('bodyremove');
-        document.querySelector('.showdiv').classList.replace('showdiv', 'personal-details-modal')
-      });
-
       document.getElementById('teaching-experience-add-button').addEventListener('click', function () {
-
         let table = ` <tr data-toggle="collapse" class="collapsed">
         <td><input class="form-control" type="text"></td>
         <td><input class="form-control" type="text"></td>
@@ -1133,7 +1124,6 @@
 
         document.getElementById('teaching-experience-data').insertAdjacentHTML("beforeend", table);
       })
-
       $(document).on('click', '.teaching-experience-delete-button', function () {
         $(this).closest('tr').remove()
       })
@@ -1153,7 +1143,6 @@
 
         document.getElementById('industrial-experience-data').insertAdjacentHTML("beforeend", table);
       })
-      
       $(document).on('click', '.industrial-experience-delete-button', function () {
         $(this).closest('tr').remove()
       })
@@ -1179,6 +1168,7 @@
         document.getElementById('body').classList.remove('bodyremove');
         document.querySelector('.showdiv').classList.replace('showdiv', 'qualification-modal');
       });
+
 
       document.getElementById('bachelors-degree-add-button').addEventListener('click', function () {
         let table = ` <tr data-toggle="collapse" class="collapsed">
@@ -1257,7 +1247,6 @@
 
         document.getElementById('professionaL-certification-data').insertAdjacentHTML("beforeend", table);
       })
-     
       $(document).on('click', '.professionaL-certification-delete-button', function () {
         $(this).closest('tr').remove()
       })
@@ -1290,10 +1279,11 @@
        `
         document.getElementById('achievement-data').insertAdjacentHTML("beforeend", table);
       })
-     
       $(document).on('click', '.achievement-delete-button', function () {
         $(this).closest('tr').remove()
       })
+
+
 
       document.querySelector(".publication-edit-box").addEventListener('click', function () {
         document.getElementById('body').classList.add('bodyremove');
@@ -1340,6 +1330,7 @@
         document.querySelector('.showdiv').classList.replace('showdiv', 'research-modal');
       });
 
+
       document.getElementById('research-add-button').addEventListener('click', function () {
         let table = ` <tr data-toggle="collapse" class="collapsed">
             <td><input data-title="Title" class="form-control" type="text"></td>
@@ -1357,12 +1348,12 @@
 
         document.getElementById('research-data').insertAdjacentHTML("beforeend", table);
       })
-     
+
       $(document).on('click', '.research-delete-button', function () {
         $(this).closest('tr').remove()
       })
 
-      document.querySelector('#bank-details-div').addEventListener('click', function () {
+      document.querySelector('.bank-details-edit-box').addEventListener('click', function () {
         document.getElementById('body').classList.add('bodyremove');
         document.querySelector('.bank-details-modal').classList.replace('bank-details-modal', 'showdiv');
       });
@@ -1371,7 +1362,6 @@
         document.getElementById('body').classList.remove('bodyremove');
         document.querySelector('.showdiv').classList.replace('showdiv', 'bank-details-modal');
       });
-
     })
   </script>
 </body>
