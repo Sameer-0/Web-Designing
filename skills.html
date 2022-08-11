@@ -200,14 +200,13 @@
 
 
         let addAvailableSkill = document.getElementById('left-skill-box')
-        let addSkillButton = document.getElementsByClassName('skill-add-button')
         let skillDisplay = document.getElementById('skill-display')
 
         addAvailableSkill.addEventListener('click',function(event) {
 
             let element = event.target
             if (element.matches('i')) {
-                let text = element.parentElement.parentElement.lastElementChild.lastElementChild.innerText;
+               let text = element.parentElement.parentElement.lastElementChild.lastElementChild.innerText;
 
                let div = ` 
                     <li class="list-group">
