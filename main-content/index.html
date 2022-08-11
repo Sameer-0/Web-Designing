@@ -42,7 +42,7 @@
                     </div>
 
                     <div id="right-cover" class="col-md-8 col-sm-12 col-lg-9 text-white">
-                      <h3 p-3>Full Name</h3>
+                      <h3 p-3 id="full-name-value">Full Name</h3>
                       <h5 class="ms-3">Role</h5>
                       <p>
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -69,11 +69,11 @@
                         </div>
                         <div class="col-6 ps-md-0 ps-0 col-md-6 col-lg-6 col-sm-6">
                           <p>Male</p>
-                          <p class="pt-2">06-07-2000</p>
-                          <p class="pt-3">AAAAA1111A</p>
-                          <p class="pt-3"><i class="fa-solid fa-ban"></i></p>
-                          <p class="pt-2">1111 2222 3333 4444</p>
-                          <p class="pt-2"><i class="fa-solid fa-ban"></i></p>
+                          <p class="pt-2" id="date-of-birth-value">2000-07-06</p>
+                          <p class="pt-3" id="pancard-value">AAAAA1111A</p>
+                          <p class="pt-3" id="pancard-photo"><i class="fa-solid fa-ban"></i></p>
+                          <p class="pt-2" id="aadhar-card-value">1111 2222 3333 4444</p>
+                          <p class="pt-2" id="aadhar-card-photo"><i class="fa-solid fa-ban"></i></p>
                         </div>
                       </div>
                     </div>
@@ -90,13 +90,13 @@
                           <h6 class="pt-sm-1">Country</h6>
                         </div>
                         <div class="col-6 ps-md-0 ps-0 col-md-6 col-lg-6 col-sm-6">
-                          <p>9876543210</p>
-                          <p class="pt-2">example@gmail.com</p>
-                          <p class="pt-1 mb-3">Room No.101 Lane 1 Downtown</p>
-                          <p class="pt-1">Mumbai</p>
-                          <p class="pt-1">Maharashtra</p>
-                          <p class="pt-1">400001</p>
-                          <p class="pt-1">India</p>
+                          <p id="contact-number-value">9876543210</p>
+                          <p id="email-value" class="pt-2">example@gmail.com</p>
+                          <p id="address-value" class="pt-1 mb-3">Room No.101 Lane 1 Downtown</p>
+                          <p id="city-value" class="pt-1">Mumbai</p>
+                          <p id="state-value" class="pt-1">Maharashtra</p>
+                          <p id="pincode-value" class="pt-1">400001</p>
+                          <p id="country-value" class="pt-1">India</p>
                         </div>
                       </div>
                     </div>
@@ -511,15 +511,20 @@
 
           <div class="container">
             <div id="left-fourth-row" class="row">
-              <div class="col-md-6">
+              <div class="col-md-4">
                 <label for="city">City</label>
                 <span id="city-message" class="error"></span>
                 <input type="text" class="form-control" name="city" id="city" />
               </div>
-              <div class="col-md-6">
+              <div class="col-md-4">
                 <label for="state">State</label>
                 <span id="state-message" class="error"></span>
                 <input type="text" class="form-control" id="state">
+              </div>
+              <div class="col-md-4">
+                <label for="country">Country</label>
+                <span id="country-message" class="error"></span>
+                <input type="text" class="form-control" id="country">
               </div>
             </div>
           </div>
@@ -947,14 +952,14 @@
         <div class="row">
           <div class="col-md-6 col-sm-12">
             <div>
-              <label for="cancalled_cheque_Photo" class="py-md-2">Cancalled Cheque Photo</label>
-              <input type="file" name="cancalled_cheque_Photo" id="cancalled_cheque_Photo" class="form-control"
+              <label for="cancelled_cheque_Photo" class="py-md-2">Cancalled Cheque Photo</label>
+              <input type="file" name="cancelled_cheque_Photo" id="cancelled_cheque_Photo" class="form-control"
                 onchange="document.getElementById('check-preview').src = window.URL.createObjectURL(this.files[0])">
             </div>
           </div>
           <div class="col-md-6 col-sm-12 py-md-2">
             <div>
-              <img id="check-preview" alt="Cancalled Cheque photo" width="150" />
+              <img id="check-preview" alt="Cancelled Cheque photo" width="150" />
             </div>
           </div>
         </div>
@@ -1098,6 +1103,37 @@
 
 
       document.querySelector('.personal-details-edit-box').addEventListener('click', function () {
+
+
+
+        let editPersonalDetailsForm = new FormData()
+
+        editPersonalDetailsForm.append('editDateOfBirth', document.getElementById('date-of-birth-value')
+          .innerText)
+        editPersonalDetailsForm.append('editPancardNumber', document.getElementById('pancard-value').innerText)
+        editPersonalDetailsForm.append('editAadharCardNumber', document.getElementById('aadhar-card-value')
+          .innerText)
+        editPersonalDetailsForm.append('editContactNumber', document.getElementById('contact-number-value')
+          .innerText)
+        editPersonalDetailsForm.append('editEmail', document.getElementById('email-value').innerText)
+        editPersonalDetailsForm.append('editAddress', document.getElementById('address-value').innerText)
+        editPersonalDetailsForm.append('editCity', document.getElementById('city-value').innerText)
+        editPersonalDetailsForm.append('editState', document.getElementById('state-value').innerText)
+        editPersonalDetailsForm.append('editPincode', document.getElementById('pincode-value').innerText)
+        editPersonalDetailsForm.append('editCountry', document.getElementById('country-value').innerText)
+
+        document.getElementById('date-of-birth').value = editPersonalDetailsForm.get('editDateOfBirth')
+        document.getElementById('pan-number').value = editPersonalDetailsForm.get('editPancardNumber')
+        document.getElementById('aadhar-number').value = editPersonalDetailsForm.get('editAadharCardNumber')
+        document.getElementById('contact-number').value = editPersonalDetailsForm.get('editContactNumber')
+        document.getElementById('email').value = editPersonalDetailsForm.get('editEmail')
+        document.getElementById('address').value = editPersonalDetailsForm.get('editAddress')
+        document.getElementById('city').value = editPersonalDetailsForm.get('editCity')
+        document.getElementById('state').value = editPersonalDetailsForm.get('editState')
+        document.getElementById('pincode').value = editPersonalDetailsForm.get('editPincode')
+        document.getElementById('country').value = editPersonalDetailsForm.get('editCountry')
+
+
         document.getElementById('body').classList.add('bodyremove');
         document.querySelector('.personal-details-modal').classList.replace('personal-details-modal',
           'showdiv');
@@ -1105,6 +1141,57 @@
 
 
       document.querySelector('#personal-details-cancel-button').addEventListener('click', function () {
+        document.getElementById('body').classList.remove('bodyremove');
+        document.querySelector('.showdiv').classList.replace('showdiv', 'personal-details-modal')
+      });
+
+      document.querySelector('#personal-details-submit-button').addEventListener('click', function () {
+
+        let submitPersonalDetailsForm = new FormData()
+
+        submitPersonalDetailsForm.append('dateOfBirth', document.getElementById('date-of-birth').value)
+        submitPersonalDetailsForm.append('pancardNumber', document.getElementById('pan-number').value)
+        submitPersonalDetailsForm.append('aadharCardNumber', document.getElementById('aadhar-number').value)
+        submitPersonalDetailsForm.append('contactNumber', document.getElementById('contact-number').value)
+        submitPersonalDetailsForm.append('email', document.getElementById('email').value)
+        submitPersonalDetailsForm.append('address', document.getElementById('address').value)
+        submitPersonalDetailsForm.append('city', document.getElementById('city').value)
+        submitPersonalDetailsForm.append('state', document.getElementById('state').value)
+        submitPersonalDetailsForm.append('pincode', document.getElementById('pincode').value)
+        submitPersonalDetailsForm.append('country', document.getElementById('country').value)
+        submitPersonalDetailsForm.append('pancardPhoto', document.getElementById('pan-photo').value)
+        submitPersonalDetailsForm.append('aadharCardPhoto', document.getElementById('aadhar-photo').value)
+        submitPersonalDetailsForm.append('firstName', document.getElementById('first-name').value)
+        submitPersonalDetailsForm.append('middleName', document.getElementById('middle-name').value)
+        submitPersonalDetailsForm.append('lastName', document.getElementById('last-name').value)
+
+        document.getElementById('date-of-birth-value').innerText = submitPersonalDetailsForm.get('dateOfBirth')
+        document.getElementById('pancard-value').innerText = submitPersonalDetailsForm.get('pancardNumber')
+        document.getElementById('aadhar-card-value').innerText = submitPersonalDetailsForm.get(
+          'aadharCardNumber')
+        document.getElementById('contact-number-value').innerText = submitPersonalDetailsForm.get(
+          'contactNumber')
+        document.getElementById('email-value').innerText = submitPersonalDetailsForm.get('email')
+        document.getElementById('address-value').innerText = submitPersonalDetailsForm.get('address')
+        document.getElementById('city-value').innerText = submitPersonalDetailsForm.get('city')
+        document.getElementById('state-value').innerText = submitPersonalDetailsForm.get('state')
+        document.getElementById('pincode-value').innerText = submitPersonalDetailsForm.get('pincode')
+        document.getElementById('country-value').innerText = submitPersonalDetailsForm.get('country')
+        document.getElementById('full-name-value').innerText = submitPersonalDetailsForm.get('firstName') +
+          " " + submitPersonalDetailsForm.get('middleName') + " " + submitPersonalDetailsForm.get('lastName')
+
+        if (submitPersonalDetailsForm.get('pancardPhoto').length != 0) {
+          document.getElementById('pancard-photo').firstElementChild.classList.remove('fa-ban')
+          document.getElementById('pancard-photo').firstElementChild.classList.add('fa-circle-check')
+          document.getElementById('pancard-photo').firstElementChild.classList.add('text-success')
+        }
+
+        if (submitPersonalDetailsForm.get('aadharCardPhoto').length != 0) {
+          document.getElementById('aadhar-card-photo').firstElementChild.classList.remove('fa-ban')
+          document.getElementById('aadhar-card-photo').firstElementChild.classList.add('fa-circle-check')
+          document.getElementById('aadhar-card-photo').firstElementChild.classList.add('text-success')
+        }
+
         document.getElementById('body').classList.remove('bodyremove');
         document.querySelector('.showdiv').classList.replace('showdiv', 'personal-details-modal')
       });

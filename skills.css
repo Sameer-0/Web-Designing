@@ -10,7 +10,7 @@ body {
 
 #skill-box {
     background-color: #fff;
-    max-height: 70vh;
+    min-height: 70vh;
     margin-top: 60px;
     padding: 30px;
 }
@@ -55,7 +55,7 @@ body {
 
 #left-skill-box {
     min-width: 50%;
-    height: 60vh;
+    height: 65vh;
     overflow: auto;
     scroll-behavior: smooth;
 }
@@ -70,11 +70,7 @@ body {
 }
 
 #skill-search:focus {
-    border: 3px solid #3983fa !important;
-}
-
-#skill-search:hover {
-    border: 3px solid #3983fa !important;
+    border: 2px solid #3983fa !important;
 }
 
 #myUL {
@@ -115,7 +111,7 @@ body {
     cursor: pointer;
     color: #3983fa;
     padding: 10px 20px 0 15px;
-    border-right: 2px solid black;
+    border-right: 1px solid black;
     height: 100%;
 }
 
@@ -144,4 +140,12 @@ body {
 #buttons-row {
     margin-top: 30%;
     bottom: 0;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .skill-add-button i {
+        padding: 7px 5px 0 4px ;
+    }
+    
 }
