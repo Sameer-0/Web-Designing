@@ -358,9 +358,9 @@
                         <h6 class="pb-4">IFSC Code</h6>
                       </div>
                       <div class="col-6 ps-md-0 ps-0 col-md-6 col-lg-6 col-sm-6">
-                        <p>ICICI Bank</p>
-                        <p class="pt-2">Panvel</p>
-                        <p class="pt-2">ICIC0000007</p>
+                        <p id="bank-name-value">ICICI Bank</p>
+                        <p id="branch-name-value" class="pt-2">Panvel</p>
+                        <p id="ifsc-code-value" class="pt-2">ICIC0000007</p>
                       </div>
                     </div>
                   </div>
@@ -374,10 +374,12 @@
                         <h6 class="pb-4">Cancalled Cheque Photo</h6>
                       </div>
                       <div class="col-6 ps-md-0 ps-0 col-md-6 col-lg-6 col-sm-6">
-                        <p>600002025</p>
-                        <p class="pt-2">778866445523</p>
-                        <p class="pt-2">Current Account</p>
-                        <p class="pt-3 h5"><i class="fa-solid fa-ban"></i></p>
+                        <p id="micr-code-value">600002025</p>
+                        <p id="account-number-value" class="pt-2">778866445523</p>
+                        <p id="account-type-value" class="pt-2">Current Account</p>
+                        <p id="cancelled-check-photo" class="pt-3 h5">
+                          <i class="fa-solid fa-ban"></i>
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -1608,6 +1610,25 @@
       //*************************************Bank-details-modal JS****************************************
 
       document.querySelector('.bank-details-edit-box').addEventListener('click', function () {
+
+        let editBankDetailsForm = new FormData()
+
+        editBankDetailsForm.append('editBankName', document.getElementById('bank-name-value').innerText)
+        editBankDetailsForm.append('editBranchName', document.getElementById('branch-name-value').innerText)
+        editBankDetailsForm.append('editIfscCode', document.getElementById('ifsc-code-value').innerText)
+        editBankDetailsForm.append('editMicrCode', document.getElementById('micr-code-value').innerText)
+        editBankDetailsForm.append('editAccoutNumber', document.getElementById('account-number-value')
+          .innerText)
+        editBankDetailsForm.append('editAccountType', document.getElementById('account-type-value').innerText)
+
+        document.getElementById('bank-name').value = editBankDetailsForm.get('editBankName')
+        document.getElementById('bank-branch').value = editBankDetailsForm.get('editBranchName')
+        document.getElementById('bank-ifsc-code').value = editBankDetailsForm.get('editIfscCode')
+        document.getElementById('bank-micr-code').value = editBankDetailsForm.get('editMicrCode')
+        document.getElementById('bank-account-number').value = editBankDetailsForm.get('editAccoutNumber')
+        document.getElementById('bank-account-type').value = editBankDetailsForm.get('editAccountType')
+
+
         document.getElementById('body').classList.add('d-none');
         document.querySelector('.bank-details-modal').classList.remove('d-none');
       });
@@ -1617,17 +1638,46 @@
         document.querySelector('.bank-details-modal').classList.add('d-none');
       });
 
+      document.querySelector('#bank-details-submit-button').addEventListener('click', function () {
+
+        let submitBankDetailsForm = new FormData()
+
+        submitBankDetailsForm.append('bankName', document.getElementById('bank-name').value)
+        submitBankDetailsForm.append('branchName', document.getElementById('bank-branch').value)
+        submitBankDetailsForm.append('ifscCode', document.getElementById('bank-ifsc-code').value)
+        submitBankDetailsForm.append('micrCode', document.getElementById('bank-micr-code').value)
+        submitBankDetailsForm.append('accoutNumber', document.getElementById('bank-account-number').value)
+        submitBankDetailsForm.append('accountType', document.getElementById('bank-account-type').value)
+        submitBankDetailsForm.append('cancelledCheckPhoto', document.getElementById('cancelled_cheque_Photo').value)
+
+        document.getElementById('bank-name-value').innerText = submitBankDetailsForm.get('bankName')
+        document.getElementById('branch-name-value').innerText = submitBankDetailsForm.get('branchName')
+        document.getElementById('ifsc-code-value').innerText = submitBankDetailsForm.get('ifscCode')
+        document.getElementById('micr-code-value').innerText = submitBankDetailsForm.get('micrCode')
+        document.getElementById('account-number-value').innerText = submitBankDetailsForm.get('accoutNumber')
+        document.getElementById('account-type-value').innerText = submitBankDetailsForm.get('accountType')
+
+        if (submitBankDetailsForm.get('cancelledCheckPhoto').length != 0) {
+          document.getElementById('cancelled-check-photo').firstElementChild.classList.remove('fa-ban')
+          document.getElementById('cancelled-check-photo').firstElementChild.classList.add('fa-circle-check')
+          document.getElementById('cancelled-check-photo').firstElementChild.classList.add('text-success')
+        }
+
+        document.getElementById('body').classList.remove('d-none');
+        document.querySelector('.bank-details-modal').classList.add('d-none');
+      });
+
       // ****************************************************JS for skills Modal****************************************************************
 
 
       document.querySelector('.skills-edit-box').addEventListener('click', function () {
-        document.getElementById('body').classList.add('bodyremove');
+        document.getElementById('body').classList.add('d-none');
         document.querySelector('.skills-modal').classList.remove('d-none');
 
       })
 
       document.querySelector('#skills-modal-cancel-button').addEventListener('click', function () {
-        document.getElementById('body').classList.remove('bodyremove');
+        document.getElementById('body').classList.remove('d-none');
         document.querySelector('.skills-modal').classList.add('d-none');
 
       })
