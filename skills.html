@@ -1,267 +1,224 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+    <title>Hello, world!</title>
 </head>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-<link rel="preload" as="style"
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
-<link rel="stylesheet" href="./skills.css" />
 
 <body>
+    <div class="accordion" id="accordionExample">
 
-    <div id="skill-box" class="container">
-        <div class="row">
-            <div class="col-md-1 col-sm-1 col-1 d-flex justify-content-center align-items-center">
-                <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+        <div class="card">
+            <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                    <button class="btn collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Soft Skill
+                    </button>
+                </h2>
             </div>
-            <div class="col-md-11 col-sm-11 col-11">
-                <input type="text" id="skill-search" placeholder="Search for names.." class="form-control"
-                    title="Type in a name">
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                    <div id="soft-skill-box" class="col-4 Flipped">
+                        <div class="flipping">
+                        <div class="col-12">
+                          <input type="text" id="soft-skill-search" placeholder="Search for soft skills.." class="form-control"
+                            title="Type in a name">
+                        </div>
+                        <ul id="soft-skill-UL">
+                          <li class="skill-list">
+                            <div class="row">
+                              <div class="col-md-2 col-sm-2 col-2 soft-skill-add-button"><i class="fa-solid fa-circle-plus fa-2x"></i>
+                              </div>
+                              <div class="col-md-10 col-sm-10 col-12"><a href="#">Java</a></div>
+                            </div>
+                          </li>
+                          <li class="skill-list">
+                            <div class="row">
+                              <div class="col-md-2 col-sm-2 col-2 soft-skill-add-button"><i class="fa-solid fa-circle-plus fa-2x"></i>
+                              </div>
+                              <div class="col-md-10 col-sm-10 col-12"><a href="#">CSS</a></div>
+                            </div>
+                          </li>
+                          <li class="skill-list">
+                            <div class="row">
+                              <div class="col-md-2 col-sm-2 col-2 soft-skill-add-button"><i class="fa-solid fa-circle-plus fa-2x"></i>
+                              </div>
+                              <div class="col-md-10 col-sm-10 col-12"><a href="#">JavaScript</a></div>
+                            </div>
+                          </li>
+                          <li class="skill-list">
+                            <div class="row">
+                              <div class="col-md-2 col-sm-2 col-2 soft-skill-add-button"><i class="fa-solid fa-circle-plus fa-2x"></i>
+                              </div>
+                              <div class="col-md-10 col-sm-10 col-12"><a href="#">Soft Skill1</a></div>
+                            </div>
+                          </li>
+                          <li class="skill-list">
+                            <div class="row">
+                              <div class="col-md-2 col-sm-2 col-2 soft-skill-add-button"><i class="fa-solid fa-circle-plus fa-2x"></i>
+                              </div>
+                              <div class="col-md-10 col-sm-10 col-12"><a href="#">Soft Skill2</a></div>
+                            </div>
+                          </li>
+                          <li class="skill-list">
+                            <div class="row">
+                              <div class="col-md-2 col-sm-2 col-2 soft-skill-add-button"><i class="fa-solid fa-circle-plus fa-2x"></i>
+                              </div>
+                              <div class="col-md-10 col-sm-10 col-12"><a href="#">Soft Skill3</a></div>
+                            </div>
+                          </li>
+                          <li class="skill-list">
+                            <div class="row">
+                              <div class="col-md-2 col-sm-2 col-2 soft-skill-add-button"><i class="fa-solid fa-circle-plus fa-2x"></i>
+                              </div>
+                              <div class="col-md-10 col-sm-10 col-12"><a href="#">Soft Skill4</a></div>
+                            </div>
+                          </li>
+                          <li class="skill-list">
+                            <div class="row">
+                              <div class="col-md-2 col-sm-2 col-2 soft-skill-add-button"><i class="fa-solid fa-circle-plus fa-2x"></i>
+                              </div>
+                              <div class="col-md-10 col-sm-10 col-12"><a href="#">Soft Skill5</a></div>
+                            </div>
+                          </li>
+                          <li class="skill-list">
+                            <div class="row">
+                              <div class="col-md-2 col-sm-2 col-2 soft-skill-add-button"><i class="fa-solid fa-circle-plus fa-2x"></i>
+                              </div>
+                              <div class="col-md-10 col-sm-10 col-12"><a href="#">Soft Skill6</a></div>
+                            </div>
+                          </li>
+                          <li class="skill-list">
+                            <div class="row">
+                              <div class="col-md-2 col-sm-2 col-2 soft-skill-add-button"><i class="fa-solid fa-circle-plus fa-2x"></i>
+                              </div>
+                              <div class="col-md-10 col-sm-10 col-12"><a href="#">Soft Skill7</a></div>
+                            </div>
+                          </li>
+                        </ul>
+                        </div>
+                      </div>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div id="left-skill-box" class="col-md-6 col-sm-12">
-
-                <ul id="myUL">
-                    <li class="skill-list">
-                        <div class="row">
-                            <div class="col-md-2 col-sm-2 col-2 skill-add-button"><i
-                                    class="fa-solid fa-circle-plus fa-2x"></i></div>
-                            <div class="col-md-10 col-sm-10 col-12"><a href="#">Java</a></div>
-                        </div>
-                    </li>
-                    <li class="skill-list">
-                        <div class="row">
-                            <div class="col-md-2 col-sm-2 col-2 skill-add-button"><i
-                                    class="fa-solid fa-circle-plus fa-2x"></i></div>
-                            <div class="col-md-10 col-sm-10 col-10"><a href="#">SpringBoot</a></div>
-                        </div>
-                    </li>
-                    <li class="skill-list">
-                        <div class="row">
-                            <div class="col-md-2 col-sm-2 col-sm-2 skill-add-button"><i
-                                    class="fa-solid fa-circle-plus fa-2x"></i></div>
-                            <div class="col-md-10 col-sm-10 col-10"><a href="#">JavaScript</a></div>
-                        </div>
-                    </li>
-                    <li class="skill-list">
-                        <div class="row">
-                            <div class="col-md-2 col-sm-2 col-2 skill-add-button"><i
-                                    class="fa-solid fa-circle-plus fa-2x"></i></div>
-                            <div class="col-md-10 col-sm-10 col-10"><a href="#">HTML</a></div>
-                        </div>
-                    </li>
-                    <li class="skill-list">
-                        <div class="row">
-                            <div class="col-md-2 col-sm-2 col-2 skill-add-button"><i
-                                    class="fa-solid fa-circle-plus fa-2x"></i></div>
-                            <div class="col-md-10 col-sm-10 col-10"><a href="#">CSS</a></div>
-                        </div>
-                    </li>
-                    <li class="skill-list">
-                        <div class="row">
-                            <div class="col-md-2 col-sm-2 col-2 skill-add-button"><i
-                                    class="fa-solid fa-circle-plus fa-2x"></i></div>
-                            <div class="col-md-10 col-sm-10 col-10"><a href="#">Bootstrap</a></div>
-                        </div>
-                    </li>
-                    <li class="skill-list">
-                        <div class="row">
-                            <div class="col-md-2 col-sm-2 col-2 skill-add-button"><i
-                                    class="fa-solid fa-circle-plus fa-2x"></i></div>
-                            <div class="col-md-10 col-sm-10 col-10"><a href="#">jquery</a></div>
-                        </div>
-                    </li>
-                    <li class="skill-list">
-                        <div class="row">
-                            <div class="col-md-2 col-sm-2 col-2 skill-add-button"><i
-                                    class="fa-solid fa-circle-plus fa-2x"></i></div>
-                            <div class="col-md-10 col-sm-10 col-10"><a href="#">Skill1</a></div>
-                        </div>
-                    </li>
-                    <li class="skill-list">
-                        <div class="row">
-                            <div class="col-md-2 col-sm-2 col-2 skill-add-button"><i
-                                    class="fa-solid fa-circle-plus fa-2x"></i></div>
-                            <div class="col-md-10 col-sm-10 col-10"><a href="#">Skill1</a></div>
-                        </div>
-                    </li>
-                    <li class="skill-list">
-                        <div class="row">
-                            <div class="col-md-2 col-sm-2 col-2 skill-add-button"><i
-                                    class="fa-solid fa-circle-plus fa-2x"></i></div>
-                            <div class="col-md-10 col-sm-10 col-10"><a href="#">Skill1</a></div>
-                        </div>
-                    </li>
-                    <li class="skill-list">
-                        <div class="row">
-                            <div class="col-md-2 col-sm-2 col-2 skill-add-button"><i
-                                    class="fa-solid fa-circle-plus fa-2x"></i></div>
-                            <div class="col-md-10 col-sm-10 col-10"><a href="#">Skill1</a></div>
-                        </div>
-                    </li>
-                    <li class="skill-list">
-                        <div class="row">
-                            <div class="col-md-2 col-sm-2 col-2 skill-add-button"><i
-                                    class="fa-solid fa-circle-plus fa-2x"></i></div>
-                            <div class="col-md-10 col-sm-10 col-10"><a href="#">Skill1</a></div>
-                        </div>
-                    </li>
-                    <li class="skill-list">
-                        <div class="row">
-                            <div class="col-md-2 col-sm-2 col-2 skill-add-button"><i
-                                    class="fa-solid fa-circle-plus fa-2x"></i></div>
-                            <div class="col-md-10 col-sm-10 col-10"><a href="#">Skill1</a></div>
-                        </div>
-                    </li>
-                    <li class="skill-list">
-                        <div class="row">
-                            <div class="col-md-2 col-sm-2 col-2 skill-add-button"><i
-                                    class="fa-solid fa-circle-plus fa-2x"></i></div>
-                            <div class="col-md-10 col-sm-10 col-10"><a href="#">Skill1</a></div>
-                        </div>
-                    </li>
-                    <li class="skill-list">
-                        <div class="row">
-                            <div class="col-md-2 col-sm-2 col-2 skill-add-button"><i
-                                    class="fa-solid fa-circle-plus fa-2x"></i></div>
-                            <div class="col-md-10 col-sm-10 col-10"><a href="#">Skill1</a></div>
-                        </div>
-                    </li>
-                    <li class="skill-list">
-                        <div class="row">
-                            <div class="col-md-2 col-sm-2 col-2 skill-add-button"><i
-                                    class="fa-solid fa-circle-plus fa-2x"></i></div>
-                            <div class="col-md-10 col-sm-10 col-10"><a href="#">Skill1</a></div>
-                        </div>
-                    </li>
-
-                </ul>
+        <div class="card">
+            <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                    <button class="btn collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Hard Skill
+                    </button>
+                </h2>
             </div>
-            <div class="col-md-6 col-sm-12">
-                <h4 class="ms-2 text-primary">Review Your Skills</h4>
-                <div id="right-skill-box">
-                    <ul id="skill-display">
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                    <div id="hard-skill-box" class="col-4">
 
-                    </ul>
+                        <div class="col-12">
+                          <input type="text" id="hard-skill-search" placeholder="Search for hard skills.." class="form-control"
+                            title="Type in a name">
+                        </div>
+                
+                        <ul id="hard-skill-UL">
+                          <li class="skill-list">
+                            <div class="row">
+                              <div class="col-md-2 col-sm-2 col-2 hard-skill-add-button"><i class="fa-solid fa-circle-plus fa-2x"></i>
+                              </div>
+                              <div class="col-md-10 col-sm-10 col-12"><a href="#">Presentation</a></div>
+                            </div>
+                          </li>
+                          <li class="skill-list">
+                            <div class="row">
+                              <div class="col-md-2 col-sm-2 col-2 hard-skill-add-button"><i class="fa-solid fa-circle-plus fa-2x"></i>
+                              </div>
+                              <div class="col-md-10 col-sm-10 col-12"><a href="#">Boxing</a></div>
+                            </div>
+                          </li>
+                          <li class="skill-list">
+                            <div class="row">
+                              <div class="col-md-2 col-sm-2 col-2 hard-skill-add-button"><i class="fa-solid fa-circle-plus fa-2x"></i>
+                              </div>
+                              <div class="col-md-10 col-sm-10 col-12"><a href="#">Management</a></div>
+                            </div>
+                          </li>
+                          <li class="skill-list">
+                            <div class="row">
+                              <div class="col-md-2 col-sm-2 col-2 hard-skill-add-button"><i class="fa-solid fa-circle-plus fa-2x"></i>
+                              </div>
+                              <div class="col-md-10 col-sm-10 col-12"><a href="#">Analytical</a></div>
+                            </div>
+                          </li>
+                          <li class="skill-list">
+                            <div class="row">
+                              <div class="col-md-2 col-sm-2 col-2 hard-skill-add-button"><i class="fa-solid fa-circle-plus fa-2x"></i>
+                              </div>
+                              <div class="col-md-10 col-sm-10 col-12"><a href="#">Marketing</a></div>
+                            </div>
+                          </li>
+                          <li class="skill-list">
+                            <div class="row">
+                              <div class="col-md-2 col-sm-2 col-2 hard-skill-add-button"><i class="fa-solid fa-circle-plus fa-2x"></i>
+                              </div>
+                              <div class="col-md-10 col-sm-10 col-12"><a href="#">Financial Planning</a></div>
+                            </div>
+                          </li>
+                          <li class="skill-list">
+                            <div class="row">
+                              <div class="col-md-2 col-sm-2 col-2 hard-skill-add-button"><i class="fa-solid fa-circle-plus fa-2x"></i>
+                              </div>
+                              <div class="col-md-10 col-sm-10 col-12"><a href="#">hard skill1</a></div>
+                            </div>
+                          </li>
+                          <li class="skill-list">
+                            <div class="row">
+                              <div class="col-md-2 col-sm-2 col-2 hard-skill-add-button"><i class="fa-solid fa-circle-plus fa-2x"></i>
+                              </div>
+                              <div class="col-md-10 col-sm-10 col-12"><a href="#">hard skill2</a></div>
+                            </div>
+                          </li>
+                          <li class="skill-list">
+                            <div class="row">
+                              <div class="col-md-2 col-sm-2 col-2 hard-skill-add-button"><i class="fa-solid fa-circle-plus fa-2x"></i>
+                              </div>
+                              <div class="col-md-10 col-sm-10 col-12"><a href="#">hard skill3</a></div>
+                            </div>
+                          </li>
+                         
+                        </ul>
+                      </div>
                 </div>
-
-                    <div id="save-submit-div">
-                        <div class="d-flex justify-content-between mt-4">
-                            <small>can't fint your skill?</small>
-                            <h4 class="text-primary">Add Skill</h4>
-                            <i class="fa-solid fa-plus fa-2x text-primary" id="add-custom-skill"></i>
-                        </div>
-                        <input type="text" class="form-control" id="custom-skill-input" placeholder="Enter your skill">
-
-                        <div id="buttons-row" class="d-flex justify-content-center">
-                            <button id="work-experience-cancel-button" class="btn btn-danger m-4">Cancel</button>
-                            <button id="work-experience-submit-button" class="btn btn-success m-4">Submit</button>
-                        </div>
-                    </div>
             </div>
-
         </div>
     </div>
+    <!-- Optional JavaScript; choose one of the two! -->
 
-    <script>
-        let skillSearchButton = document.getElementById('skill-search')
-        skillSearchButton.addEventListener('keyup', function myFunction() {
-            // Declare variables
-            var input, filter, ul, li, a, i, txtValue;
-
-            input = document.getElementById('skill-search');
-            filter = input.value.toUpperCase();
-            ul = document.getElementById("myUL");
-            li = ul.getElementsByTagName('li');
-
-            // Loop through all list items, and hide those who don't match the search query
-            for (i = 0; i < li.length; i++) {
-
-                a = li[i].getElementsByTagName("a")[0];
-                txtValue = a.textContent || a.innerText;
-                if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                    li[i].style.display = "";
-                } else {
-                    li[i].style.display = "none";
-                }
-            }
-
-        })
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 
-        let addAvailableSkill = document.getElementById('left-skill-box')
-        let skillDisplay = document.getElementById('skill-display')
-
-        addAvailableSkill.addEventListener('click',function(event) {
-
-            let element = event.target
-            if (element.matches('i')) {
-               let text = element.parentElement.parentElement.lastElementChild.lastElementChild.innerText;
-
-               let div = ` 
-                    <li class="list-group">
-                        <div class="row">
-                            <div class="col-md-2 col-sm-2 col-2"><i class="fa-solid fa-trash-can fa-2x skill-delete-button" style="color:red;"></i></div>
-                            <div class="col-md-10 col-sm-10 col-10"><a  href="#">${text}</a></div>
-                        </div>
-                    </li> `
-
-                    skillDisplay.insertAdjacentHTML('beforeend', div)
-                    element.closest('li').remove()
-            }
-        })
-
-        let addCustomSkill = document.getElementById('add-custom-skill')
-
-        addCustomSkill.addEventListener('click', function () {
-            let customSkillValue = document.getElementById('custom-skill-input').value
-
-            let div = `<li class="list-group">
-                             <div class="row">
-                                 <div class="col-md-2 col-sm-2 col-2"><i class="fa-solid fa-trash-can fa-2x skill-delete-button" style="color:red;"></i></div>
-                                 <div class="col-md-10 col-sm-10 col-10"><a  href="#">${customSkillValue}</a></div>
-                             </div>
-                       </li> `
-
-            skillDisplay.insertAdjacentHTML('afterend', div)
-            document.getElementById('custom-skill-input').value = ''
-        })
-
-
-        document.getElementById('right-skill-box').addEventListener('click', function (event) {
-
-            let element = event.target
-
-            let skillDeleteButton = document.getElementsByClassName('skill-delete-button')
-            let skillList = document.getElementById('myUL')
-
-            if (element.matches('i')) {
-                let text = element.parentElement.parentElement.lastElementChild.lastElementChild.innerText
-                let div = `
-                            <li class="skill-list">
-                              <div class="row">
-                                  <div class="col-md-2 col-sm-2 col-2 skill-add-button"><i
-                                        class="fa-solid fa-circle-plus fa-2x"></i></div>
-                                 <div class="col-md-10 col-sm-10 col-10"><a href="#">${text}</a></div>
-                              </div>
-                            </li>
-                            `
-
-                skillList.insertAdjacentHTML('afterbegin', div)
-                element.closest('li').remove()
-            }
-
-        })
-
-    </script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
 </body>
 
 </html>
